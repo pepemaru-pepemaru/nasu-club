@@ -1,0 +1,45 @@
+* {
+margin: 0;
+padding:0;
+font-size: 100%;
+}
+
+ul{
+    list-style-type: none;
+}
+
+
+#header{
+    background-color: brown;
+}
+.contner01{
+    width: 1300px;
+    margin: 0 auto;
+}
+.header_text01{
+    padding-top: 16px ;
+    font-size: 12px;
+    color: white;
+    text-align: right;
+}
+.header_logo{
+    font-size: 48px;
+    color: white;
+}
+.header_text02{
+    font-size: 24px;
+    text-align: right;
+    margin-right: 214px;
+    color: white;
+}
+
+#navi{
+    background-color: red;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* コマンド＋スラッシュでコメントできるよ */
