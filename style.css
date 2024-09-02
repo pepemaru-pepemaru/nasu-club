@@ -3,43 +3,129 @@ margin: 0;
 padding:0;
 font-size: 100%;
 }
-
 ul{
     list-style-type: none;
 }
-
-
-#header{
-    background-color: brown;
-}
-.contner01{
+.contner{
     width: 1300px;
     margin: 0 auto;
 }
-.header_text01{
-    padding-top: 16px ;
-    font-size: 12px;
-    color: white;
-    text-align: right;
-}
-.header_logo{
-    font-size: 48px;
-    color: white;
-}
-.header_text02{
-    font-size: 24px;
-    text-align: right;
-    margin-right: 214px;
-    color: white;
-}
-
-#navi{
-    background-color: red;
-}
-
 .flex{
     display: flex;
     justify-content: space-around;
+}
+.flex_stretch{
+    display: flex;
+    justify-content: stretch; 
+}
+
+#header{
+    background-image:url(images/wood-back-ground.jpg);
+    color: white;
+}
+.header_text01{
+    padding-top: 16px ;
+    text-align: right;
+}
+
+.header_logo > img {
+    height: 200px;
+    object-fit: fill;
+}
+.header_cope{
+    margin-top: 170px;
+}
+
+#navi{
+    background-image: url(images/red_backgound.png);
+    margin-top: 10px;
+}
+#navi_img > img {
+    object-fit: none;
+    object-position: 0px 95px;
+    margin-top: -90px;
+}
+
+.box{
+    background-image: url(images/black_usuiyatu.png);
+    height: 120px ;
+    width: 809px ;
+}
+
+#aburiya{
+    background-image: url(images/aburiya_background.png) ;
+    height: 600px ;
+    width: 1420px ;
+}
+
+#contents{
+    background-image:url(images/wood-back-ground.jpg);
+    padding: 65px;
+}
+#store_intoro{
+    border-bottom: 1px black solid;
+    font-size: 20px;
+}
+
+.brown{
+    color: brown;
+}
+.white{
+    color: white;
+}
+.center{
+    text-align: center;
+}
+.space{
+    margin-top: 20px;
+}
+
+h3{
+    font-size: 45px;
+}
+.side_border{
+    border-left: dotted #444 1px;
+    border-right: dotted #444 1px;;
+}
+
+
+#oishii_text01{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    border-bottom: solid 1px black;
+}
+#oishii_text02{
+    margin-top: 10px;
+}
+#oishii_text03{
+    text-align: right;
+}
+#oishii_text04{
+    text-align: left;
+}
+
+
+#news{
+    background-image:url(images/wood-back-ground.jpg);
+}
+#news_logo{
+    padding-top: 40px;
+    border-bottom: solid 1px black;
+}
+#news_scroll{
+    width: 1000px;
+    height: 240px;
+    overflow-y: scroll; 
+    margin: 0 auto;
+    padding-top: 20px;
+    line-height:40px;
+    font-size: 20px;
+}
+
+#feeder{
+    background-image: url(images/red_backgound.png);
+    padding: 20px ;
 }
 
 /* コマンド＋スラッシュでコメントできるよ */

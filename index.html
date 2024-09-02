@@ -9,17 +9,25 @@
 <body>
     <div id="wrapper">
         <div id="header">
-            <div class="contner01">
+            <div class="contner">
                 <p class="header_text01">福知山や北京都を中心に、多数の居酒屋店舗を展開中</p>
                 <div class="flex">
-                    <p><img src="images/logo.png"alt="なすくらぶ"></p>
-                    <p class="header_text02">美味しいは ニッコリに つながる</p>
+                    <p class="header_logo"><img src="images/logo.png"alt="なすくらぶ"></p>
+                    <p class="header_cope"><img src="images/oishiihanikkori.png"alt="美味しいはニッコリにつながる"></p>
                 </div>
             </div>
-        </div>
+        </div><!-- headerの終わり　-->
 
-        <ul id="navi">
-            <div class="contner01 flex">
+            <div id="navi">
+                <div class="contner">
+                    <p id="navi_img">
+                        <img src="images/navi_nandakore.png"alt="もう一度やり直して下さい">
+                    </p>
+                </div>
+            </div>
+        
+        <!-- <ul id="navi">
+            <div class="contner flex">
                 <li>
                     <p>TOP PAGE</p>
                     <p>トップページ</p>
@@ -41,68 +49,134 @@
                     <p>お問い合わせ</p>
                 </li>
             </div>
-        </ul>
+        </ul>naviの終わり -->
 
         <div id="flexlider-index">
-            <ul>
+            <ul class="contner flex_stretch">
                 <li>上方人情酒場ちりとてちん　楽しく語らい夜を明かす大衆酒場</li>
-                <li>鶏料理と炉端焼きあぶりや　炉端文化を福知山から発信中！</li>
+
+                <li id="aburiya">
+                    <div class="box center">
+                        <p class="white">鶏料理と炉端焼きあぶりや</p>
+                        <img src="images/aburiya_catchphrase.png" alt="炉端文化を福知山から発信中">
+                    </div>
+                </li>
+
                 <li>本格炭焼鳥鳥屋平兵衛商店　炭火焼鳥「バカうま！」宣言</li>
             </ul>
         </div>
         
-        <div id="contents">
-            <h2 class="contents01">🔸なすくらぶ全店のご紹介</h2>
-            <ul class="contents02">
+        <div class="contner">
+            <h2 id="store_intoro"><span class=brown>◆</span>なすくらぶ全店のご紹介<span class=brown>◆</span></h2>
+            <ul class="contents flex_stretch space">
                 <li>
-                    <p><img src="images/nasuno-yoichi.png"alt="なすの与一"></p>
+                    <p><img class="side_border" src="images/nasuno-yoichi.png"alt="なすの与一"></p>
                 </li>
-                <li>鳥屋平兵衛商店</li>
-                <li>魚屋平兵衛商店</li>
-                <li>ちりとてちん</li>
-                <li>なすの与一</li>
-                <li>いせの与一</li>
+                <li>
+                    <p><img class="side_border" src="images/chirirtotechin.png"alt="ちりとてちん"></p>
+                </li>
+                <li>
+                    <p><img class="side_border" src="images/kinnchan.png"alt="金ちゃん"></p>
+                </li>
+                <li>
+                    <p><img class="side_border" src="images/aburiya.png"alt="あぶりや"></p>
+                </li>
+                <li>
+                    <p><img class="side_border" src="images/toriya.png"alt="鳥屋平兵衛商店"></p>
+                </li>
+                <li>
+                    <p><img class="side_border" src="images/sakanaya.png"alt="魚屋平兵衛商店"></p>
+                </li>
+            </ul>   
+            <ul class="contents flex_stretch space">
+                <li>
+                    <p><img class="side_border" src="images/iseno-yoichi.png"alt="いせの与一"></p>
+                </li>
+                <li>
+                    <p><img class="side_border" src="images/yamiichi-nishimai.png"alt="闇市倶楽部西舞鶴店"></p>
+                </li>
+                <li>
+                    <p><img class="side_border" src="images/jounetsu-toyooka.png"alt="情熱ホルモン豊岡酒場店"></p>
+                </li>
+                <li>
+                    <p><img class="side_border" src="images/yakiniki-not-name.png"alt="名前のない焼肉屋さん"></p>
+                </li>
             </ul>
-        </div>  
+        </div>
+    
         
+        <div id="contents">
+            <div class="contner">
+                <div class="flex">
+                    <div>
+                        <p><img src="images/saikinnnoichimai.png"alt=最近注目の一枚></p>
+                    </div>
+                    <div>
+                        <p><img src="images/osusumeryouri.png"alt=おすすめ！料理></p>
+                        <p class="white">今月のおすすめ料理はこちら！毎月なすくら<br>ぶの各店をPickupして、それぞれのお料理を<br>ご紹介。旬の美味しいお料理やイチ押し料理<br>などがチェックできます</p>
+                    </div>
+                    <div>
+                        <p><img src="images/konngetunoibennto.png"alt=今月のイベント></p>
+                        <p class="white">なすくらぶ各店舗のイベント情報はこちら！<br>今月は、各店どんなイベント開催するのか<br>な？お店に行く前に要チェック！</p>
+                    </div>
+                </div>
+                <div class="contents flex">
+                    <div>
+                        <p><img src="images/osusumeennkaiko-su.png"alt=おすすめ宴会コース></p>
+                    </div>
+                    <div>
+                        <p><img src="images/konngetunopresent.png"alt=今月のプレゼント></p>
+                        <p class="white">今月のプレゼントはこちら！なすくらぶ<br>では、お客様に素敵なプレゼントをご用意。<br>アンケートに答えて応募できます。</p>
+                    </div>
+                    <div>
+                        <p><img src="images/pointcard.png"alt=ポイントカード></p>
+                        <p class="white">なすくらぶのポイントカードはこちら！<br>各店舗でご利用可能な、貯めてお得！<br>使ってお得！なポイントカード。ポイント数<br>の照会ができます。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div>
-            <div>
-                <p>スタッフより</p>
-                <p>最近注目の一枚</p>
+            <div class="contner">
+                <h3 id="oishii_text01">
+                    <img src="images/oishiiha_nikkori.png">
+                </h3>
+                <div class="flex">
+                    <div>
+                        <p><img src="images/oishiinikkori_02.png"></p>
+                        <p id="oishii_text02">私達の目指す「美味しい」とはそれすなわち「二ッコリ」であり、<br>「ニッコリ」とは、あらゆるすべての幸せにつながると考えていま<br>す。すべては「美味しい」から始まり「ニッコリ」となり、幸せに<br>続く・・・。「美味しい」の形はいろいろとあれど、あらゆる人々<br>の「美味しい」＝「ニッコリ」を全スタッフのモットーとし、会社<br>組織の礎とし、おごることなく、楽しくふくよかにすべてに通じる<br>『寿』を追い求めて参ります。</p>
+                        <p id="oishii_text03"><img src="images/bl nasuclub.png"alt="なすくらぶ"></p>
+                    </div>
+                    <div id="oishii_text04">
+                        <img src="images/kanpai.png">
+                    </div>
+                </div>
             </div>
+        </div>
 
-            <div>
-                <p>おすすめ！料理</p>
-                <p>今月のおすすめ料理はこちら！毎月なすくらぶの各店をPickupして、それぞれのお料理をご紹介。旬の美味しいお料理やイチ押し料理などがチェックできます</p>
+        <div id="news">
+            <div class="contner white center">
+                <h1 id="news_logo">
+                    <img src="images/news_oshirase.png">
+                </h1>
+                <div id="news_scroll">
+                    <p>2024.09.01  【重要】なすくらぶポイントカードはシステム終了に伴い、終了しました。</p>
+                    <p>2024.08.22  8/22（木）29（木）地域貢献イベント【ゆらのガーデンde水遊び！】開催のお知らせ</p>
+                    <p>2024.08.17  8/17,18と24,25の２週土日に「ゆらのガーデンバル」開催！</p>
+                    <p>2024.08.01  ８月のイベントスケジュール更新！</p>
+                    <p>2024.07.22  7/23.24.25 ちりとてちん100円カレー開催！（公立大生とのコラボ）</p>
+                    <p>2024.07.20  7/20（土）地域貢献イベント【ゆらのガーデンde水遊び！】開催のお知らせ</p>
+                    <p>2024.07.15  7/20(土)21(日)の２日間「ゆらのガーデンバル」開催！</p>
+                    <p>2024.07.01  ７月のイベントスケジュール更新！</p>
+                </div>
             </div>
-
-            <div>
-                <p>今月のイベント</p>
-                <p>なすくらぶ各店舗のイベント情報はこちら！今月は、各店どんなイベント開催するのかな？お店に行く前に要チェック！</p>
+        </div>
+        
+        <div id="feeder">
+            <div class="contner white center">
+                <p>Copyright © オフィスヒュート All Rights Reserved. 無断転載禁止</p>
             </div>
-
-            <div>
-                <p>おすすめ宴会コース</p>
-                <p>歓送迎会や飲み会など、宴会をするなら、なすくらぶ各店へ！</p>
-            </div>
-
-            <div>
-                <p>今月のプレゼント</p>
-                <p>今月のプレゼントはこちら！なすくらぶでは、お客様に素敵なプレゼントをご用意。アンケートに答えて応募できます。</p>
-            </div>
-
-            <div>
-                <p>ポイントカード</p>
-                <p>なすくらぶのポイントカードはこちら！各店舗でご利用可能な、貯めてお得！使ってお得！なポイントカード。ポイント数の照会ができます。</p>
-            </div>
-        </div><!-- #wrapperの終わり -->
-    </div><!-- #wrapperの終わり -->
-    
-    <h2>美味しいはニッコリにつながる</h2>
-    <h3>「美味しい」＝「ニッコリ」</h3>
-    <p>私達の目指す「美味しい」とはそれすなわち「ニッコリ」であり、「ニッコリ」とは、あらゆるすべての幸せにつながると考えています。すべては「美味しい」から始まり「ニッコリ」となり、幸せに続く・・・。「美味しい」の形はいろいろとあれど、あらゆる人々の「美味しい」＝「ニッコリ」を全スタッフのモットーとし、会社組織の礎とし、おごることなく、楽しくふくよかにすべてに通じる『寿』を追い求めて参ります。</p>
-    <p>なすくらぶ</p>
-
-    
+        </div>      
+    </div><!-- #wrapperの終わり -->   
 </body>
 </html>
