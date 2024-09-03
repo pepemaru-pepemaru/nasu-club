@@ -38,29 +38,11 @@ h3{
     object-position: 0px 95px;
     margin-top: -90px;
 }
-
-#shop_top_information{
-    overflow:hidden
-}
-#chiritote{
-    background-image: url(images/chiritotechin_background_top_img.png) ;
-    height: 600px ;
-    width: 1420px ;
-}
 #aburiya{
     background-image: url(images/aburiya_background.png) ;
     height: 600px ;
     width: 1420px ;
 }
-#toriya{
-    background-image: url(images/toriya_top_background.png);
-    height: 600px ;
-    width: 1420px ;
-}
-
-
-
-
 
 #contents{
     background-image:url(images/wood-back-ground.jpg);
@@ -103,21 +85,12 @@ h3{
     /* margin: 0 auto; */
     padding-top: 20px;
     line-height:40px;
-    font-size: 16px;
-    text-align: left ;
+    font-size: 20px;
 }
-
 
 #feeder{
     background-image: url(images/red_backgound.png);
-}
-#feeder_pagetop{
-    float: right ;
-}
-#feeder_text{
-    padding-top: 28px;
-    padding-bottom: 28px;
-    color: #FFFFFF;
+    padding: 20px ;
 }
 
 
@@ -140,23 +113,10 @@ h3{
     display: flex;
     justify-content: stretch; 
 }
-
 .box{
     background-image: url(images/black_usuiyatu.png);
     width: 809px ;
-    margin-top: 480px;
-    padding-bottom: 25px;
 }
-.box_in_text{
-    padding-top: 15px;
-    color: #FFFFFF;
-}
-
-
-
-
-
-
 .brown{
     color: #611D1A
 }
@@ -165,7 +125,7 @@ h3{
 }
 .left{
     margin-left: 0 auto;
-    padding-left: 70px;
+    padding-left: 50px;
 }
 .center{
     text-align: center;
@@ -177,13 +137,9 @@ h3{
     margin-bottom: 20px;
 }
 .side_border{
-    border-left: dotted #CBCBCB 1px;
-    border-right: dotted #CBCBCB 1px;;
+    border-left: dotted #444 1px;
+    border-right: dotted #444 1px;;
 }
 .float_right{
-    float: right ;
+    float: right;
 }
-.float_left{
-    float: left ;
-}
-
