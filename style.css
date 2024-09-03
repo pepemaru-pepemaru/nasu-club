@@ -6,36 +6,29 @@ font-size: 100%;
 ul{
     list-style-type: none;
 }
-.contner{
-    width: 1300px;
-    margin: 0 auto;
+h3{
+    font-size: 45px;
 }
-.flex{
-    display: flex;
-    justify-content: space-around;
-}
-.flex_stretch{
-    display: flex;
-    justify-content: stretch; 
-}
+
+
+
+
 
 #header{
     background-image:url(images/wood-back-ground.jpg);
     color: white;
 }
-.header_text01{
+#header_text01{
     padding-top: 16px ;
     text-align: right;
 }
-
-.header_logo > img {
+#header_logo > img {
     height: 200px;
     object-fit: fill;
 }
-.header_cope{
+#header_cope{
     margin-top: 170px;
 }
-
 #navi{
     background-image: url(images/red_backgound.png);
     margin-top: 10px;
@@ -45,13 +38,6 @@ ul{
     object-position: 0px 95px;
     margin-top: -90px;
 }
-
-.box{
-    background-image: url(images/black_usuiyatu.png);
-    height: 120px ;
-    width: 809px ;
-}
-
 #aburiya{
     background-image: url(images/aburiya_background.png) ;
     height: 600px ;
@@ -65,27 +51,6 @@ ul{
 #store_intoro{
     border-bottom: 1px black solid;
     font-size: 20px;
-}
-
-.brown{
-    color: brown;
-}
-.white{
-    color: white;
-}
-.center{
-    text-align: center;
-}
-.space{
-    margin-top: 20px;
-}
-
-h3{
-    font-size: 45px;
-}
-.side_border{
-    border-left: dotted #444 1px;
-    border-right: dotted #444 1px;;
 }
 
 
@@ -114,13 +79,13 @@ h3{
     border-bottom: solid 1px black;
 }
 #news_scroll{
-    width: 1000px;
-    height: 240px;
+    width: 800px;
+    height: 120px;
     overflow-y: scroll; 
     margin: 0 auto;
     padding-top: 20px;
     line-height:40px;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 #feeder{
@@ -128,4 +93,52 @@ h3{
     padding: 20px ;
 }
 
-/* コマンド＋スラッシュでコメントできるよ */
+
+
+
+
+
+
+
+
+.contner{
+    width: 1000px;
+    margin: 0 auto;
+}
+.flex{ 
+    display: flex;
+    justify-content: space-around;
+}
+.flex_stretch{
+    display: flex;
+    justify-content: stretch; 
+}
+.box{
+    background-image: url(images/black_usuiyatu.png);
+    width: 809px ;
+}
+.brown{
+    color: brown;
+}
+.white{
+    color: white;
+}
+.left{
+    margin-left: 0 auto;
+}
+.center{
+    text-align: center;
+}
+.space_top{
+    margin-top: 20px;
+}
+.space_bottom{
+    margin-bottom: 20px;
+}
+.side_border{
+    border-left: dotted #444 1px;
+    border-right: dotted #444 1px;;
+}
+.float_right{
+    float: right;
+}
