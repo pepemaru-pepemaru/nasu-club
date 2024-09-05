@@ -57,20 +57,10 @@ h3{
     height: 600px ;
     width: 1420px ;
 }
-
-
-
-
-
 #contents{
     background-image:url(images/wood-back-ground.jpg);
     padding: 65px;
 }
-#store_intoro{
-    border-bottom: 1px black solid;
-    font-size: 20px;
-}
-
 
 #oishii_text01{
     margin-top: 40px;
@@ -87,8 +77,6 @@ h3{
 #oishii_text04{
     text-align: left;
 }
-
-
 #news{
     background-image:url(images/wood-back-ground.jpg);
 }
@@ -106,8 +94,9 @@ h3{
     font-size: 16px;
     text-align: left ;
 }
-
-
+.news02 img{
+    width: 100%;
+}
 #feeder{
     background-image: url(images/red_backgound.png);
 }
@@ -118,6 +107,26 @@ h3{
     padding-top: 28px;
     padding-bottom: 28px;
     color: #FFFFFF;
+}
+
+
+
+#sub_header{
+    background-image: url(images/wood-back-ground.jpg);
+    text-align: center;
+    height: 300px ;
+}
+#store_nasunoyoichi{
+    color: #FFFFFF;
+    text-align: center;
+    background-image: url(images/nasunoyoihi_name_background.png);
+    width: 100%;
+}
+#store_chiritote{
+    color: #FFFFFF;
+    text-align: center;
+    background-image: url(images/chiritote_name_background.png);
+    width: 100%;
 }
 
 
@@ -151,8 +160,15 @@ h3{
     padding-top: 15px;
     color: #FFFFFF;
 }
-
-
+.store_intoro{
+    border-bottom: 1px black solid;
+    font-size: 20px;
+}
+.store02{
+    background-image: url(images/shop_background.png);
+    width: 25%;
+    height: 430px;
+}
 
 
 
@@ -166,6 +182,9 @@ h3{
 .left{
     margin-left: 0 auto;
     padding-left: 70px;
+}
+.left2{
+    margin-left: 2%;
 }
 .center{
     text-align: center;
