@@ -39,24 +39,44 @@ h3{
     margin-top: -90px;
 }
 
-#shop_top_information{
+/* TOPページのスライドの部分に使ってる */
+/* #shop_top_information{
     overflow:hidden
-}
+} */
 #chiritote{
     background-image: url(images/chiritotechin_background_top_img.png) ;
     height: 600px ;
-    width: 1420px ;
+    width: 800px ;
 }
 #aburiya{
     background-image: url(images/aburiya_background.png) ;
     height: 600px ;
-    width: 1420px ;
+    width: 800px ;
 }
 #toriya{
     background-image: url(images/toriya_top_background.png);
     height: 600px ;
-    width: 1420px ;
+    width: 800px ;
 }
+.box{
+    background-image: url(images/black_usuiyatu.png);
+    width: 800px ;
+    margin-top: 480px;
+    padding-bottom: 25px;
+}
+.box_in_text{
+    padding-top: 15px;
+    color: #FFFFFF;
+}
+
+
+
+
+
+
+
+
+
 #contents{
     background-image:url(images/wood-back-ground.jpg);
     padding: 65px;
@@ -130,8 +150,61 @@ h3{
 }
 
 
+/* ↓店舗毎の紹介ページに使ったCSS↓ */
+#nasunoyoichi_shop_text{
+    background-image: url(images/nasunoyoihi_name_background.png);
+    text-align: center;
+    padding: 30px;
+    color: #FFFFFF;
+    font-size: 25px;
+}
+#nasunoyoichi_shop_img{
+    background-image: url(images/shop_background.png);
+}
+#chiritotechin_shop_text{
+    background-image: url(images/chiritote_name_background.png);
+    text-align: center;
+    padding: 30px;
+    color: #FFFFFF;
+    font-size: 25px;
+}
+#nasunoyoichi_shop_img{
+    background-image: url(images/shop_background.png);
+}
 
 
+
+.shop_img_size{
+    width:200px;
+}
+.shop_introduction_text01{
+    width: 900px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+.shop_introduction_text02{
+    line-height: 35px;
+    font-size: 15px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.shop_introduction_text03{
+    width: 855px;
+    margin: 0 auto;
+}
+#enkai{
+    margin-top: 350px;
+    text-align: center;
+    padding-bottom: 150px;
+}
+/* ↑店舗毎の紹介ページに使ったCSS↑ */
+
+/* お問い合わせページに使ったCSS */
+#otoiawase{
+    margin-top: 50px;
+    text-align: center;
+    border-bottom: solid 1px black;
+}
 
 
 
@@ -149,17 +222,13 @@ h3{
     display: flex;
     justify-content: stretch; 
 }
+.flex_between{
+    display: flex;
+    justify-content: space-between;
+}
 
-.box{
-    background-image: url(images/black_usuiyatu.png);
-    width: 809px ;
-    margin-top: 480px;
-    padding-bottom: 25px;
-}
-.box_in_text{
-    padding-top: 15px;
-    color: #FFFFFF;
-}
+
+/* TOPページ店舗紹介へ飛ぶ部分 */
 .store_intoro{
     border-bottom: 1px black solid;
     font-size: 20px;
@@ -195,9 +264,16 @@ h3{
 .space_bottom{
     margin-bottom: 20px;
 }
+.space_right{
+    margin-right: 20px;
+
+}
 .side_border{
     border-left: dotted #CBCBCB 1px;
     border-right: dotted #CBCBCB 1px;;
+}
+.border_bottom_dot{
+    border-bottom: dotted #000000 1px;
 }
 .float_right{
     float: right ;
@@ -205,4 +281,6 @@ h3{
 .float_left{
     float: left ;
 }
-
+.hover_img:hover{
+    opacity: 0.5;
+}
