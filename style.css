@@ -14,6 +14,11 @@ h3{
 
 
 
+
+
+
+
+
 #header{
     background-image:url(images/wood-back-ground.jpg);
     color: white;
@@ -33,7 +38,7 @@ h3{
     background-image: url(images/red_backgound.png);
     margin-top: 10px;
 }
-#navi_img > img {
+#navi_img>img {
     object-fit: none;
     object-position: 0px 95px;
     margin-top: -90px;
@@ -136,30 +141,248 @@ h3{
     text-align: center;
     height: 300px ;
 }
+
+
+
+
+
+
+/* 店舗一覧で使ったCSS */
+
+.store02{
+    background-image: url(images/shop_background.png);
+    width: 23%;
+    margin: 0,2%,2%,0;
+    height: 430px;
+}
+.shop_introduction_img{
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 2%;
+}
+.left2{
+    margin-left: 2%;
+}
 #store_nasunoyoichi{
     color: #FFFFFF;
     text-align: center;
     background-image: url(images/nasunoyoihi_name_background.png);
     width: 100%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.button_yoichi{
+    background: #136166;
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 30px;
 }
 #store_chiritote{
     color: #FFFFFF;
     text-align: center;
     background-image: url(images/chiritote_name_background.png);
     width: 100%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.button{
+    background: #136166;
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 30px;
+}
+#store_kinchan{
+    color: #FFFFFF;
+    text-align: center;
+    background-image: url(images/kinchan_name_background.png);
+    width: 100%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+#store_aburiya{
+    color: #FFFFFF;
+    text-align: center;
+    background-image: url(images/aburiya_name_background.png);
+    width: 100%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+#store_toriya{
+    color: #FFFFFF;
+    text-align: center;
+    background-image: url(images/toriya_name_background.png);
+    width: 100%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+#store_sakanaya{
+    color: #FFFFFF;
+    text-align: center;
+    background-image: url(images/sakanaya_name_background.png);
+    width: 100%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+#store_isenoyoichi{
+    color: #FFFFFF;
+    text-align: center;
+    background-image: url(images/nasunoyoihi_name_background.png);
+    width: 100%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+#store_yamiichi{
+    color: #FFFFFF;
+    text-align: center;
+    background-image: url(images/yamiichi_name_background.png);
+    width: 100%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+#store_jounetu_toyooka{
+    color: #FFFFFF;
+    text-align: center;
+    background-image: url(images/kinchan_name_background.png);
+    width: 100%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+#store_yakiniku_not_name{
+    color: #FFFFFF;
+    text-align: center;
+    background-image: url(images/aburiya_name_background.png);
+    width: 100%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.button01{
+    background: #136166;
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 30px;
+}
+.button02{
+    background: #bb5a20;
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 6px;
+}
+.button03{
+    background: #ab1313;
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 6px;
+}
+.button04{
+    background: #000000;
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 6px;
+}
+.button05{
+    background: #ffbc3d;
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 30px;
+}
+.button06{
+    background: #2789a1;
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 6px;
+}
+.button07{
+    background: #7d2257;
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 6px;
 }
 
 
+
+/* お問い合わせページに使ったCSS */
+#otoiawase{
+    margin-top: 50px;
+    text-align: center;
+    border-bottom: solid 1px black;
+}
+#otoiawase_01{
+    width: 800px;
+    margin: 0 auto;
+    line-height: 50px;
+}
+.text_box{
+    width: 300px;
+    margin-right: 150px;
+}
+.text_box_big{
+    width: 400px;
+    height: 200px;
+    margin-right: 100px;
+}
+.text_box_submit{
+    text-align: center;
+}
+#otoiawase_02{
+    font-size: 15px;
+    margin-bottom: 50px;
+}
+
+/* プレゼントページで使ったCSS */
+#presentpage{
+    background-image: url(images/shop_background.png);
+    width: 100%;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+/* ポイントカードページで使ったCSS */
+#pointcard01{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+#pointcard02{
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 14px;
+}
+#pointcard_img{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+
+
+
 /* ↓店舗毎の紹介ページに使ったCSS↓ */
+#nasunoyoichi_shop_img{
+    background-image: url(images/shop_background.png);
+}
 #nasunoyoichi_shop_text{
     background-image: url(images/nasunoyoihi_name_background.png);
     text-align: center;
     padding: 30px;
     color: #FFFFFF;
     font-size: 25px;
-}
-#nasunoyoichi_shop_img{
-    background-image: url(images/shop_background.png);
 }
 #chiritotechin_shop_text{
     background-image: url(images/chiritote_name_background.png);
@@ -168,9 +391,47 @@ h3{
     color: #FFFFFF;
     font-size: 25px;
 }
-#nasunoyoichi_shop_img{
-    background-image: url(images/shop_background.png);
+#aburiya_shop_text{
+    background-image: url(images/aburiya_name_background.png);
+    text-align: center;
+    padding: 30px;
+    color: #FFFFFF;
+    font-size: 25px;
 }
+#kinchan_shop_text{
+    background-image: url(images/kinchan_name_background.png);
+    text-align: center;
+    padding: 30px;
+    color: #FFFFFF;
+    font-size: 25px;
+}
+#toriya_shop_text{
+    background-image: url(images/toriya_name_background.png);
+    text-align: center;
+    padding: 30px;
+    color: #FFFFFF;
+    font-size: 25px;
+}
+#sakanaya_shop_text{
+    background-image: url(images/sakanaya_name_background.png);
+    text-align: center;
+    padding: 30px;
+    color: #FFFFFF;
+    font-size: 25px;
+}
+#yamiichi_shop_text{
+    background-image: url(images/yamiichi_name_background.png);
+    text-align: center;
+    padding: 30px;
+    color: #FFFFFF;
+    font-size: 25px;
+}
+
+
+
+
+
+
 
 
 
@@ -199,12 +460,7 @@ h3{
 }
 /* ↑店舗毎の紹介ページに使ったCSS↑ */
 
-/* お問い合わせページに使ったCSS */
-#otoiawase{
-    margin-top: 50px;
-    text-align: center;
-    border-bottom: solid 1px black;
-}
+
 
 
 
@@ -233,14 +489,6 @@ h3{
     border-bottom: 1px black solid;
     font-size: 20px;
 }
-.store02{
-    background-image: url(images/shop_background.png);
-    width: 25%;
-    height: 430px;
-}
-
-
-
 
 .brown{
     color: #611D1A
@@ -252,9 +500,7 @@ h3{
     margin-left: 0 auto;
     padding-left: 70px;
 }
-.left2{
-    margin-left: 2%;
-}
+
 .center{
     text-align: center;
 }
@@ -283,4 +529,9 @@ h3{
 }
 .hover_img:hover{
     opacity: 0.5;
+}
+.hover_navi:hover{
+    position: relative;
+    top: 0px ;
+    left: 0px ;
 }

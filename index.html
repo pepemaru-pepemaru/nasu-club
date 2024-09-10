@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>なすくらぶ</title>
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
 </head>
 <body>
     <div id="wrapper">
@@ -20,7 +22,7 @@
 
         <div id="navi">
             <div class="contner">
-                    <a id="navi_img" class="hover_img" href="店舗紹介.html"><img src="images/navi_nandakore.png"alt="もう一度やり直して下さい"></a>
+                    <a id="navi_img" href="店舗紹介.html"><img class="hover_navi" src="images/navi_nandakore.png"alt="もう一度やり直して下さい"></a>
             </div>
         </div>
         
@@ -48,6 +50,13 @@
             </ul>
         </div>
         
+
+
+
+
+
+
+        
         <div class="contner space_top">
             <h2 class="store_intoro"><span class=brown>◆</span>なすくらぶ全店のご紹介<span class=brown>◆</span></h2>
             <ul class="contents flex_stretch space_top">
@@ -58,30 +67,30 @@
                     <a href="ちりとてちん紹介.html"><img class="side_border hover_img" src="images/chirirtotechin.png"alt="ちりとてちん"></a>
                 </li>
                 <li>
-                    <a href="なすの与一紹介.html"><img class="side_border hover_img" src="images/kinnchan.png"alt="金ちゃん"></a>
+                    <a href="金ちゃん紹介.html"><img class="side_border hover_img" src="images/kinnchan.png"alt="金ちゃん"></a>
                 </li>
                 <li>
-                    <a href="なすの与一紹介.html"><img class="side_border hover_img" src="images/aburiya.png"alt="あぶりや"></a>
+                    <a href="あぶりや紹介.html"><img class="side_border hover_img" src="images/aburiya.png"alt="あぶりや"></a>
                 </li>
                 <li>
-                    <a href="なすの与一紹介.html"><img class="side_border hover_img" src="images/toriya.png"alt="鳥屋平兵衛商店"></a>
+                    <a href="鳥屋平兵衛商店紹介.html"><img class="side_border hover_img" src="images/toriya.png"alt="鳥屋平兵衛商店"></a>
                 </li>
             </ul>   
             <ul class="contents flex_stretch space_top space_bottom">
                 <li>
-                    <a href="なすの与一紹介.html"><img class="side_border hover_img" src="images/sakanaya.png"alt="魚屋平兵衛商店"></a>
+                    <a href="魚屋平兵衛商店紹介.html"><img class="side_border hover_img" src="images/sakanaya.png"alt="魚屋平兵衛商店"></a>
                 </li>
                 <li>
-                    <a href="なすの与一紹介.html"><img class="side_border hover_img" src="images/iseno-yoichi.png"alt="いせの与一"></a>
+                    <a href="いせの与一紹介.html"><img class="side_border hover_img" src="images/iseno-yoichi.png"alt="いせの与一"></a>
                 </li>
                 <li>
-                    <a href="なすの与一紹介.html"><img class="side_border hover_img" src="images/yamiichi-nishimai.png"alt="闇市倶楽部西舞鶴店"></a>
+                    <a href="闇市倶楽部 西舞鶴店紹介.html"><img class="side_border hover_img" src="images/yamiichi-nishimai.png"alt="闇市倶楽部西舞鶴店"></a>
                 </li>
                 <li>
-                    <a href="なすの与一紹介.html"><img class="side_border hover_img" src="images/jounetsu-toyooka.png"alt="情熱ホルモン豊岡酒場店"></a>
+                    <a href="情熱ホルモン 豊岡酒場紹介.html"><img class="side_border hover_img" src="images/jounetsu-toyooka.png"alt="情熱ホルモン豊岡酒場店"></a>
                 </li>
                 <li>
-                    <a href="なすの与一紹介.html"><img class="side_border hover_img" src="images/yakiniki-not-name.png"alt="名前のない焼肉屋さん"></a>
+                    <a href="名前のない焼肉屋紹介.html"><img class="side_border hover_img" src="images/yakiniki-not-name.png"alt="名前のない焼肉屋さん"></a>
                 </li>
             </ul>
         </div>
@@ -107,11 +116,11 @@
                         <p><img src="images/osusumeennkaiko-su.png"alt=おすすめ宴会コース></p>
                     </div>
                     <div>
-                        <p><img src="images/konngetunopresent.png"alt=今月のプレゼント></p>
+                        <p><a href="今月のプレゼント.html"><img class="hover_img" src="images/konngetunopresent.png"alt=今月のプレゼント></a></p>
                         <p class="white">今月のプレゼントはこちら！なすくらぶ<br>では、お客様に素敵なプレゼントをご用意。<br>アンケートに答えて応募できます。</p>
                     </div>
                     <div>
-                        <p><img src="images/pointcard.png"alt=ポイントカード></p>
+                        <p><a href="なすくらぶポイントカードについて.html"><img class="hover_img" src="images/pointcard.png"alt=ポイントカード></a></p>
                         <p class="white">なすくらぶのポイントカードはこちら！<br>各店舗でご利用可能な、貯めてお得！<br>使ってお得！なポイントカード。ポイント数<br>の照会ができます。</p>
                     </div>
                 </div>
@@ -189,12 +198,14 @@
         
         <div id="feeder">
             <div class="contner center">
-                <img id="feeder_pagetop" src="images/page_top.png">
+                <p class="pagetop"><a href="#header"><img class="hover_img" id="feeder_pagetop" src="images/page_top.png"></a></p>
                 <div id="feeder_text">
                     <p>Copyright © オフィスヒュート All Rights Reserved. 無断転載禁止</p>
                 </div>
             </div>    
         </div>      
     </div><!-- #wrapperの終わり -->   
+    <script src="js/test.js"></script>
+
 </body>
 </html>
