@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>隠れ家屋敷　なすの与一</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
     <link rel="stylesheet" href="style.css">
+    <script src="js/test.js"></script>
 </head>
 <body>
     <div id="wrapper">
@@ -32,15 +37,21 @@
             <div id="nasunoyoichi_shop_text">
                 <p>隠れ家屋敷　なすの与一</p>
             </div>
+            <ul class="slider-for">
+                <li><img src="images/なすの与一紹介img/nasunoyoichi_shop_img01.jpg" alt="なすの与一店内写真01"></li>
+                <li><img src="images/なすの与一紹介img/nasunoyoichi_shop_img02.jpg" alt="なすの与一店内写真02"></li>
+                <li><img src="images/なすの与一紹介img/nasunoyoichi_shop_img03.jpg" alt="なすの与一店内写真03"></li>
+                <li><img src="images/なすの与一紹介img/nasunoyoichi_shop_img04.jpg" alt="なすの与一店内写真04"></li>
+                <li><img src="images/なすの与一紹介img/nasunoyoichi_shop_img05.jpg" alt="なすの与一店内写真05"></li>
+            </ul>
+            <ol class="slider-nav">
+                <li><img class="shop_img_size hover_img" src="images/なすの与一紹介img/nasunoyoichi_shop_img01.jpg" alt="なすの与一店内写真01"></li>
+                <li><img class="shop_img_size hover_img" src="images/なすの与一紹介img/nasunoyoichi_shop_img02.jpg" alt="なすの与一店内写真02"></li>
+                <li><img class="shop_img_size hover_img" src="images/なすの与一紹介img/nasunoyoichi_shop_img03.jpg" alt="なすの与一店内写真03"></li>
+                <li><img class="shop_img_size hover_img" src="images/なすの与一紹介img/nasunoyoichi_shop_img04.jpg" alt="なすの与一店内写真04"></li>
+                <li><img class="shop_img_size hover_img" src="images/なすの与一紹介img/nasunoyoichi_shop_img05.jpg" alt="なすの与一店内写真05"></li>
+            </ol>
             <div id="nasunoyoichi_shop_img">
-                <img src="images/なすの与一紹介img/nasunoyoichi_shop_img01.jpg" alt="なすの与一店内写真01">
-                <ul class="flex_stretch">
-                    <li><img class="shop_img_size" src="images/なすの与一紹介img/nasunoyoichi_shop_img01.jpg" alt="なすの与一店内写真01"></li>
-                    <li><img class="shop_img_size" src="images/なすの与一紹介img/nasunoyoichi_shop_img02.jpg" alt="なすの与一店内写真02"></li>
-                    <li><img class="shop_img_size" src="images/なすの与一紹介img/nasunoyoichi_shop_img03.jpg" alt="なすの与一店内写真03"></li>
-                    <li><img class="shop_img_size" src="images/なすの与一紹介img/nasunoyoichi_shop_img04.jpg" alt="なすの与一店内写真04"></li>
-                    <li><img class="shop_img_size" src="images/なすの与一紹介img/nasunoyoichi_shop_img05.jpg" alt="なすの与一店内写真05"></li>
-                </ul>
     <!-- 店舗紹介文のキャンペーン情報 -->
                 <div class="shop_introduction_text01">
                     <p class="store_intoro"><img src="images/なすの与一紹介img/yoichi_campaign_jouhou.png" alt="キャンペーン情報"></p>
@@ -95,8 +106,8 @@
                 <div class="contner center flex_stretch">
                     <p class="news02"><img src="images/osusumeryouri.png"></p>
                     <p class="left2 news02"><img src="images/konngetunoibennto.png"></p>
-                    <p class="left2 news02"><img src="images/konngetunopresent.png"></p>
-                    <p class="left2 news02"><img src="images/pointcard.png"></p>
+                    <p class="left2 news02"><a href="今月のプレゼント.html"><img class="hover_img" src="images/konngetunopresent.png"></a></p>
+                    <p class="left2 news02"><a href="なすくらぶポイントカードについて.html"><img class="hover_img" src="images/pointcard.png"></a></p>
                 </div>
                 <p class="space_top"><br><br></p>
             </div>             
@@ -104,12 +115,27 @@
         
         <div id="feeder">
             <div class="contner center">
-                <img id="feeder_pagetop" src="images/page_top.png">
+                <p class="pagetop"><a href="#header"><img class="hover_img" id="feeder_pagetop" src="images/page_top.png"></a></p>
                 <div id="feeder_text">
                     <p>Copyright © オフィスヒュート All Rights Reserved. 無断転載禁止</p>
                 </div>
             </div>    
-        </div>      
+          </div>      
     </div><!-- #wrapperの終わり -->   
+    <script>
+        $(function () {
+           $(".slider-for").slick({
+               autoplay: true,
+               autoplaySpeed: 3000,
+               arrows: false,
+               asNavFor: ".slider-nav",
+           });
+            $(".slider-nav").slick({
+               slidesToShow: 5,
+               asNavFor: ".slider-for",
+               focusOnSelect: true,
+           });
+       });
+         </script>
 </body>
 </html>

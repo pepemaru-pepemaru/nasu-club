@@ -34,6 +34,15 @@ h3{
 #header_cope{
     margin-top: 170px;
 }
+
+
+
+
+
+
+
+
+
 #navi{
     background-image: url(images/red_backgound.png);
     margin-top: 10px;
@@ -44,34 +53,79 @@ h3{
     margin-top: -90px;
 }
 
+
+
+
+
+
+
+
+
 /* TOPページのスライドの部分に使ってる */
-/* #shop_top_information{
-    overflow:hidden
-} */
 #chiritote{
-    background-image: url(images/chiritotechin_background_top_img.png) ;
+    background-image: url(images/index_top_slider_img/chiritotechin_background_top_img.png) ;
+    height: 600px ;
+    width: 800px ;
+    display: block;
+}
+#aburiya{
+    background-image: url(images/index_top_slider_img/aburiya_background.png) ;
     height: 600px ;
     width: 800px ;
 }
-#aburiya{
-    background-image: url(images/aburiya_background.png) ;
+#kinchan{
+    background-image: url(images/index_top_slider_img/kinchan_background.png) ;
     height: 600px ;
     width: 800px ;
 }
 #toriya{
-    background-image: url(images/toriya_top_background.png);
+    background-image: url(images/index_top_slider_img/toriya_top_background.png) ;
     height: 600px ;
     width: 800px ;
 }
-.box{
-    background-image: url(images/black_usuiyatu.png);
+#sakanaya{
+    background-image: url(images/index_top_slider_img/sakanaya_background.png) ;
+    height: 600px ;
     width: 800px ;
+}
+#yamiichi_nishimai{
+    background-image: url(images/index_top_slider_img/yamiichi_nishimai_background.png) ;
+    height: 600px ;
+    width: 800px ;
+}
+#isenoyoichi{
+    background-image: url(images/index_top_slider_img/isenoyoichi_background.png) ;
+    height: 600px ;
+    width: 800px ;
+}
+#jounetu_toyooka{
+    background-image: url(images/index_top_slider_img/jounetu_toyoka_background.png) ;
+    height: 600px ;
+    width: 800px ;
+}
+#nasunoyoichi{
+    background-image: url(images/index_top_slider_img/nasunoyoichi_background.png) ;
+    height: 600px ;
+    width: 800px ;
+}
+
+.box{
+    background-image: url(images/index_top_slider_img/black_usuiyatu.png);
+    width: 800px ;
+    position: absolute;
     margin-top: 480px;
     padding-bottom: 25px;
 }
 .box_in_text{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 15px;
     color: #FFFFFF;
+}
+
+.slider-nav .slick-track{
+    transform: unset !important;
 }
 
 
@@ -316,6 +370,21 @@ h3{
     margin-top: 6px;
 }
 
+/* indexの各ページへのリンクに使った部分（木の部分） */
+
+.flex_column{
+    display: flex;
+    flex-direction: column;
+}
+.flex_01{ 
+    display: flex;
+    justify-content: space-between;
+}
+.font_size_mini{
+    font-size: 14.5px;
+}
+
+
 
 
 /* お問い合わせページに使ったCSS */
@@ -428,15 +497,19 @@ h3{
 }
 
 
-
-
-
-
+.slider-nav .slick-track{
+    transform: unset !important;
+}
 
 
 
 .shop_img_size{
-    width:200px;
+    width: 200px;
+    height: auto;
+}
+.shop_img_size02{
+    width: 1000px;
+    height: auto;
 }
 .shop_introduction_text01{
     width: 900px;
@@ -484,6 +557,7 @@ h3{
 }
 
 
+
 /* TOPページ店舗紹介へ飛ぶ部分 */
 .store_intoro{
     border-bottom: 1px black solid;
@@ -501,9 +575,98 @@ h3{
     padding-left: 70px;
 }
 
-.center{
-    text-align: center;
+
+
+/* 宴会コースページに使ったCSS */
+.blown_box{
+    font-size: 15px;
+    padding: 10px 10px;
+    margin: 2px 0;
+    color: #ffffff;
+    background: #7e0701;/*背景色*/
+    border-radius: 5px;/*角の丸み*/
 }
+#nasunoyoichi_shop_text_enkai01{
+    background-image: url(images/nasunoyoihi_name_background.png);
+    text-align: center;
+    padding: 12px;
+    color: #FFFFFF;
+    font-size: 22px;
+}
+.nasunoyoichi_shop_text_enkai02{
+    background-color: #ffffff;
+    text-align: left;
+    margin: 10px;
+    padding: 10px;
+    color: #000000;
+    font-size: 18px;
+    border-left: solid 7px #136166;/*左線*/
+    border-bottom: dotted #CBCBCB 1px;
+}
+.course_main{
+    display: flex;
+    justify-content: stretch; 
+    margin: 20px ;
+}
+.course_head{
+    width: 100%;
+    margin: 0 0 15px 20px;
+    border-bottom: solid 1px #000000;
+}
+.course_text{
+    line-height:1.7;
+    margin: 5px 0 30px 60px;
+    font-size: 15px
+}
+.course_img{
+    width: 400px;
+    height: auto;
+}
+.course_text_strong{
+    font-size: 20px;
+    color: #7e0701;
+}
+.course_text_box{
+    padding:  5px;
+    border: solid 1px #7e0701 ;
+}
+.course_text_box_attention{
+    margin: 30px 150px;
+    padding:  15px;
+    border: solid 3px #920902 ;
+}
+.text_left{
+    text-align:left;
+    margin: 0 auto;
+}
+.top_text{
+    text-align: right;
+    color: #1f1f22;
+}
+#chiritotechinn_shop_text_enkai01{
+    background-image: url(images/chiritote_name_background.png);
+    text-align: center;
+    padding: 12px;
+    color: #FFFFFF;
+    font-size: 22px;
+}
+.chiritotechinn_shop_text_enkai02{
+    background-color: #ffffff;
+    text-align: left;
+    margin: 10px;
+    padding: 10px;
+    color: #000000;
+    font-size: 18px;
+    border-left: solid 7px #bb5a20;/*左線*/
+    border-bottom: dotted #CBCBCB 1px;
+}
+
+
+
+
+
+
+
 .space_top{
     margin-top: 20px;
 }
@@ -535,3 +698,7 @@ h3{
     top: 0px ;
     left: 0px ;
 }
+.center{
+    text-align: center;
+}
+
