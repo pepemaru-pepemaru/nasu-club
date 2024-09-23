@@ -1,40 +1,29 @@
-* {
-margin: 0;
-padding:0;
-font-size: 100%;
-}
-ul{
-    list-style-type: none;
-}
-h3{
-    font-size: 45px;
-}
-
-
-
-
-
-
-
-
-
-
-#header{
-    background-image:url(images/wood-back-ground.jpg);
+header{
+    background-image:url(../images/wood-back-ground.jpg);
     color: white;
 }
 #header_text01{
     padding-top: 16px ;
     text-align: right;
 }
-#header_logo > img {
+#header_logo{
     height: 200px;
     object-fit: fill;
 }
 #header_cope{
     margin-top: 170px;
 }
-
+footer{
+    background-image: url(../images/red_backgound.png);
+}
+#footer_pagetop{
+    float: right ;
+}
+#footer_text{
+    padding-top: 28px;
+    padding-bottom: 28px;
+    color: #FFFFFF;
+}
 
 
 
@@ -44,7 +33,7 @@ h3{
 
 
 #navi{
-    background-image: url(images/red_backgound.png);
+    background-image: url(../images/red_backgound.png);
     margin-top: 10px;
 }
 #navi_img>img {
@@ -63,54 +52,54 @@ h3{
 
 /* TOPページのスライドの部分に使ってる */
 #chiritote{
-    background-image: url(images/index_top_slider_img/chiritotechin_background_top_img.png) ;
+    background-image: url(../images/index_top_slider_img/chiritotechin_background_top_img.png) ;
     height: 600px ;
     width: 800px ;
     display: block;
 }
 #aburiya{
-    background-image: url(images/index_top_slider_img/aburiya_background.png) ;
+    background-image: url(../images/index_top_slider_img/aburiya_background.png) ;
     height: 600px ;
     width: 800px ;
 }
 #kinchan{
-    background-image: url(images/index_top_slider_img/kinchan_background.png) ;
+    background-image: url(../images/index_top_slider_img/kinchan_background.png) ;
     height: 600px ;
     width: 800px ;
 }
 #toriya{
-    background-image: url(images/index_top_slider_img/toriya_top_background.png) ;
+    background-image: url(../images/index_top_slider_img/toriya_top_background.png) ;
     height: 600px ;
     width: 800px ;
 }
 #sakanaya{
-    background-image: url(images/index_top_slider_img/sakanaya_background.png) ;
+    background-image: url(../images/index_top_slider_img/sakanaya_background.png) ;
     height: 600px ;
     width: 800px ;
 }
 #yamiichi_nishimai{
-    background-image: url(images/index_top_slider_img/yamiichi_nishimai_background.png) ;
+    background-image: url(../images/index_top_slider_img/yamiichi_nishimai_background.png) ;
     height: 600px ;
     width: 800px ;
 }
 #isenoyoichi{
-    background-image: url(images/index_top_slider_img/isenoyoichi_background.png) ;
+    background-image: url(../images/index_top_slider_img/isenoyoichi_background.png) ;
     height: 600px ;
     width: 800px ;
 }
 #jounetu_toyooka{
-    background-image: url(images/index_top_slider_img/jounetu_toyoka_background.png) ;
+    background-image: url(../images/index_top_slider_img/jounetu_toyoka_background.png) ;
     height: 600px ;
     width: 800px ;
 }
 #nasunoyoichi{
-    background-image: url(images/index_top_slider_img/nasunoyoichi_background.png) ;
+    background-image: url(../images/index_top_slider_img/nasunoyoichi_background.png) ;
     height: 600px ;
     width: 800px ;
 }
 
 .box{
-    background-image: url(images/index_top_slider_img/black_usuiyatu.png);
+    background-image: url(../images/index_top_slider_img/black_usuiyatu.png);
     width: 800px ;
     position: absolute;
     margin-top: 480px;
@@ -137,7 +126,7 @@ h3{
 
 
 #contents{
-    background-image:url(images/wood-back-ground.jpg);
+    background-image:url(../images/wood-back-ground.jpg);
     padding: 65px;
 }
 
@@ -157,7 +146,7 @@ h3{
     text-align: left;
 }
 #news{
-    background-image:url(images/wood-back-ground.jpg);
+    background-image:url(../images/wood-back-ground.jpg);
 }
 #news_logo{
     padding-top: 40px;
@@ -176,22 +165,12 @@ h3{
 .news02 img{
     width: 100%;
 }
-#feeder{
-    background-image: url(images/red_backgound.png);
-}
-#feeder_pagetop{
-    float: right ;
-}
-#feeder_text{
-    padding-top: 28px;
-    padding-bottom: 28px;
-    color: #FFFFFF;
-}
+
 
 
 
 #sub_header{
-    background-image: url(images/wood-back-ground.jpg);
+    background-image: url(../images/wood-back-ground.jpg);
     text-align: center;
     height: 300px ;
 }
@@ -203,7 +182,7 @@ h3{
 
 /* 店舗紹介、一覧で使ったCSS */
 .store02{
-    background-image: url(images/shop_background.png);
+    background-image: url(../images/shop_background.png);
     width: 23%;
     margin: 0,2%,2%,0;
     height: 430px;
@@ -219,7 +198,7 @@ h3{
 #store_nasunoyoichi{
     color: #FFFFFF;
     text-align: center;
-    background-image: url(images/name_background_img/nasunoyoihi_name_background.png);
+    background-image: url(../images/name_background_img/nasunoyoihi_name_background.png);
     width: 100%;
     padding-top: 3px;
     padding-bottom: 3px;
@@ -235,7 +214,7 @@ h3{
 #store_chiritote{
     color: #FFFFFF;
     text-align: center;
-    background-image: url(images/name_background_img/chiritote_name_background.png);
+    background-image: url(../images/name_background_img/chiritote_name_background.png);
     width: 100%;
     padding-top: 3px;
     padding-bottom: 3px;
@@ -251,7 +230,7 @@ h3{
 #store_kinchan{
     color: #FFFFFF;
     text-align: center;
-    background-image: url(images/name_background_img/kinchan_name_background.png);
+    background-image: url(../images/name_background_img/kinchan_name_background.png);
     width: 100%;
     padding-top: 3px;
     padding-bottom: 3px;
@@ -259,7 +238,7 @@ h3{
 #store_aburiya{
     color: #FFFFFF;
     text-align: center;
-    background-image: url(images/name_background_img/aburiya_name_background.png);
+    background-image: url(../images/name_background_img/aburiya_name_background.png);
     width: 100%;
     padding-top: 3px;
     padding-bottom: 3px;
@@ -267,7 +246,7 @@ h3{
 #store_toriya{
     color: #FFFFFF;
     text-align: center;
-    background-image: url(images/name_background_img/toriya_name_background.png);
+    background-image: url(../images/name_background_img/toriya_name_background.png);
     width: 100%;
     padding-top: 3px;
     padding-bottom: 3px;
@@ -275,7 +254,7 @@ h3{
 #store_sakanaya{
     color: #FFFFFF;
     text-align: center;
-    background-image: url(images/name_background_img/sakanaya_name_background.png);
+    background-image: url(../images/name_background_img/sakanaya_name_background.png);
     width: 100%;
     padding-top: 3px;
     padding-bottom: 3px;
@@ -283,7 +262,7 @@ h3{
 #store_isenoyoichi{
     color: #FFFFFF;
     text-align: center;
-    background-image: url(images/name_background_img/nasunoyoihi_name_background.png);
+    background-image: url(../images/name_background_img/nasunoyoihi_name_background.png);
     width: 100%;
     padding-top: 3px;
     padding-bottom: 3px;
@@ -291,7 +270,7 @@ h3{
 #store_yamiichi{
     color: #FFFFFF;
     text-align: center;
-    background-image: url(images/name_background_img/yamiichi_name_background.png);
+    background-image: url(../images/name_background_img/yamiichi_name_background.png);
     width: 100%;
     padding-top: 3px;
     padding-bottom: 3px;
@@ -299,7 +278,7 @@ h3{
 #store_jounetu_toyooka{
     color: #FFFFFF;
     text-align: center;
-    background-image: url(images/name_background_img/kinchan_name_background.png);
+    background-image: url(../images/name_background_img/kinchan_name_background.png);
     width: 100%;
     padding-top: 3px;
     padding-bottom: 3px;
@@ -307,7 +286,7 @@ h3{
 #store_yakiniku_not_name{
     color: #FFFFFF;
     text-align: center;
-    background-image: url(images/name_background_img/aburiya_name_background.png);
+    background-image: url(../images/name_background_img/aburiya_name_background.png);
     width: 100%;
     padding-top: 3px;
     padding-bottom: 3px;
@@ -415,7 +394,7 @@ h3{
 
 /* プレゼントページで使ったCSS */
 #presentpage{
-    background-image: url(images/shop_background.png);
+    background-image: url(../images/shop_background.png);
     width: 100%;
     text-align: center;
     padding-top: 80px;
@@ -442,52 +421,52 @@ h3{
 
 /* ↓店舗毎の紹介ページに使ったCSS↓ */
 #nasunoyoichi_shop_img{
-    background-image: url(images/shop_background.png);
+    background-image: url(../images/shop_background.png);
 }
 #nasunoyoichi_shop_text{
-    background-image: url(images/name_background_img/nasunoyoihi_name_background.png);
+    background-image: url(../images/name_background_img/nasunoyoihi_name_background.png);
     text-align: center;
     padding: 30px;
     color: #FFFFFF;
     font-size: 25px;
 }
 #chiritotechin_shop_text{
-    background-image: url(images/name_background_img/chiritote_name_background.png);
+    background-image: url(../images/name_background_img/chiritote_name_background.png);
     text-align: center;
     padding: 30px;
     color: #FFFFFF;
     font-size: 25px;
 }
 #aburiya_shop_text{
-    background-image: url(images/name_background_img/aburiya_name_background.png);
+    background-image: url(../images/name_background_img/aburiya_name_background.png);
     text-align: center;
     padding: 30px;
     color: #FFFFFF;
     font-size: 25px;
 }
 #kinchan_shop_text{
-    background-image: url(images/name_background_img/kinchan_name_background.png);
+    background-image: url(../images/name_background_img/kinchan_name_background.png);
     text-align: center;
     padding: 30px;
     color: #FFFFFF;
     font-size: 25px;
 }
 #toriya_shop_text{
-    background-image: url(images/name_background_img/toriya_name_background.png);
+    background-image: url(../images/name_background_img/toriya_name_background.png);
     text-align: center;
     padding: 30px;
     color: #FFFFFF;
     font-size: 25px;
 }
 #sakanaya_shop_text{
-    background-image: url(images/name_background_img/sakanaya_name_background.png);
+    background-image: url(../images/name_background_img/sakanaya_name_background.png);
     text-align: center;
     padding: 30px;
     color: #FFFFFF;
     font-size: 25px;
 }
 #yamiichi_shop_text{
-    background-image: url(images/name_background_img/yamiichi_name_background.png);
+    background-image: url(../images/name_background_img/yamiichi_name_background.png);
     text-align: center;
     padding: 30px;
     color: #FFFFFF;
@@ -550,7 +529,7 @@ h3{
     text-align: left;
 }
 #event_nasunoyoichi_head{
-    background-image: url(images/name_background_img/nasunoyoihi_name_background.png);
+    background-image: url(../images/name_background_img/nasunoyoihi_name_background.png);
     color: #FFFFFF;
     text-align: center;
     font-size: 18px;
@@ -563,7 +542,7 @@ h3{
     border-bottom: dotted 1px #b5b5b5;
 }
 #event_chiritotechin_head{
-    background-image: url(images/name_background_img/chiritote_name_background.png);
+    background-image: url(../images/name_background_img/chiritote_name_background.png);
     color: #FFFFFF;
     text-align: center;
     font-size: 18px;
@@ -576,7 +555,7 @@ h3{
     border-bottom: dotted 1px #b5b5b5;
 }
 #event_kinchan_head{
-    background-image: url(images/name_background_img/kinchan_name_background.png);
+    background-image: url(../images/name_background_img/kinchan_name_background.png);
     color: #FFFFFF;
     text-align: center;
     font-size: 18px;
@@ -589,7 +568,7 @@ h3{
     border-bottom: dotted 1px #b5b5b5;
 }
 #event_aburiya_head{
-    background-image: url(images/name_background_img/aburiya_name_background.png);
+    background-image: url(../images/name_background_img/aburiya_name_background.png);
     color: #FFFFFF;
     text-align: center;
     font-size: 18px;
@@ -602,7 +581,7 @@ h3{
     border-bottom: dotted 1px #b5b5b5;
 }
 #event_toriya_head{
-    background-image: url(images/name_background_img/toriya_name_background.png);
+    background-image: url(../images/name_background_img/toriya_name_background.png);
     color: #FFFFFF;
     text-align: center;
     font-size: 18px;
@@ -615,7 +594,7 @@ h3{
     border-bottom: dotted 1px #b5b5b5;
 }
 #event_sakanaya_head{
-    background-image: url(images/name_background_img/sakanaya_name_background.png);
+    background-image: url(../images/name_background_img/sakanaya_name_background.png);
     color: #FFFFFF;
     text-align: center;
     font-size: 18px;
@@ -628,7 +607,7 @@ h3{
     border-bottom: dotted 1px #b5b5b5;
 }
 #event_yamiichi_head{
-    background-image: url(images/name_background_img/yamiichi_name_background.png);
+    background-image: url(../images/name_background_img/yamiichi_name_background.png);
     color: #FFFFFF;
     text-align: center;
     font-size: 18px;
@@ -641,28 +620,28 @@ h3{
     border-bottom: dotted 1px #b5b5b5;
 }
 #event_isenoyoichi_head{
-    background-image: url(images/name_background_img/nasunoyoihi_name_background.png);
+    background-image: url(../images/name_background_img/nasunoyoihi_name_background.png);
     color: #FFFFFF;
     text-align: center;
     font-size: 18px;
     padding: 15px;
 }
 #event_jounetu_head{
-    background-image: url(images/name_background_img/aburiya_name_background.png);
+    background-image: url(../images/name_background_img/aburiya_name_background.png);
     color: #FFFFFF;
     text-align: center;
     font-size: 18px;
     padding: 15px;
 }
 #event_yakiniku_head{
-    background-image: url(images/name_background_img/kinchan_name_background.png);
+    background-image: url(../images/name_background_img/kinchan_name_background.png);
     color: #FFFFFF;
     text-align: center;
     font-size: 18px;
     padding: 15px;
 }
 #event_isenoyoichi_head{
-    background-image: url(images/name_background_img/nasunoyoihi_name_background.png);
+    background-image: url(../images/name_background_img/nasunoyoihi_name_background.png);
     color: #FFFFFF;
     text-align: center;
     font-size: 18px;
@@ -676,8 +655,7 @@ h3{
 
 
 
-
-.contner{
+.container{
     width: 1000px;
     margin: 0 auto;
 }
@@ -725,7 +703,7 @@ h3{
     border-radius: 5px;/*角の丸み*/
 }
 #nasunoyoichi_shop_text_enkai01{
-    background-image: url(images/name_background_img/nasunoyoihi_name_background.png);
+    background-image: url(../images/name_background_img/nasunoyoihi_name_background.png);
     text-align: center;
     padding: 12px;
     color: #FFFFFF;
@@ -782,7 +760,7 @@ h3{
     color: #1f1f22;
 }
 #chiritotechinn_shop_text_enkai01{
-    background-image: url(images/name_background_img/chiritote_name_background.png);
+    background-image: url(../images/name_background_img/chiritote_name_background.png);
     text-align: center;
     padding: 12px;
     color: #FFFFFF;
@@ -804,10 +782,10 @@ h3{
 
 /* 会社案内、沿革ページに使ったCSS */
 #company_ishizue_background{
-    background-image: url(images/shop_background.png);
+    background-image: url(../images/shop_background.png);
 }
 #company_ishizue{
-    background-image: url(images/会社案内:スタッフ募集img/company_flower.png);
+    background-image: url(../images/会社案内:スタッフ募集img/company_flower.png);
     background-repeat: no-repeat;
     background-position: center top;
     width: 1000px;
@@ -826,7 +804,7 @@ h3{
     font-size: 14px;
 }
 .company_info{
-    background-image: url(images/会社案内:スタッフ募集img/company_info_background.png);
+    background-image: url(../images/会社案内:スタッフ募集img/company_info_background.png);
     background-repeat: no-repeat;
     background-position: 600px 150px;
     width: 1000px;
@@ -863,7 +841,7 @@ h3{
 }
 .company_history_table{
     margin: 0 100px 0 150px ;
-    background-image: url(images/会社案内:スタッフ募集img/company_history_background.png);
+    background-image: url(../images/会社案内:スタッフ募集img/company_history_background.png);
     background-size: 148px;
     background-repeat: no-repeat;
     background-position:left bottom ;
