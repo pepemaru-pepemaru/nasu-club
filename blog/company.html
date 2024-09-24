@@ -4,26 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>会社案内、遠隔</title>
-    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 
 </head>
 <body>
-    <div id="wrapper">
-        <div id="header">
-            <div class="contner">
-                <p id="header_text01">福知山や北京都を中心に、多数の居酒屋店舗を展開中</p>
-                <div class="flex">
-                    <a id="header_logo" href="index.html"><img class="hover_img" src="images/logo.png"alt="なすくらぶ"></a>
-                    <p id="header_cope"><img src="images/oishiihanikkori.png"alt="美味しいはニッコリにつながる"></p>
-                </div>
+    <header>
+        <div class="container">
+            <p id="header_text01">福知山や北京都を中心に、多数の居酒屋店舗を展開中</p>
+            <div class="flex">
+                <a href="../index.html"><img id="header_logo" class="hover_img" src="../images/logo.png"alt="なすくらぶ"></a>
+                <img id="header_cope" src="../images/oishiihanikkori.png"alt="美味しいはニッコリにつながる">
             </div>
-        </div><!-- headerの終わり　-->
+        </div>
+    </header>
+
+    <div id="wrapper">
 
         <div id="navi">
-            <div class="contner">
+            <div class="container">
                 <p id="navi_img">
-                    <img src="images/navi_nandakore.png"alt="もう一度やり直して下さい">
+                    <img src="../images/navi_nandakore.png"alt="もう一度やり直して下さい">
                 </p>
             </div>
         </div>
@@ -31,7 +34,7 @@
         <main>
             <div id="company_ishizue_background">
                 <div id="company_ishizue">
-                    <h2 id="company_ishizue_ttl"><img src="images/会社案内:スタッフ募集img/ttl_company.png" alt="会社の礎"></h2>
+                    <h2 id="company_ishizue_ttl"><img src="../images/company_recruit_img/ttl_company.png" alt="会社の礎"></h2>
                     <p class="company_ishizue_text">
                         「美味しい」は「ニッコリ」につながる<br><br>
                         　私たちが目指す「美味しい」とは、すなわち「ニッコリ」。 ニッコリは幸せのスタートでありゴール、そして象徴です。<br><br>
@@ -40,13 +43,18 @@
                         　この「美味しい」を包む時間や空間、人のふれあいの記憶は、 温かい思い出と共に、心の中のやわらかな部分に留まって、 「幸せ」という名の小さな種となり、きっと新しい芽を出すことでしょう。 私たちにできるのは、そのほんの少しのお手伝い。<br><br>
                         　「食」を通じて、「食」に集う人々・「食」からつながる全ての人々を 一人でも多く幸せにしたい。<br><br>
                         　「食文化」の一端を担う者として、この小さな幸せの種まきを、ずっとずっと 続けていきたいと考えます。 私たちの『会社の礎』として。<br><br>
-                        　そして何より「ニッコリ」をくれたあなたへの恩返しとして。<br><br>
-                    </p>   
+                        　そして何より「ニッコリ」をくれたあなたへの恩返しとして。<br><br><br><br><br><br>
+                    </p>
+                    <p class="company_ishizue_img1"><img src="../images/company_recruit_img/company_info_img01.png" alt="カンパイイメージ"></p>
+                    <p class="company_ishizue_img2"><img src="../images/company_recruit_img/company_info_img02.png" alt="母親と赤ちゃんイメージ"></p>
+                    <p class="company_ishizue_img3"><img src="../images/company_recruit_img/company_info_img03.png" alt="焼き鳥イメージ"></p>
+                    <p class="company_ishizue_img4"><img src="../images/company_recruit_img/company_info_img04.png" alt="スタッフ"></p>
+                    <p class="company_ishizue_img5"><img src="../images/company_recruit_img/company_info_img05.png" alt="お酒"></p>
                 </div>
             </div>
 
             <div class="company_info">
-                <h2 class="company_info_head"><img src="images/会社案内:スタッフ募集img/ttl2_company.png" alt="会社案内"></h2>
+                <h2 class="company_info_head"><img src="../images/company_recruit_img/ttl2_company.png" alt="会社案内"></h2>
                 <dl class="company_info_text">
                     <dt>会社名</dt><dd>株式会社オフィスヒュート　<span class="text_color_gray">（株式会社オフィスヒュートはなすグループの運営会社です）</span></dd>
                 </dl>
@@ -102,7 +110,7 @@
             </div>
 
             <div class="company_history">
-                <h2 class="company_info_head"><img src="images/会社案内:スタッフ募集img/ttl3_company.png" alt="各店営業沿革"></h2>
+                <h2 class="company_info_head"><img src="../images/company_recruit_img/ttl3_company.png" alt="各店営業沿革"></h2>
                 <table class="company_history_table">
                     <tr>
                         <th class="company_history_table_th">2000/04/17</th>
@@ -344,25 +352,24 @@
         
         <div id="news">
             <div>
-                <p ><br><br><br></p>
-                <div class="contner center flex_stretch">
-                    <p class="news02"><img src="images/osusumeryouri.png"></p>
-                    <p class="left2 news02"><img src="images/konngetunoibennto.png"></p>
-                    <p class="left2 news02"><a href="今月のプレゼント.html"><img class="hover_img" src="images/konngetunopresent.png"></a></p>
-                    <p class="left2 news02"><a href="なすくらぶポイントカードについて.html"><img class="hover_img" src="images/pointcard.png"></a></p>
+                <p><br><br><br></p>
+                <div class="container center flex_stretch">
+                    <p class="news02"><img src="../images/osusumeryouri.png"></p>
+                    <p class="left2 news02"><a href="../blog/event.html"><img class="hover_img" src="../images/konngetunoibennto.png"></a></p>
+                    <p class="left2 news02"><a href="../blog/present.html"><img class="hover_img" src="../images/konngetunopresent.png"></a></p>
+                    <p class="left2 news02"><a href="../blog/pointcard.html"><img class="hover_img" src="../images/pointcard.png"></a></p>
                 </div>
                 <p class="space_top"><br><br></p>
             </div>             
         </div>
-        
-        <div id="feeder">
-            <div class="contner center">
-                <p class="pagetop"><a href="#header"><img class="hover_img" id="feeder_pagetop" src="images/page_top.png"></a></p>
-                <div id="feeder_text">
-                    <p>Copyright © オフィスヒュート All Rights Reserved. 無断転載禁止</p>
-                </div>
-            </div>    
-          </div>      
-    </div><!-- #wrapperの終わり -->   
+    </div><!-- #wrapperの終わり -->  
+    <footer>
+        <div class="container center">
+            <p class="pagetop"><a href="#header"><img class="hover_img" id="footer_pagetop" src="../images/page_top.png"></a></p>
+            <div id="footer_text">
+                <p>Copyright © オフィスヒュート All Rights Reserved. 無断転載禁止</p>
+            </div>
+        </div>    
+    </footer>    
 </body>
 </html>

@@ -4,42 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>店舗一覧ページ</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/style.css">
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 </head>
 <body>
-    <div id="wrapper">
-        <div id="header">
-            <div class="contner">
-                <p id="header_text01">福知山や北京都を中心に、多数の居酒屋店舗を展開中</p>
-                <div class="flex">
-                    <a id="header_logo" href="index.html"><img class="hover_img" src="images/logo.png"alt="なすくらぶ"></a>
-                    <p id="header_cope"><img src="images/oishiihanikkori.png"alt="美味しいはニッコリにつながる"></p>
-                </div>
+    <header>
+        <div class="container">
+            <p id="header_text01">福知山や北京都を中心に、多数の居酒屋店舗を展開中</p>
+            <div class="flex">
+                <a href="../../index.html"><img id="header_logo" class="hover_img" src="../../images/logo.png"alt="なすくらぶ"></a>
+                <img id="header_cope" src="../../images/oishiihanikkori.png"alt="美味しいはニッコリにつながる">
             </div>
-        </div><!-- headerの終わり　-->
+        </div>
+    </header>
+
+    <div id="wrapper">
 
         <div id="navi">
-            <div class="contner">
+            <div class="container">
                 <p id="navi_img">
-                    <img src="images/navi_nandakore.png"alt="もう一度やり直して下さい">
+                    <img src="../../images/navi_nandakore.png"alt="もう一度やり直して下さい">
                 </p>
             </div>
         </div>
 
         <div id="sub_header">
-            <img src="images/tennpoichirann.jpg">
+            <img src="../../images/tennpoichirann.jpg">
         </div>
 
-        <div class="contner space_top space_bottom">
-            <h2 class="store_intoro"><span class=brown>◆</span>なすくらぶ全店のご紹介<span class=brown>◆</span></h2>
+        <div class="container space_top shop_info">
+            <h2><span class=brown>◆</span><b>なすくらぶ全店のご紹介</b><span class=brown>◆</span></h2>
 
             <ul class="flex_stretch space_top">
                 <li class="store02">
                     <div id="store_nasunoyoichi">なすの与一</div>
                     <div class="shop_introduction_img">
                         <div class="center">
-                            <a class="hover_img" href="なすの与一紹介.html"><img src="images/nasuno-yoichi.png"></a>
+                            <a class="hover_img" href="なすの与一紹介.html"><img src="../../images/nasuno-yoichi.png"></a>
                         </div>
                         <p><b class="brown">住所</b><br>
                             〒620-0931<br>
@@ -56,7 +58,7 @@
                     <div id="store_chiritote">ちりとてちん</div>
                     <div class="shop_introduction_img">
                         <div class="center">
-                            <a class="hover_img" href="ちりとてちん紹介.html"><img src="images/chirirtotechin.png"></a>
+                            <a class="hover_img" href="ちりとてちん紹介.html"><img src="../../images/chirirtotechin.png"></a>
                         </div>
                         <p><b class="brown">住所</b><br>
                             〒620-0947<br>
@@ -74,7 +76,7 @@
                     <div id="store_kinchan">金ちゃん</div>
                     <div class="shop_introduction_img">
                         <div class="center">
-                            <a class="hover_img" href="金ちゃん紹介.html"><img src="images/kinnchan.png"></a>
+                            <a class="hover_img" href="金ちゃん紹介.html"><img src="../../images/kinnchan.png"></a>
                         </div>
                         <p><b class="brown">住所</b><br>
                             〒620-0940<br>
@@ -92,7 +94,7 @@
                     <div id="store_aburiya">あぶりや</div>
                     <div class="shop_introduction_img">
                         <div class="center">
-                            <a class="hover_img" href="あぶりや紹介.html"><img src="images/aburiya.png"></a>
+                            <a class="hover_img" href="あぶりや紹介.html"><img src="../../images/aburiya.png"></a>
                         </div>
                         <p><b class="brown">住所</b><br>
                             〒620-0000<br>
@@ -112,7 +114,7 @@
                     <div id="store_toriya">鳥屋平兵衛商店</div>
                     <div class="shop_introduction_img">
                         <div class="center">
-                            <a class="hover_img" href="鳥屋平兵衛商店紹介.html"><img src="images/toriya.png"></a>
+                            <a class="hover_img" href="鳥屋平兵衛商店紹介.html"><img src="../../images/toriya.png"></a>
                         </div>
                         <p><b class="brown">住所</b><br>
                             〒620-0931<br>
@@ -130,7 +132,7 @@
                     <div id="store_sakanaya">魚屋平兵衛商店</div>
                     <div class="shop_introduction_img">
                         <div class="center">
-                            <a class="hover_img" href="魚屋平兵衛商店紹介.html"><img src="images/sakanaya.png"></a>
+                            <a class="hover_img" href="魚屋平兵衛商店紹介.html"><img src="../../images/sakanaya.png"></a>
                         </div>
                         <p><b class="brown">住所</b><br>
                             〒620-0055<br>
@@ -148,7 +150,7 @@
                     <div id="store_isenoyoichi">いせの与一</div>
                     <div class="shop_introduction_img">
                         <div class="center">
-                            <a class="hover_img" href="いせの与一紹介.html"><img src="images/iseno-yoichi.png"></a>
+                            <a class="hover_img" href="いせの与一紹介.html"><img src="../../images/iseno-yoichi.png"></a>
                         </div>
                         <p><b class="brown">住所</b><br>
                             〒625-0036<br>
@@ -166,7 +168,7 @@
                     <div id="store_yamiichi">闇市倶楽部 西舞鶴店</div>
                     <div class="shop_introduction_img">
                         <div class="center">
-                            <a class="hover_img" href="闇市倶楽部 西舞鶴店紹介.html"><img src="images/yamiichi-nishimai.png"></a>
+                            <a class="hover_img" href="闇市倶楽部 西舞鶴店紹介.html"><img src="../../images/yamiichi-nishimai.png"></a>
                         </div>
                         <p><b class="brown">住所</b><br>
                             〒624-0841<br>
@@ -188,7 +190,7 @@
                     <div id="store_jounetu_toyooka">情熱ホルモン 豊岡酒場</div>
                     <div class="shop_introduction_img">
                         <div class="center">
-                            <a class="hover_img" href="情熱ホルモン豊岡酒場紹介.html"><img src="images/jounetsu-toyooka.png"></a>
+                            <a class="hover_img" href="情熱ホルモン豊岡酒場紹介.html"><img src="../../images/jounetsu-toyooka.png"></a>
                         </div>
                         <p><b class="brown">住所</b><br>
                             〒668-0052<br>
@@ -206,7 +208,7 @@
                     <div id="store_yakiniku_not_name">名前のない焼肉屋</div>
                     <div class="shop_introduction_img">
                         <div class="center">
-                            <a class="hover_img" href="名前のない焼肉屋紹介.html"><img src="images/yakiniki-not-name.png"></a>
+                            <a class="hover_img" href="名前のない焼肉屋紹介.html"><img src="../../images/yakiniki-not-name.png"></a>
                         </div>
                         <p><b class="brown">住所</b><br>
                             〒620-0000<br>
@@ -227,26 +229,25 @@
         </div>
         <div id="news">
             <div>
-                <p class="space_top"><br><br><br></p>
-                <div class="contner center flex_stretch">
-                    <p class="news02"><img src="images/osusumeryouri.png"></p>
-                    <p class="left2 news02"><img src="images/konngetunoibennto.png"></p>
-                    <p class="left2 news02"><a href="今月のプレゼント.html"><img class="hover_img" src="images/konngetunopresent.png"></a></p>
-                    <p class="left2 news02"><a href="なすくらぶポイントカードについて.html"><img class="hover_img" src="images/pointcard.png"></a></p>
+                <p><br><br><br></p>
+                <div class="container center flex_stretch">
+                    <p class="news02"><img src="../../images/osusumeryouri.png"></p>
+                    <p class="left2 news02"><a href="../event.html"><img class="hover_img" src="../../images/konngetunoibennto.png"></a></p>
+                    <p class="left2 news02"><a href="../present.html"><img class="hover_img" src="../../images/konngetunopresent.png"></a></p>
+                    <p class="left2 news02"><a href="../pointcard.html"><img class="hover_img" src="../../images/pointcard.png"></a></p>
                 </div>
                 <p class="space_top"><br><br></p>
             </div>             
         </div>
-        
-        <div id="feeder">
-            <div class="contner center">
-                <p class="pagetop"><a href="#header"><img class="hover_img" id="feeder_pagetop" src="images/page_top.png"></a></p>
-                <div id="feeder_text">
-                    <p>Copyright © オフィスヒュート All Rights Reserved. 無断転載禁止</p>
-                </div>
-            </div>    
-        </div>      
-    </div><!-- #wrapperの終わり --> 
+        </div><!-- #wrapperの終わり -->   
+    <footer>
+        <div class="container center">
+            <p class="pagetop"><a href="#wrapper"><img class="hover_img" id="footer_pagetop" src="../../images/page_top.png"></a></p>
+            <div id="footer_text">
+                <p>Copyright © オフィスヒュート All Rights Reserved. 無断転載禁止</p>
+            </div>
+        </div>    
+    </footer>       
     <script src="js/test.js"></script>  
 </body>
 </html>

@@ -1,3 +1,10 @@
+b{
+    font-weight: 900;
+}
+#wrapper{
+    line-height: normal;
+}
+/* headerやfooter、naviなどの共用部 */
 header{
     background-image:url(../images/wood-back-ground.jpg);
     color: white;
@@ -24,14 +31,6 @@ footer{
     padding-bottom: 28px;
     color: #FFFFFF;
 }
-
-
-
-
-
-
-
-
 #navi{
     background-image: url(../images/red_backgound.png);
     margin-top: 10px;
@@ -44,13 +43,9 @@ footer{
 
 
 
+/* TOPページに使っているCSS */
 
-
-
-
-
-
-/* TOPページのスライドの部分に使ってる */
+/* TOPページのスライドの部分に使ってるCSS */
 #chiritote{
     background-image: url(../images/index_top_slider_img/chiritotechin_background_top_img.png) ;
     height: 600px ;
@@ -97,7 +92,6 @@ footer{
     height: 600px ;
     width: 800px ;
 }
-
 .box{
     background-image: url(../images/index_top_slider_img/black_usuiyatu.png);
     width: 800px ;
@@ -112,20 +106,24 @@ footer{
     padding-top: 15px;
     color: #FFFFFF;
 }
-
 .slider-nav .slick-track{
     transform: unset !important;
 }
 
 
+/* TOPページ店舗紹介欄に使っているCSS */
+.shop_info{
+    margin: 15px;
+}
+.shop_info h2{
+    border-bottom: 1px black solid;
+    font-size: 22px;
+}
 
 
 
 
-
-
-
-#contents{
+#wood_contents{
     background-image:url(../images/wood-back-ground.jpg);
     padding: 65px;
 }
@@ -138,6 +136,7 @@ footer{
 }
 #oishii_text02{
     margin-top: 10px;
+    line-height: 2;
 }
 #oishii_text03{
     text-align: right;
@@ -348,18 +347,7 @@ footer{
     margin-top: 6px;
 }
 
-/* indexの各ページへのリンクに使った部分（木の部分） */
-.flex_column{
-    display: flex;
-    flex-direction: column;
-}
-.flex_01{ 
-    display: flex;
-    justify-content: space-between;
-}
-.font_size_mini{
-    font-size: 14.5px;
-}
+
 
 
 
@@ -650,49 +638,6 @@ footer{
 
 
 
-
-
-
-
-
-.container{
-    width: 1000px;
-    margin: 0 auto;
-}
-.flex{ 
-    display: flex;
-    justify-content: space-around;
-}
-.flex_stretch{
-    display: flex;
-    justify-content: stretch; 
-}
-.flex_between{
-    display: flex;
-    justify-content: space-between;
-}
-
-
-
-/* TOPページ店舗紹介へ飛ぶ部分 */
-.store_intoro{
-    border-bottom: 1px black solid;
-    font-size: 20px;
-}
-
-.brown{
-    color: #611D1A
-}
-.white{
-    color: #FFFFFF;
-}
-.left{
-    margin-left: 0 auto;
-    padding-left: 70px;
-}
-
-
-
 /* 宴会コースページに使ったCSS */
 .blown_box{
     font-size: 15px;
@@ -785,7 +730,7 @@ footer{
     background-image: url(../images/shop_background.png);
 }
 #company_ishizue{
-    background-image: url(../images/会社案内:スタッフ募集img/company_flower.png);
+    background-image: url(../images/company_recruit_img/company_flower.png);
     background-repeat: no-repeat;
     background-position: center top;
     width: 1000px;
@@ -804,7 +749,7 @@ footer{
     font-size: 14px;
 }
 .company_info{
-    background-image: url(../images/会社案内:スタッフ募集img/company_info_background.png);
+    background-image: url(../images/company_recruit_img/company_info_background.png);
     background-repeat: no-repeat;
     background-position: 600px 150px;
     width: 1000px;
@@ -841,8 +786,8 @@ footer{
 }
 .company_history_table{
     margin: 0 100px 0 150px ;
-    background-image: url(../images/会社案内:スタッフ募集img/company_history_background.png);
-    background-size: 148px;
+    background-image: url(../images/company_recruit_img/company_history_background.png);
+    background-size: 140px;
     background-repeat: no-repeat;
     background-position:left bottom ;
     border-spacing: 0;
@@ -856,6 +801,31 @@ footer{
     text-align: left;
     padding: 10px 20px;
     border-top: dotted #000000 1px;
+}
+.company_ishizue_img1{
+    position: absolute;
+    top: 550px;
+    left: 220px;
+}
+.company_ishizue_img2{
+    position: absolute;
+    top: 700px;
+    left: 1000px;
+}
+.company_ishizue_img3{
+    position: absolute;
+    top: 880px;
+    left: 290px;
+}
+.company_ishizue_img4{
+    position: absolute;
+    top: 1100px;
+    left: 250px;
+}
+.company_ishizue_img5{
+    position: absolute;
+    top: 1000px;
+    left: 1000px;
 }
 /* スタッフ募集ページに使ったCSS */
 .staff_wanted{
@@ -918,7 +888,22 @@ footer{
 
 
 
-
+.container{
+    width: 1000px;
+    margin: 0 auto;
+}
+.flex{ 
+    display: flex;
+    justify-content: space-around;
+}
+.flex_stretch{
+    display: flex;
+    justify-content: stretch; 
+}
+.flex_between{
+    display: flex;
+    justify-content: space-between;
+}
 .space_top{
     margin-top: 20px;
 }
@@ -935,6 +920,9 @@ footer{
 }
 .border_bottom_dot{
     border-bottom: dotted #000000 1px;
+}
+.border_bottom_solod{
+    border-bottom: solid #000000 1px;
 }
 .float_right{
     float: right ;
@@ -953,4 +941,92 @@ footer{
 .center{
     text-align: center;
 }
+.brown{
+    color: #611D1A
+}
+.white{
+    color: #FFFFFF;
+}
+.left{
+    margin-left: 0 auto;
+    padding-left: 70px;
+}
 
+
+
+
+
+.osusume_img_size{
+    margin: 10px 0;
+    height: 335px;
+    overflow: hidden;
+}
+.osusume_img_size p>img{
+    width: 50%;
+    float:right;
+}
+
+.osusume_img_size li>img{
+    width: 24.5%;
+    float:left;
+    margin: 0.2%;
+}
+.osusume_text{
+    line-height: 2;
+    margin: 20px;
+}
+.osusume_yoichi_button{
+    background-color: #136166;
+    padding: 20px;
+    color:#ffffff;
+}
+
+.modal__open:hover {
+    cursor: pointer;
+  }
+
+  .modal {
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+  }
+  
+  .modal__bg {
+    background: rgba(0, 0, 0, 0.8);
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    width: 100%;
+  }
+  
+  .modal__content {
+    font-size: 14px;
+    background: rgba(0, 0, 0, 0);
+    padding: 5px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 50%;
+  }
+  
+  .modal__content img{
+    width: 70%;
+    height: auto;
+    border: #ffffff 7px solid;
+    border-radius:10px;
+  }
+  
+  .modal .close__text {
+    width: 27px;
+    height: 27px;
+    background: url(../images/osusume_inquiry_img/l-close.png);
+    position: absolute;
+    top: 5%;
+    right: 0%;
+  }

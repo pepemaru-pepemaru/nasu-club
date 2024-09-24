@@ -4,72 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>今月のイベント</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 
 </head>
 <body>
-    <div id="wrapper">
-        <div id="header">
-            <div class="contner">
-                <p id="header_text01">福知山や北京都を中心に、多数の居酒屋店舗を展開中</p>
-                <div class="flex">
-                    <a id="header_logo" href="index.html"><img class="hover_img" src="images/logo.png"alt="なすくらぶ"></a>
-                    <p id="header_cope"><img src="images/oishiihanikkori.png"alt="美味しいはニッコリにつながる"></p>
-                </div>
+    <header>
+        <div class="container">
+            <p id="header_text01">福知山や北京都を中心に、多数の居酒屋店舗を展開中</p>
+            <div class="flex">
+                <a href="../index.html"><img id="header_logo" class="hover_img" src="../images/logo.png"alt="なすくらぶ"></a>
+                <img id="header_cope" src="../images/oishiihanikkori.png"alt="美味しいはニッコリにつながる">
             </div>
-        </div><!-- headerの終わり　-->
+        </div>
+    </header>
+
+    <div id="wrapper">
 
         <div id="navi">
-            <div class="contner">
+            <div class="container">
                 <p id="navi_img">
-                    <img src="images/navi_nandakore.png"alt="もう一度やり直して下さい">
+                    <img src="../images/navi_nandakore.png"alt="もう一度やり直して下さい">
                 </p>
             </div>
         </div>
 
-        <div id="sub_header"><img src="images/event_yoko.jpg"></div>
+        <div id="sub_header"><img src="../images/event_pointcard_img/event_yoko.jpg"></div>
 
-        <div class="contner space_top">
+        <div class="container space_top">
             <p><span class=blown_box>気になる店舗のロゴマークをクリック！</span></p>
             <ul class="contents flex_stretch space_top">
                 <li>
-                    <a href="#event_nasunoyoichi_head"><img class="side_border hover_img" src="images/nasuno-yoichi.png"alt="なすの与一"></a>
+                    <a href="#event_nasunoyoichi_head"><img class="side_border hover_img" src="../images/nasuno-yoichi.png"alt="なすの与一"></a>
                 </li>
                 <li>
-                    <a href="#event_chiritotechin_head"><img class="side_border hover_img" src="images/chirirtotechin.png"alt="ちりとてちん"></a>
+                    <a href="#event_chiritotechin_head"><img class="side_border hover_img" src="../images/chirirtotechin.png"alt="ちりとてちん"></a>
                 </li>
                 <li>
-                    <a href="#event_kinchan_head"><img class="side_border hover_img" src="images/kinnchan.png"alt="金ちゃん"></a>
+                    <a href="#event_kinchan_head"><img class="side_border hover_img" src="../images/kinnchan.png"alt="金ちゃん"></a>
                 </li>
                 <li>
-                    <a href="#event_aburiya_head"><img class="side_border hover_img" src="images/aburiya.png"alt="あぶりや"></a>
+                    <a href="#event_aburiya_head"><img class="side_border hover_img" src="../images/aburiya.png"alt="あぶりや"></a>
                 </li>
                 <li>
-                    <a href="#event_toriya_head"><img class="side_border hover_img" src="images/toriya.png"alt="鳥屋平兵衛商店"></a>
+                    <a href="#event_toriya_head"><img class="side_border hover_img" src="../images/toriya.png"alt="鳥屋平兵衛商店"></a>
                 </li>
             </ul>   
             <ul class="contents flex_stretch space_top space_bottom">
                 <li>
-                    <a href="#event_sakanaya_head"><img class="side_border hover_img" src="images/sakanaya.png"alt="魚屋平兵衛商店"></a>
+                    <a href="#event_sakanaya_head"><img class="side_border hover_img" src="../images/sakanaya.png"alt="魚屋平兵衛商店"></a>
                 </li>
                 <li>
-                    <a href="#event_isenoyoichi_head"><img class="side_border hover_img" src="images/iseno-yoichi.png"alt="いせの与一"></a>
+                    <a href="#event_isenoyoichi_head"><img class="side_border hover_img" src="../images/iseno-yoichi.png"alt="いせの与一"></a>
                 </li>
                 <li>
-                    <a href="#event_yamiichi_head"><img class="side_border hover_img" src="images/yamiichi-nishimai.png"alt="闇市倶楽部西舞鶴店"></a>
+                    <a href="#event_yamiichi_head"><img class="side_border hover_img" src="../images/yamiichi-nishimai.png"alt="闇市倶楽部西舞鶴店"></a>
                 </li>
                 <li>
-                    <a href="#event_jounetu_head"><img class="side_border hover_img" src="images/jounetsu-toyooka.png"alt="情熱ホルモン豊岡酒場店"></a>
+                    <a href="#event_jounetu_head"><img class="side_border hover_img" src="../images/jounetsu-toyooka.png"alt="情熱ホルモン豊岡酒場店"></a>
                 </li>
                 <li>
-                    <a href="#event_yakiniku_head"><img class="side_border hover_img" src="images/yakiniki-not-name.png"alt="名前のない焼肉屋さん"></a>
+                    <a href="#event_yakiniku_head"><img class="side_border hover_img" src="../images/yakiniki-not-name.png"alt="名前のない焼肉屋さん"></a>
                 </li>
             </ul>
         </div>
 
 
-        <main class="contner">
+        <main class="container">
 
             <div class="event">
                 <h2 id="event_nasunoyoichi_head">隠れ家屋敷　なすの与一</h2>
@@ -221,27 +223,24 @@
         <div id="news">
             <div>
                 <p><br><br><br></p>
-                <div class="contner center flex_stretch">
-                    <p class="news02"><img src="images/osusumeryouri.png"></p>
-                    <p class="left2 news02"><img src="images/konngetunoibennto.png"></p>
-                    <p class="left2 news02"><a href="今月のプレゼント.html"><img class="hover_img" src="images/konngetunopresent.png"></a></p>
-                    <p class="left2 news02"><a href="なすくらぶポイントカードについて.html"><img class="hover_img" src="images/pointcard.png"></a></p>
+                <div class="container center flex_stretch">
+                    <p class="news02"><img src="../images/osusumeryouri.png"></p>
+                    <p class="left2 news02"><a href="../blog/event.html"><img class="hover_img" src="../images/konngetunoibennto.png"></a></p>
+                    <p class="left2 news02"><a href="../blog/present.html"><img class="hover_img" src="../images/konngetunopresent.png"></a></p>
+                    <p class="left2 news02"><a href="../blog/pointcard.html"><img class="hover_img" src="../images/pointcard.png"></a></p>
                 </div>
                 <p class="space_top"><br><br></p>
             </div>             
         </div>
         
-        <div id="feeder">
-            <div class="contner center">
-                <p class="pagetop"><a href="#header"><img class="hover_img" id="feeder_pagetop" src="images/page_top.png"></a></p>
-                <div id="feeder_text">
-                    <p>Copyright © オフィスヒュート All Rights Reserved. 無断転載禁止</p>
-                </div>
-            </div>    
-          </div>      
     </div><!-- #wrapperの終わり -->  
-
-    
-
+    <footer>
+        <div class="container center">
+            <p class="pagetop"><a href="#wrapper"><img class="hover_img" id="footer_pagetop" src="../images/page_top.png"></a></p>
+            <div id="footer_text">
+                <p>Copyright © オフィスヒュート All Rights Reserved. 無断転載禁止</p>
+            </div>
+        </div>    
+    </footer>    
 </body>
 </html>

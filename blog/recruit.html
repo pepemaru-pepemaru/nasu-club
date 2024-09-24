@@ -4,33 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>なすくらぶの採用情報</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 
 </head>
 <body>
-    <div id="wrapper">
-        <div id="header">
-            <div class="contner">
-                <p id="header_text01">福知山や北京都を中心に、多数の居酒屋店舗を展開中</p>
-                <div class="flex">
-                    <a id="header_logo" href="index.html"><img class="hover_img" src="images/logo.png"alt="なすくらぶ"></a>
-                    <p id="header_cope"><img src="images/oishiihanikkori.png"alt="美味しいはニッコリにつながる"></p>
-                </div>
+    <header>
+        <div class="container">
+            <p id="header_text01">福知山や北京都を中心に、多数の居酒屋店舗を展開中</p>
+            <div class="flex">
+                <a href="../index.html"><img id="header_logo" class="hover_img" src="../images/logo.png"alt="なすくらぶ"></a>
+                <img id="header_cope" src="../images/oishiihanikkori.png"alt="美味しいはニッコリにつながる">
             </div>
-        </div><!-- headerの終わり　-->
+        </div>
+    </header>
+
+    <div id="wrapper">
 
         <div id="navi">
-            <div class="contner">
+            <div class="container">
                 <p id="navi_img">
-                    <img src="images/navi_nandakore.png"alt="もう一度やり直して下さい">
+                    <img src="../images/navi_nandakore.png"alt="もう一度やり直して下さい">
                 </p>
             </div>
         </div>
 
         <main>
             <div class="staff_wanted">
-                <h2 class="staff_wanted_head"><img src="images/会社案内:スタッフ募集img/ttl_staff.png" alt="会社案内"></h2>
+                <h2 class="staff_wanted_head"><img src="../images/company_recruit_img/ttl_staff.png" alt="会社案内"></h2>
                 <h4 class="blown_box">パート・アルバイト</h4>
                 <table class="staff_wanted_table">
                     <tr>
@@ -96,16 +98,16 @@
                     </tr>
                 </table>
                 <div class="otoiawase_beige_box">
-                    <h2 class="otoiawase_box_head"><img src="images/会社案内:スタッフ募集img/ttl_otoiawase.png" alt="採用に関するお問い合わせはこちら"></h2>
+                    <h2 class="otoiawase_box_head"><img src="../images/company_recruit_img/ttl_otoiawase.png" alt="採用に関するお問い合わせはこちら"></h2>
                     <div class="flex">
                         <div>
-                            <img src="images/会社案内:スタッフ募集img/tel_nunber.png" alt="">
+                            <img src="../images/company_recruit_img/tel_nunber.png" alt="">
                             <p>受付時間　9：00 ～ 17：00（平日）</p>
                         </div>
                         <div>
                             <a href="お問い合わせ.html">
                                 <div class="otoiawase_blown_box">
-                                    <img class="float_left" src="images/会社案内:スタッフ募集img/icon_mail.png" alt="">
+                                    <img class="float_left" src="../images/company_recruit_img/icon_mail.png" alt="">
                                     <p>お問い合せフォームはこちら</p>
                                 </div>
                             </a>
@@ -187,16 +189,16 @@
                     </tr>
                 </table>
                 <div class="otoiawase_beige_box">
-                    <h2 class="otoiawase_box_head"><img src="images/会社案内:スタッフ募集img/ttl_otoiawase.png" alt="採用に関するお問い合わせはこちら"></h2>
+                    <h2 class="otoiawase_box_head"><img src="../images/company_recruit_img/ttl_otoiawase.png" alt="採用に関するお問い合わせはこちら"></h2>
                     <div class="flex">
                         <div>
-                            <img src="images/会社案内:スタッフ募集img/tel_nunber.png" alt="">
+                            <img src="../images/company_recruit_img/tel_nunber.png" alt="">
                             <p>受付時間　9：00 ～ 17：00（平日）</p>
                         </div>
                         <div>
                             <a href="お問い合わせ.html">
                                 <div class="otoiawase_blown_box">
-                                    <img class="float_left" src="images/会社案内:スタッフ募集img/icon_mail.png" alt="">
+                                    <img class="float_left" src="../images/company_recruit_img/icon_mail.png" alt="">
                                     <p>お問い合せフォームはこちら</p>
                                 </div>
                             </a>
@@ -209,25 +211,25 @@
 
         <div id="news">
             <div>
-                <p ><br><br><br></p>
-                <div class="contner center flex_stretch">
-                    <p class="news02"><img src="images/osusumeryouri.png"></p>
-                    <p class="left2 news02"><img src="images/konngetunoibennto.png"></p>
-                    <p class="left2 news02"><a href="今月のプレゼント.html"><img class="hover_img" src="images/konngetunopresent.png"></a></p>
-                    <p class="left2 news02"><a href="なすくらぶポイントカードについて.html"><img class="hover_img" src="images/pointcard.png"></a></p>
+                <p><br><br><br></p>
+                <div class="container center flex_stretch">
+                    <p class="news02"><img src="../images/osusumeryouri.png"></p>
+                    <p class="left2 news02"><a href="../blog/event.html"><img class="hover_img" src="../images/konngetunoibennto.png"></a></p>
+                    <p class="left2 news02"><a href="../blog/present.html"><img class="hover_img" src="../images/konngetunopresent.png"></a></p>
+                    <p class="left2 news02"><a href="../blog/pointcard.html"><img class="hover_img" src="../images/pointcard.png"></a></p>
                 </div>
                 <p class="space_top"><br><br></p>
             </div>             
         </div>
         
-        <div id="feeder">
-            <div class="contner center">
-                <p class="pagetop"><a href="#header"><img class="hover_img" id="feeder_pagetop" src="images/page_top.png"></a></p>
-                <div id="feeder_text">
-                    <p>Copyright © オフィスヒュート All Rights Reserved. 無断転載禁止</p>
-                </div>
-            </div>    
-          </div>      
-    </div><!-- #wrapperの終わり -->   
+    </div><!-- #wrapperの終わり -->  
+    <footer>
+        <div class="container center">
+            <p class="pagetop"><a href="#wrapper"><img class="hover_img" id="footer_pagetop" src="../images/page_top.png"></a></p>
+            <div id="footer_text">
+                <p>Copyright © オフィスヒュート All Rights Reserved. 無断転載禁止</p>
+            </div>
+        </div>    
+    </footer>     
 </body>
 </html>

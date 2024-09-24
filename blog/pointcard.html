@@ -4,36 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>なすくらぶポイントカードについて</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 
 </head>
 <body>
-    <div id="wrapper">
-        <div id="header">
-            <div class="contner">
-                <p id="header_text01">なすくらぶポイントカードについて</p>
-                <div class="flex">
-                    <a id="header_logo" href="index.html"><img class="hover_img" src="images/logo.png"alt="なすくらぶ"></a>
-                    <p id="header_cope"><img src="images/oishiihanikkori.png"alt="美味しいはニッコリにつながる"></p>
-                </div>
+    <header>
+        <div class="container">
+            <p id="header_text01">福知山や北京都を中心に、多数の居酒屋店舗を展開中</p>
+            <div class="flex">
+                <a href="../index.html"><img id="header_logo" class="hover_img" src="../images/logo.png"alt="なすくらぶ"></a>
+                <img id="header_cope" src="../images/oishiihanikkori.png"alt="美味しいはニッコリにつながる">
             </div>
-        </div><!-- headerの終わり　-->
+        </div>
+    </header>
 
-        <div></div>
+    <div id="wrapper">
 
         <div id="navi">
-            <div class="contner">
+            <div class="container">
                 <p id="navi_img">
-                    <img src="images/navi_nandakore.png"alt="もう一度やり直して下さい">
+                    <img src="../images/navi_nandakore.png"alt="もう一度やり直して下さい">
                 </p>
             </div>
         </div>
 
-        <div id="pointcard01" class="contner space_top space_bottom flex">
-            <img id="pointcard_img" src="images/なすくらぶポイントカードについてimg/pointcard_img.png" alt="なすくらぶポイントカード">
+        <div id="pointcard01" class="container space_top space_bottom flex">
+            <img id="pointcard_img" src="../images/event_pointcard_img/pointcard_img.png" alt="なすくらぶポイントカード">
             <div id="pointcard02">
-                <p class="border_bottom_dot"><img class="space_bottom" src="images/なすくらぶポイントカードについてimg/stop_pointcard.png" alt="ポイントカードが終了します"></p>
+                <p class="border_bottom_dot"><img class="space_bottom" src="../images/event_pointcard_img/stop_pointcard.png" alt="ポイントカードが終了します"></p>
                 <p class="space_top">
                     　なすくらぶ各店で利用できる左のポイントカード（一部対象外店舗あり）ですが、2024年8月31日(土)をもちまして終了となり、お持ちの保有ポイントが全て失効されます。<br>
                     　所持ポイントが残っておられるお客様は、なるべくお早めに各店へご来店いただきポイントをご利用ください。<br>
@@ -46,25 +46,25 @@
         
         <div id="news">
             <div>
-                <p ><br><br><br></p>
-                <div class="contner center flex_stretch">
-                    <p class="news02"><img src="images/osusumeryouri.png"></p>
-                    <p class="left2 news02"><a href="今月のイベント.html"><img class="hover_img" src="images/konngetunoibennto.png"></a></p>
-                    <p class="left2 news02"><a href="今月のプレゼント.html"><img class="hover_img" src="images/konngetunopresent.png"></a></p>
-                    <p class="left2 news02"><a href="なすくらぶポイントカードについて.html"><img class="hover_img" src="images/pointcard.png"></a></p>
+                <p><br><br><br></p>
+                <div class="container center flex_stretch">
+                    <p class="news02"><img src="../images/osusumeryouri.png"></p>
+                    <p class="left2 news02"><a href="../blog/event.html"><img class="hover_img" src="../images/konngetunoibennto.png"></a></p>
+                    <p class="left2 news02"><a href="../blog/present.html"><img class="hover_img" src="../images/konngetunopresent.png"></a></p>
+                    <p class="left2 news02"><a href="../blog/pointcard.html"><img class="hover_img" src="../images/pointcard.png"></a></p>
                 </div>
                 <p class="space_top"><br><br></p>
             </div>             
         </div>
         
-        <div id="feeder">
-            <div class="contner center">
-                <p class="pagetop"><a href="#header"><img class="hover_img" id="feeder_pagetop" src="images/page_top.png"></a></p>
-                <div id="feeder_text">
-                    <p>Copyright © オフィスヒュート All Rights Reserved. 無断転載禁止</p>
-                </div>
-            </div>    
-          </div>      
-    </div><!-- #wrapperの終わり -->   
+    </div><!-- #wrapperの終わり -->  
+    <footer>
+        <div class="container center">
+            <p class="pagetop"><a href="#wrapper"><img class="hover_img" id="footer_pagetop" src="../images/page_top.png"></a></p>
+            <div id="footer_text">
+                <p>Copyright © オフィスヒュート All Rights Reserved. 無断転載禁止</p>
+            </div>
+        </div>    
+    </footer>    
 </body>
 </html>
