@@ -7,57 +7,68 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-
+    <script src="../js/test.js"></script>
 </head>
 <body>
     <header>
         <div class="container">
-            <p id="header_text01">福知山や北京都を中心に、多数の居酒屋店舗を展開中</p>
+            <p id="header_text01">なすくらぶのポイントカードについて</p>
             <div class="flex">
-                <a href="../index.html"><img id="header_logo" class="hover_img" src="../images/logo.png"alt="なすくらぶ"></a>
-                <img id="header_cope" src="../images/oishiihanikkori.png"alt="美味しいはニッコリにつながる">
+                <a href="../index.html"><img class="header_logo hover_img" src="../images/logo.png"alt="なすくらぶ"></a>
+                <img class="header_cope" src="../images/oishiihanikkori.png"alt="美味しいはニッコリにつながる">
             </div>
         </div>
     </header>
 
-    <div id="wrapper">
-
-        <div id="navi">
-            <div class="container">
-                <p id="navi_img">
-                    <img src="../images/navi_nandakore.png"alt="もう一度やり直して下さい">
-                </p>
+    <nav id="navi">
+        <div class="container">
+            <div id="navi_mobile">
+                <p class="navi_logo"><a href="../index.html"><img src="../images/logo.png"alt="なすくらぶ"></a></p>
+                <p class="navi_cope"><img src="../images/oishiihanikkori.png"alt="美味しいはニッコリにつながる"></p>
+                <div id="js-hamburger" class="navi_menu"></div>
+            </div>
+            <div id="js-nav" class="menu">
+                <a href="../index.html"><p class="menu_size">トップページ</p></a>
+                <a href="shop/index.html"><p class="menu_size">店舗紹介・一覧</p></a>
+                <a href="company.html"><p class="menu_size">会社案内</p></a>
+                <a href="recruit.html"><p class="menu_size">スタッフ募集</p></a>
+                <a href="inquiry.html"><p class="menu_size">お問い合わせ</p></a>
+            </div>
+            <div id="navi_pc">
+                <img src="../images/navi_nandakore.png"alt="MENU">
             </div>
         </div>
+    </nav>
 
-        <div id="pointcard01" class="container space_top space_bottom flex">
-            <img id="pointcard_img" src="../images/event_pointcard_img/pointcard_img.png" alt="なすくらぶポイントカード">
-            <div id="pointcard02">
-                <p class="border_bottom_dot"><img class="space_bottom" src="../images/event_pointcard_img/stop_pointcard.png" alt="ポイントカードが終了します"></p>
-                <p class="space_top">
-                    　なすくらぶ各店で利用できる左のポイントカード（一部対象外店舗あり）ですが、2024年8月31日(土)をもちまして終了となり、お持ちの保有ポイントが全て失効されます。<br>
-                    　所持ポイントが残っておられるお客様は、なるべくお早めに各店へご来店いただきポイントをご利用ください。<br>
-                    　長きにわたり多くの皆様に、なすくらぶポイントカードをご利用いただき誠にありがとうございました。<br>
-                    　今回皆様へ多大なご迷惑をおかけいたしますことを深くお詫び申し上げます。<br>
-                    　今後ともなすくらぶ各店をご愛顧のほどよろしくお願いいたいます。</p>
-            </div>
-        </div>
-
-        
-        <div id="news">
-            <div>
-                <p><br><br><br></p>
-                <div class="container center flex_stretch">
-                    <p class="news02"><img src="../images/osusumeryouri.png"></p>
-                    <p class="left2 news02"><a href="../blog/event.html"><img class="hover_img" src="../images/konngetunoibennto.png"></a></p>
-                    <p class="left2 news02"><a href="../blog/present.html"><img class="hover_img" src="../images/konngetunopresent.png"></a></p>
-                    <p class="left2 news02"><a href="../blog/pointcard.html"><img class="hover_img" src="../images/pointcard.png"></a></p>
+    <main id="wrapper">
+        <div class="container">
+            <div class="pointcard">
+                <p class="pointcard_img"><img src="../images/event_pointcard_img/pointcard_img.png" alt="なすくらぶポイントカード"></p>
+                <div class="pointcard02">
+                    <p class="pointcard02_img border_bottom_dot"><img class="space_bottom" src="../images/event_pointcard_img/stop_pointcard.png" alt="ポイントカードが終了します"></p>
+                    <p class="space_top">
+                        　なすくらぶ各店で利用できる左のポイントカード（一部対象外店舗あり）ですが、2024年8月31日(土)をもちまして終了となり、お持ちの保有ポイントが全て失効されます。<br>
+                        　所持ポイントが残っておられるお客様は、なるべくお早めに各店へご来店いただきポイントをご利用ください。<br>
+                        　長きにわたり多くの皆様に、なすくらぶポイントカードをご利用いただき誠にありがとうございました。<br>
+                        　今回皆様へ多大なご迷惑をおかけいたしますことを深くお詫び申し上げます。<br>
+                        　今後ともなすくらぶ各店をご愛顧のほどよろしくお願いいたいます。
+                    </p>
                 </div>
-                <p class="space_top"><br><br></p>
-            </div>             
+            </div>
         </div>
         
-    </div><!-- #wrapperの終わり -->  
+        <div class="wood_background">
+            <div class="container">
+                <ul class="news">
+                    <li><a href="osusume.html"><img class="hover_img" src="../images/osusumeryouri.png"></a></li>
+                    <li><a href="event.html"><img class="hover_img" src="../images/konngetunoibennto.png"></a></li>
+                    <li><a href="present.html"><img class="hover_img" src="../images/konngetunopresent.png"></a></li>
+                    <li><a href="pointcard.html"><img class="hover_img" src="../images/pointcard.png"></a></li>
+                </ul>
+            </div>
+        </div>
+        
+    </div><!-- #wrapperの終わり -->   
     <footer>
         <div class="container center">
             <p class="pagetop"><a href="#wrapper"><img class="hover_img" id="footer_pagetop" src="../images/page_top.png"></a></p>
@@ -65,6 +76,6 @@
                 <p>Copyright © オフィスヒュート All Rights Reserved. 無断転載禁止</p>
             </div>
         </div>    
-    </footer>    
+    </footer>       
 </body>
 </html>

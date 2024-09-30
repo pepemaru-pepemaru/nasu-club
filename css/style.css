@@ -1,6 +1,6 @@
-b{
-    font-weight: 900;
-}
+b{font-weight: 900;}
+/* URLの下線を消すCSS→リセットCSSへ移動予定 */
+a {text-decoration: none;}
 #wrapper{
     line-height: normal;
 }
@@ -9,16 +9,122 @@ header{
     background-image:url(../images/wood-back-ground.jpg);
     color: white;
 }
-#header_text01{
-    padding-top: 16px ;
+header p{
+    padding: 16px ;
     text-align: right;
 }
-#header_logo{
+.header_logo{
     height: 200px;
     object-fit: fill;
 }
-#header_cope{
+.header_cope{
     margin-top: 170px;
+}
+/* ナビゲーションバーの赤い背景 */
+#navi{
+    margin-top: 5px;
+    background-image: url(../images/red_backgound.png);
+}
+#navi_mobile{
+    display: flex;
+    justify-content: space-between;
+}
+.navi_logo{
+    width: 20%;
+    margin: 1% auto;
+}
+.navi_logo img{
+    width: 100%;
+}
+.navi_cope{
+    width: 50%;
+    margin: auto;
+}
+.navi_cope img{
+    width: 100%;
+}
+/* ハンバーガーメニューボタン */
+.navi_menu{
+    background-image: url(../images/hamburger.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:100%;
+    width: 10%;
+    margin: 5%;
+}
+/* バーガーメニューが閉じるメニューへ変わる */
+.close.navi_menu{
+    background-image: url(../images/close.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:140%;
+    width: 10%;
+    margin: 5%;
+}
+/* いつもはmenuの表示をなくし */
+.menu{display: none;}
+/* クリックされた時だけ表示に切り替える */
+.menu.hamburger{display:block;}
+
+/* バーガーメニューを押した後の中身 */
+.hamburger{
+    background-image: url(../images/shop_background.png);
+    width: 90%;
+    height: auto;
+    padding: 5%;
+    text-align: center;
+}
+.menu_size{
+    padding: 5% ;
+    border-bottom: 1px solid #808080;
+    color: #000000;
+}
+/* PC版naviの背景と画像の遷移による色変更のCSS */
+.navi_pc_button{
+    background-image: url(../images/navi_nandakore.png);
+    background-position: 0px 190px;
+    display: flex;
+}
+.navi_pc_button li{
+    width: 200px;
+    height: 95px;
+}
+.navi_pc_button_1:hover{
+    background-image: url(../images/navi_nandakore.png);
+    background-position: 0px 95px;
+}
+.navi_pc_button_2:hover{
+    background-image: url(../images/navi_nandakore.png);
+    background-position: 801px 95px;
+}
+.navi_pc_button_3:hover{
+    background-image: url(../images/navi_nandakore.png);
+    background-position: 601px 95px;
+}
+.navi_pc_button_4:hover{
+    background-image: url(../images/navi_nandakore.png);
+    background-position: 401px 95px;
+}
+.navi_pc_button_5:hover{
+    background-image: url(../images/navi_nandakore.png);
+    background-position: 201px 95px;
+}
+
+
+
+
+
+.news{
+    padding: 60px 0 60px 0;
+    display:flex ;
+    justify-content: space-between;
+    flex-wrap: wrap
+}
+.news li{
+    width: 24.5%;
+}
+.news img{
+    width: 100%;
 }
 footer{
     background-image: url(../images/red_backgound.png);
@@ -27,70 +133,173 @@ footer{
     float: right ;
 }
 #footer_text{
-    padding-top: 28px;
-    padding-bottom: 28px;
+    padding: 28px;
     color: #FFFFFF;
 }
-#navi{
-    background-image: url(../images/red_backgound.png);
-    margin-top: 10px;
+
+/* 全ページで使う共有のCSS */
+
+.container{
+    width: 1000px;
+    margin: 0 auto;
 }
-#navi_img>img {
-    object-fit: none;
-    object-position: 0px 95px;
-    margin-top: -90px;
+.flex{ 
+    display: flex;
+    justify-content: space-around;
+}
+.flex_stretch{
+    display: flex;
+    justify-content: stretch; 
+}
+.flex_between{
+    display: flex;
+    justify-content: space-between;
+}
+.flex_column{
+    display: flex;
+    flex-direction:column;
+}
+.space_top{
+    margin-top: 20px;
+}
+.space_bottom{
+    margin-bottom: 20px;
+}
+.space_right{
+    margin-right: 20px;
+}
+.all_space{
+    padding: 40px 0 40px 0;
+}
+
+.border_bottom_dot{
+    border-bottom: dotted #000000 1px;
+}
+.border_bottom_solod{
+    border-bottom: solid #000000 1px;
+}
+.font_size_large{
+    font-size: 22px;;
+}
+.font_size_mini{
+    font-size: 14px;;
+
+}
+.float_right{
+    float: right ;
+}
+.float_left{
+    float: left ;
+}
+.hover_img:hover{
+    opacity: 0.5;
+}
+.hover_navi:hover{
+    position: relative;
+    top: 0px ;
+    left: 0px ;
+}
+.center{
+    text-align: center;
+}
+.brown{
+    color: #611D1A
+}
+.white{
+    color: #FFFFFF;
+}
+.text_color_gray{
+    color:#808080;
+}
+.left{
+    margin-left: 0 auto;
+    padding-left: 70px;
+}
+.left2{
+    margin-left: 2%;
+}
+/* 背景CSS一覧 */
+/* 背景の木の画像挿入 */
+.wood_background{
+    background-image: url(../images/wood-back-ground.jpg);
+    text-align: center;
+    width: 100%;
+}
+/* ベージュの背景店舗書とかで使う */
+.shops_bg{
+    background-image: url(../images/shop_background.png);
+}
+/* 店舗名等の背景色、モサモサしている方 */
+.yoichi_name_bg_img{ 
+    background-image: url(../images/name_background_img/nasunoyoihi_name_background.png);
+}
+.chiritote_name_bg_img{
+    background-image: url(../images/name_background_img/chiritote_name_background.png);
+}
+.kinchan_name_bg_img{
+    background-image: url(../images/name_background_img/kinchan_name_background.png);
+}
+.aburiya_name_bg_img{
+    background-image: url(../images/name_background_img/aburiya_name_background.png);
+}
+.toriya_name_bg_img{
+    background-image: url(../images/name_background_img/toriya_name_background.png);
+}
+.sakanaya_name_bg_img{
+    background-image: url(../images/name_background_img/sakanaya_name_background.png);
+}
+.yamiichi_name_bg_img{
+    background-image: url(../images/name_background_img/yamiichi_name_background.png);
+}
+/* PCの画面で、スマホ画面のnaviを非表示にする */
+@media(min-width:641px) {
+    #navi_mobile{display: none;}
+}
+
+/* 全ページ共通のスマホ版CSS */
+@media (max-width:640px) {
+    .container{width: 100%;}
+    header img{display: none;}
+    #navi_pc{display: none;}
+    .news li{width: 49%;}
+    #footer_pagetop{display: none!important;}
 }
 
 
 
-/* TOPページに使っているCSS */
 
-/* TOPページのスライドの部分に使ってるCSS */
-#chiritote{
+/* TOPページ、スライドの部分に使ってるCSS */
+.slider_img_size{
+    height: 600px ;
+    width: 800px ;
+}
+/* 店舗画像 */
+.chiritote{
     background-image: url(../images/index_top_slider_img/chiritotechin_background_top_img.png) ;
-    height: 600px ;
-    width: 800px ;
-    display: block;
 }
-#aburiya{
+.aburiya{
     background-image: url(../images/index_top_slider_img/aburiya_background.png) ;
-    height: 600px ;
-    width: 800px ;
 }
-#kinchan{
+.kinchan{
     background-image: url(../images/index_top_slider_img/kinchan_background.png) ;
-    height: 600px ;
-    width: 800px ;
 }
-#toriya{
+.toriya{
     background-image: url(../images/index_top_slider_img/toriya_top_background.png) ;
-    height: 600px ;
-    width: 800px ;
 }
-#sakanaya{
+.sakanaya{
     background-image: url(../images/index_top_slider_img/sakanaya_background.png) ;
-    height: 600px ;
-    width: 800px ;
 }
-#yamiichi_nishimai{
+.yamiichi_nishimai{
     background-image: url(../images/index_top_slider_img/yamiichi_nishimai_background.png) ;
-    height: 600px ;
-    width: 800px ;
 }
-#isenoyoichi{
+.isenoyoichi{
     background-image: url(../images/index_top_slider_img/isenoyoichi_background.png) ;
-    height: 600px ;
-    width: 800px ;
 }
-#jounetu_toyooka{
+.jounetu_toyooka{
     background-image: url(../images/index_top_slider_img/jounetu_toyoka_background.png) ;
-    height: 600px ;
-    width: 800px ;
 }
-#nasunoyoichi{
+.nasunoyoichi{
     background-image: url(../images/index_top_slider_img/nasunoyoichi_background.png) ;
-    height: 600px ;
-    width: 800px ;
 }
 .box{
     background-image: url(../images/index_top_slider_img/black_usuiyatu.png);
@@ -111,26 +320,9 @@ footer{
 }
 
 
-/* TOPページ店舗紹介欄に使っているCSS */
-.shop_info{
-    margin: 15px;
-}
-.shop_info h2{
-    border-bottom: 1px black solid;
-    font-size: 22px;
-}
-
-
-
-
-#wood_contents{
-    background-image:url(../images/wood-back-ground.jpg);
-    padding: 65px;
-}
-
+/* TOPページに使っているCSS */
 #oishii_text01{
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin: 40px;
     text-align: center;
     border-bottom: solid 1px black;
 }
@@ -144,224 +336,233 @@ footer{
 #oishii_text04{
     text-align: left;
 }
-#news{
-    background-image:url(../images/wood-back-ground.jpg);
+.news_index{
+    color: #FFFFFF;
 }
-#news_logo{
+.news_index h1{
     padding-top: 40px;
-    border-bottom: solid 1px black;
+    border-bottom: solid 1px #FFFFFF;
 }
 #news_scroll{
     width: 800px;
     height: 120px;
     overflow-y: scroll; 
-    /* margin: 0 auto; */
     padding-top: 20px;
-    line-height:40px;
+    line-height:2.5;
     font-size: 16px;
-    text-align: left ;
-}
-.news02 img{
-    width: 100%;
+    text-align: left;
 }
 
 
-
-
-#sub_header{
-    background-image: url(../images/wood-back-ground.jpg);
-    text-align: center;
-    height: 300px ;
+/* TOPページ店舗紹介欄に使っているCSS */
+.side_border{
+    border-left: dotted #CBCBCB 1px;
+    border-right: dotted #CBCBCB 1px;;
 }
-
-
-
-
-
+.TOP_shop_img_flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.TOP_shop_img_size{
+    width: 20%;
+}
 
 /* 店舗紹介、一覧で使ったCSS */
-.store02{
+/* 他ページのTOP画像でも使いまわす。 */
+
+.shop_sub_header{
+    text-align: center;
+    width: 100%;
+}
+.shop_info{
+    width: 98%;
+    margin: 0 auto;
+}
+.shop_info h2{
+    border-bottom: 1px black solid;
+    font-size: 22px;
+}
+.shops_index_flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* 店舗毎の背景、ベージュの部分 */
+.shop_info_contents_background{
     background-image: url(../images/shop_background.png);
     width: 23%;
-    margin: 0,2%,2%,0;
     height: 430px;
+    margin: 1% ;
+    position: relative;
 }
-.shop_introduction_img{
+/* 店舗画像のサイズ、あとで名前変更 */
+.shop_info_contents{
     width: 90%;
     margin: 0 auto;
     padding-top: 2%;
 }
-.left2{
-    margin-left: 2%;
+.shop_info_contents p{
+    background-color: #FFFFFF;
+    height: 160px;
+    text-align: center;
+    overflow:hidden
 }
-#store_nasunoyoichi{
+/* 店舗名の部分のサイズ、中の文字の設定、共用で使い回す */
+.shop_info_contents_head{
     color: #FFFFFF;
     text-align: center;
-    background-image: url(../images/name_background_img/nasunoyoihi_name_background.png);
     width: 100%;
     padding-top: 3px;
     padding-bottom: 3px;
 }
-.button_yoichi{
-    background: #136166;
+/* 店舗一覧のページから各店舗紹介へ飛ばすボタンのサイズ、場所指定 */
+.shop_info_button{
     margin: 0 auto;
     width: 90%;
     text-align: center;
     font-size: 15px;
     margin-top: 30px;
+    position: absolute;
+    bottom:1%;
+    left: 5%;
 }
-#store_chiritote{
-    color: #FFFFFF;
-    text-align: center;
-    background-image: url(../images/name_background_img/chiritote_name_background.png);
-    width: 100%;
-    padding-top: 3px;
-    padding-bottom: 3px;
-}
-.button{
-    background: #136166;
-    margin: 0 auto;
-    width: 90%;
-    text-align: center;
-    font-size: 15px;
-    margin-top: 30px;
-}
-#store_kinchan{
-    color: #FFFFFF;
-    text-align: center;
-    background-image: url(../images/name_background_img/kinchan_name_background.png);
-    width: 100%;
-    padding-top: 3px;
-    padding-bottom: 3px;
-}
-#store_aburiya{
-    color: #FFFFFF;
-    text-align: center;
-    background-image: url(../images/name_background_img/aburiya_name_background.png);
-    width: 100%;
-    padding-top: 3px;
-    padding-bottom: 3px;
-}
-#store_toriya{
-    color: #FFFFFF;
-    text-align: center;
-    background-image: url(../images/name_background_img/toriya_name_background.png);
-    width: 100%;
-    padding-top: 3px;
-    padding-bottom: 3px;
-}
-#store_sakanaya{
-    color: #FFFFFF;
-    text-align: center;
-    background-image: url(../images/name_background_img/sakanaya_name_background.png);
-    width: 100%;
-    padding-top: 3px;
-    padding-bottom: 3px;
-}
-#store_isenoyoichi{
-    color: #FFFFFF;
-    text-align: center;
-    background-image: url(../images/name_background_img/nasunoyoihi_name_background.png);
-    width: 100%;
-    padding-top: 3px;
-    padding-bottom: 3px;
-}
-#store_yamiichi{
-    color: #FFFFFF;
-    text-align: center;
-    background-image: url(../images/name_background_img/yamiichi_name_background.png);
-    width: 100%;
-    padding-top: 3px;
-    padding-bottom: 3px;
-}
-#store_jounetu_toyooka{
-    color: #FFFFFF;
-    text-align: center;
-    background-image: url(../images/name_background_img/kinchan_name_background.png);
-    width: 100%;
-    padding-top: 3px;
-    padding-bottom: 3px;
-}
-#store_yakiniku_not_name{
-    color: #FFFFFF;
-    text-align: center;
-    background-image: url(../images/name_background_img/aburiya_name_background.png);
-    width: 100%;
-    padding-top: 3px;
-    padding-bottom: 3px;
-}
+
+
+/* 店舗毎のボタンの色店舗カラー */
 .button01{
     background: #136166;
-    margin: 0 auto;
-    width: 90%;
-    text-align: center;
-    font-size: 15px;
-    margin-top: 30px;
 }
 .button02{
     background: #bb5a20;
-    margin: 0 auto;
-    width: 90%;
-    text-align: center;
-    font-size: 15px;
-    margin-top: 6px;
 }
 .button03{
     background: #ab1313;
-    margin: 0 auto;
-    width: 90%;
-    text-align: center;
-    font-size: 15px;
-    margin-top: 6px;
 }
 .button04{
     background: #000000;
-    margin: 0 auto;
-    width: 90%;
-    text-align: center;
-    font-size: 15px;
-    margin-top: 6px;
 }
 .button05{
     background: #ffbc3d;
-    margin: 0 auto;
-    width: 90%;
-    text-align: center;
-    font-size: 15px;
-    margin-top: 30px;
 }
 .button06{
     background: #2789a1;
-    margin: 0 auto;
-    width: 90%;
-    text-align: center;
-    font-size: 15px;
-    margin-top: 6px;
 }
 .button07{
     background: #7d2257;
-    margin: 0 auto;
-    width: 90%;
-    text-align: center;
-    font-size: 15px;
-    margin-top: 6px;
 }
 
 
+/* ↓店舗毎の紹介ページに使ったCSS↓ */
 
+/* 店舗目が大きく表示される部分のCSS */
+.shops_info_head_big{
+    text-align: center;
+    padding: 30px;
+    color: #FFFFFF;
+    font-size: 25px;
+}
+/* サムネイル付きスライドの部分、スライド時にサムネイルが動かなくするやつ */
+.slider-nav .slick-track{
+    transform: unset !important;
+}
+/* 店舗紹介画像小さな方 */
+.shop_img_size{
+    width: 100%;
+    height: auto;
+}
+/* 文章部分のヘッド */
+.shop_introduction_text{
+    width: 95%;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+.shop_introduction_text_contents{
+    width: 90%;
+    margin: 5px auto;
+    line-height: 2.5;
+    font-size: 14px;
+}
+.shop_introduction_text_contents p{
+    width: 90%;
+    margin: 0 auto;
+}
+.shop_introduction_text_contents dl{
+    display: flex;
+    width: 60%;
+}
+.shop_introduction_text_contents dt{
+    color: #831b1b;
+    flex: 0 0 30%;
+}
+.shop_introduction_map{
+    float: right ;
+    padding: 50px 150px 150px 0;
+}
+
+#enkai{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 130px;
+}
+#enkai img{
+    width:100%
+}
+/* ↑店舗毎の紹介ページに使ったCSS↑ */
+/* スマホVer　各店舗紹介のページ */
+@media (max-width:640px) {
+    .shops_info_head_big{
+        text-align: center;
+        padding: 20px;
+        color: #FFFFFF;
+        font-size: 20px;
+    }
+    .shop_introduction_text_contents{
+        font-size: 12px;
+        margin: 0 auto;
+        padding-bottom:30px ;
+    }
+    .shop_introduction_text_contents dl{
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .shop_introduction_text_contents dt{
+        color: #831b1b;
+        flex: 0 0 100%;
+    }
+    .shop_introduction_text_contents dd{
+        flex: 0 0 100%;
+    }
+    .shop_introduction_map{
+        float: none ;
+        padding: 30px 0 30px 0;
+        text-align: center;
+    }
+    /* 店舗一覧、shop/index.htmlのスマホ版 */
+    .shop_info_contents_background{
+        background-image: url(../images/shop_background.png);
+        width: 90%;
+        margin: 3% auto;
+        height: 430px;
+        position: relative;
+    }
+    
+    
+    
+}
 
 
 
 /* お問い合わせページに使ったCSS */
-#otoiawase{
+.inquiry_head{
     margin-top: 50px;
     text-align: center;
     border-bottom: solid 1px black;
 }
-#otoiawase_01{
+.inquiry_text{
     width: 800px;
     margin: 0 auto;
-    line-height: 50px;
 }
 .text_box{
     width: 300px;
@@ -381,123 +582,60 @@ footer{
 }
 
 /* プレゼントページで使ったCSS */
-#presentpage{
-    background-image: url(../images/shop_background.png);
-    width: 100%;
+.presentpage{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     text-align: center;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-block: 80px;
+}
+.presentpage li{
+width: 50%;
+}
+.presentpage img{width: 100%;}
+
+@media (max-width:640px) {
+.presentpage li{
+    width: 100%;
+}
 }
 
 /* ポイントカードページで使ったCSS */
-#pointcard01{
-    margin-top: 100px;
-    margin-bottom: 100px;
+.pointcard img{width: 100%;}
+.pointcard{
+    margin-block: 100px;
+    display: flex;
+    flex-wrap: wrap;
 }
-#pointcard02{
-    margin-left: 50px;
-    margin-right: 50px;
+.pointcard_img{
+    margin: 0 auto;
+    width: 20%;
+}
+.pointcard02{
+    margin-inline: 50px;
     font-size: 14px;
+    width: 70%;
 }
-#pointcard_img{
-    margin-left: 30px;
-    margin-right: 30px;
+.pointcard02_img{width: 80%;}
+.pointcard02 img{width: 100%;}
+@media (max-width:640px) {
+    .pointcard{
+        margin: 5% auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .pointcard_img{
+        margin: 5% auto;
+        width: 50%;
+    }
+    .pointcard02{
+        font-size: 14px;
+        width: 100%;
+    }
+    .pointcard02_img{
+        width: 100%;
+    }
 }
-
-
-
-
-/* ↓店舗毎の紹介ページに使ったCSS↓ */
-#nasunoyoichi_shop_img{
-    background-image: url(../images/shop_background.png);
-}
-#nasunoyoichi_shop_text{
-    background-image: url(../images/name_background_img/nasunoyoihi_name_background.png);
-    text-align: center;
-    padding: 30px;
-    color: #FFFFFF;
-    font-size: 25px;
-}
-#chiritotechin_shop_text{
-    background-image: url(../images/name_background_img/chiritote_name_background.png);
-    text-align: center;
-    padding: 30px;
-    color: #FFFFFF;
-    font-size: 25px;
-}
-#aburiya_shop_text{
-    background-image: url(../images/name_background_img/aburiya_name_background.png);
-    text-align: center;
-    padding: 30px;
-    color: #FFFFFF;
-    font-size: 25px;
-}
-#kinchan_shop_text{
-    background-image: url(../images/name_background_img/kinchan_name_background.png);
-    text-align: center;
-    padding: 30px;
-    color: #FFFFFF;
-    font-size: 25px;
-}
-#toriya_shop_text{
-    background-image: url(../images/name_background_img/toriya_name_background.png);
-    text-align: center;
-    padding: 30px;
-    color: #FFFFFF;
-    font-size: 25px;
-}
-#sakanaya_shop_text{
-    background-image: url(../images/name_background_img/sakanaya_name_background.png);
-    text-align: center;
-    padding: 30px;
-    color: #FFFFFF;
-    font-size: 25px;
-}
-#yamiichi_shop_text{
-    background-image: url(../images/name_background_img/yamiichi_name_background.png);
-    text-align: center;
-    padding: 30px;
-    color: #FFFFFF;
-    font-size: 25px;
-}
-
-
-.slider-nav .slick-track{
-    transform: unset !important;
-}
-
-
-
-.shop_img_size{
-    width: 200px;
-    height: auto;
-}
-.shop_img_size02{
-    width: 1000px;
-    height: auto;
-}
-.shop_introduction_text01{
-    width: 900px;
-    margin: 0 auto;
-    padding-top: 40px;
-}
-.shop_introduction_text02{
-    line-height: 35px;
-    font-size: 15px;
-    padding-bottom: 5px;
-    padding-top: 5px;
-}
-.shop_introduction_text03{
-    width: 855px;
-    margin: 0 auto;
-}
-#enkai{
-    margin-top: 350px;
-    text-align: center;
-    padding-bottom: 150px;
-}
-/* ↑店舗毎の紹介ページに使ったCSS↑ */
-
 
 
 /* 今月のイベントに使ったCSS */
@@ -506,140 +644,52 @@ footer{
     border: solid 1px #b5b5b5;
 }
 .event dl{
-   max-height: 100px;
+   display: flex;
+   /* justify-content:start; */
+
 }
 .event dt{
-   max-width: 33%;
-   height: auto;
+   width: 30%;
+   flex-grow: 0;
 }
 .event dd{
-    margin-left: 300px;
+    width: 100%;
+    flex-grow: 1;
     text-align: left;
 }
-#event_nasunoyoichi_head{
-    background-image: url(../images/name_background_img/nasunoyoihi_name_background.png);
+.event_head_size{
     color: #FFFFFF;
     text-align: center;
     font-size: 18px;
     padding: 15px;
+    font-weight: bold;
 }
-.event_nasunoyoichi_main{
+.event_main_contents{
     margin: 15px 30px;
     padding: 10px;
-    border-left: solid 5px #136166;/*左線*/
     border-bottom: dotted 1px #b5b5b5;
 }
-#event_chiritotechin_head{
-    background-image: url(../images/name_background_img/chiritote_name_background.png);
-    color: #FFFFFF;
-    text-align: center;
-    font-size: 18px;
-    padding: 15px;
-}
-.event_chiritotechin_main{
-    margin: 15px 30px;
-    padding: 10px;
-    border-left: solid 5px #bb5a20;/*左線*/
-    border-bottom: dotted 1px #b5b5b5;
-}
-#event_kinchan_head{
-    background-image: url(../images/name_background_img/kinchan_name_background.png);
-    color: #FFFFFF;
-    text-align: center;
-    font-size: 18px;
-    padding: 15px;
-}
-.event_kinchan_main{
-    margin: 15px 30px;
-    padding: 10px;
-    border-left: solid 5px #ab1313;/*左線*/
-    border-bottom: dotted 1px #b5b5b5;
-}
-#event_aburiya_head{
-    background-image: url(../images/name_background_img/aburiya_name_background.png);
-    color: #FFFFFF;
-    text-align: center;
-    font-size: 18px;
-    padding: 15px;
-}
-.event_aburiya_main{
-    margin: 15px 30px;
-    padding: 10px;
-    border-left: solid 5px #000000;/*左線*/
-    border-bottom: dotted 1px #b5b5b5;
-}
-#event_toriya_head{
-    background-image: url(../images/name_background_img/toriya_name_background.png);
-    color: #FFFFFF;
-    text-align: center;
-    font-size: 18px;
-    padding: 15px;
-}
-.event_toriya_main{
-    margin: 15px 30px;
-    padding: 10px;
-    border-left: solid 5px #ffbc3d;/*左線*/
-    border-bottom: dotted 1px #b5b5b5;
-}
-#event_sakanaya_head{
-    background-image: url(../images/name_background_img/sakanaya_name_background.png);
-    color: #FFFFFF;
-    text-align: center;
-    font-size: 18px;
-    padding: 15px;
-}
-.event_sakanaya_main{
-    margin: 15px 30px;
-    padding: 10px;
-    border-left: solid 5px #2789a1;/*左線*/
-    border-bottom: dotted 1px #b5b5b5;
-}
-#event_yamiichi_head{
-    background-image: url(../images/name_background_img/yamiichi_name_background.png);
-    color: #FFFFFF;
-    text-align: center;
-    font-size: 18px;
-    padding: 15px;
-}
-.event_yamiichi_main{
-    margin: 15px 30px;
-    padding: 10px;
-    border-left: solid 5px #7d2257;/*左線*/
-    border-bottom: dotted 1px #b5b5b5;
-}
-#event_isenoyoichi_head{
-    background-image: url(../images/name_background_img/nasunoyoihi_name_background.png);
-    color: #FFFFFF;
-    text-align: center;
-    font-size: 18px;
-    padding: 15px;
-}
-#event_jounetu_head{
-    background-image: url(../images/name_background_img/aburiya_name_background.png);
-    color: #FFFFFF;
-    text-align: center;
-    font-size: 18px;
-    padding: 15px;
-}
-#event_yakiniku_head{
-    background-image: url(../images/name_background_img/kinchan_name_background.png);
-    color: #FFFFFF;
-    text-align: center;
-    font-size: 18px;
-    padding: 15px;
-}
-#event_isenoyoichi_head{
-    background-image: url(../images/name_background_img/nasunoyoihi_name_background.png);
-    color: #FFFFFF;
-    text-align: center;
-    font-size: 18px;
-    padding: 15px;
-}
+.event_nasunoyoichi_side_line{border-left: solid 5px #136166;/*左線*/}
+.event_chiritotechin_side_line{border-left: solid 5px #bb5a20;/*左線*/}
+.event_kinchan_side_line{border-left: solid 5px #ab1313;/*左線*/}
+.event_aburiya_side_line{border-left: solid 5px #000000;/*左線*/}
+.event_toriya_side_line{border-left: solid 5px #ffbc3d;/*左線*/}
+.event_sakanaya_side_line{border-left: solid 5px #2789a1;/*左線*/}
+.event_yamiichi_side_line{border-left: solid 5px #7d2257;/*左線*/}
 
+@media (max-width:640px) {
+    .TOP_shop_img_size{
+        width: 50%;
+    }
+    .event dl{display: block;}
+    .event dt{width: 100%;}
+    .event dd{font-size: 14px;}
 
+}
 
 /* 宴会コースページに使ったCSS */
 .blown_box{
+    text-align:center;
     font-size: 15px;
     padding: 10px 10px;
     margin: 2px 0;
@@ -722,24 +772,15 @@ footer{
     border-bottom: dotted #CBCBCB 1px;
 }
 
-
-
-
 /* 会社案内、沿革ページに使ったCSS */
-#company_ishizue_background{
-    background-image: url(../images/shop_background.png);
-}
 #company_ishizue{
     background-image: url(../images/company_recruit_img/company_flower.png);
     background-repeat: no-repeat;
     background-position: center top;
-    width: 1000px;
-    margin: 0 auto;
     text-align: center;
 }
 #company_ishizue_ttl{
-    padding-top: 80px;
-    padding-bottom: 50px;
+    padding: 80px  0 50px 0;
 }
 .company_ishizue_text{
     width: 500px;
@@ -747,60 +788,6 @@ footer{
     text-align: left;  
     line-height: 2 ; 
     font-size: 14px;
-}
-.company_info{
-    background-image: url(../images/company_recruit_img/company_info_background.png);
-    background-repeat: no-repeat;
-    background-position: 600px 150px;
-    width: 1000px;
-    margin: 0 auto;
-    padding-bottom: 100px;
-    text-align: center
-}
-.company_info_head{
-    padding: 40px 0 0 5px ;
-    margin-bottom: 30px;
-    border-bottom:solid #000000 1px ;
-}
-.company_info_text{
-    text-align: left;  
-    margin-left: 100px;
-    margin-bottom: 15px;
-}
-.company_info_text dd{  
-    margin-left: 140px;
-}
-.company_info_text dt{
-    float: left;
-    color: #831b1b;
-    font-weight:bold;
-}
-.text_color_gray{
-    color:#808080;
-}
-.company_history{
-    width: 1000px;
-    margin: 0 auto;
-    padding-bottom: 100px;
-    text-align: center
-}
-.company_history_table{
-    margin: 0 100px 0 150px ;
-    background-image: url(../images/company_recruit_img/company_history_background.png);
-    background-size: 140px;
-    background-repeat: no-repeat;
-    background-position:left bottom ;
-    border-spacing: 0;
- }
-.company_history_table_th{
-    background-color: #eee0de;
-    color: #831b1b;
-    padding: 20px;
-}
-.company_history_table td{
-    text-align: left;
-    padding: 10px 20px;
-    border-top: dotted #000000 1px;
 }
 .company_ishizue_img1{
     position: absolute;
@@ -827,13 +814,94 @@ footer{
     top: 1000px;
     left: 1000px;
 }
-/* スタッフ募集ページに使ったCSS */
-.staff_wanted{
-    width: 1000px;
-    margin: 0 auto;
-    text-align: center;
+.company_info{
+    padding-bottom: 100px;
+    text-align: center
 }
+.company_info_head{
+    padding: 40px 0 0 5px ;
+    margin-bottom: 30px;
+    border-bottom:solid #000000 1px ;
+}
+.company_info_text{
+    background-image: url(../images/company_recruit_img/company_info_background.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;
+    line-height: 2 ; 
+    margin-bottom: 15px;
+}
+.company_info_text dl{
+    display: flex;
+    margin: 1%;
+}
+.company_info_text dd{ 
+    width: 80%;
+}
+.company_info_text dt{
+    width: 20%;
+    color: #831b1b;
+    font-weight:bold;
+    
+}
+.company_history{
+    padding-bottom: 100px;
+    text-align: center
+}
+.company_history_bg{
+    background-image: url(../images/company_recruit_img/company_history_background.png);
+    background-size: 20%;
+    background-repeat: no-repeat;
+    background-position:left bottom ;
+    padding-bottom: 5%;
+    width: 90%;
+    margin: 0 auto;
+}
+.company_history_table{
+    border-spacing: 0;
+    
+    
+}
+.company_history_table th{
+    width: 20%;
+    background-color: #eee0de;
+    color: #831b1b;
+    padding: 20px;
+    font-weight:bold;
+}
+.company_history_table td{
+    text-align: left;
+    padding: 10px 20px;
+    border-top: dotted #000000 1px;
+}
+
+@media (max-width:640px) {
+    .company_ishizue_img1{display: none;}
+    .company_ishizue_img2{display: none;}
+    .company_ishizue_img3{display: none;}
+    .company_ishizue_img4{display: none;}
+    .company_ishizue_img5{display: none;}
+    .company_ishizue_text{width:80%;}
+    .company_info_text{width: 90%;}
+    .company_info_text dl{
+        display: block;
+        margin: 2%;
+        font-size: 13px;
+    }
+    .company_info_text dt{width: 100%;}
+    .company_info_text dd{width: 100%;}
+    .company_history_bg{
+        background-size: 35.5%;
+        padding-bottom: 10%;
+    }
+    .company_history_table{font-size: 13px;}
+
+}
+/* スタッフ募集ページに使ったCSS */
 .staff_wanted_head{
+    text-align: center;
     padding: 40px 0 0 5px ;
     margin-bottom: 15px;
     border-bottom:solid #000000 1px ;
@@ -844,15 +912,18 @@ footer{
     border-spacing: 0;
     border: solid #CBCBCB 1px;
 }
+.staff_wanted_table{width: 100%;}
 .staff_wanted_table th{
     background-color: #CBCBCB;
-    width: 200px;
-    text-align:center;
+    width: 20%;
+    padding: 2%;
+    text-align:left;
     border-bottom: solid #FFFFFF 1px;
+    font-weight:bold;
 }
 .staff_wanted_table td{
-    margin: 50px;
-    padding: 20px;
+    width: 80%;
+    padding: 2%;
     font-size: 14px;
     text-align: left;
     border-bottom: solid #CBCBCB 1px;
@@ -862,115 +933,93 @@ footer{
     color: #ffffff;
     background: #7e0701;/*背景色*/
 }
-
-
 .otoiawase_beige_box{
     background-color: #f9ecd4;
-    margin: 40px;
+    width: 90%;
+    margin: 3% auto;
     padding: 30px;
 }
+.otoiawase_box_head img{width: 50%;}
 .otoiawase_box_head{
+    width: 100%;
+    text-align: center;
     margin-bottom: 30px;
     border-bottom:solid #000000 1px ;
 }
-.otoiawase_blown_box{
-    width: 280px;
-    font-size: 18px;
-    padding: 20px 20px 20px 30px;
-    color: #ffffff;
-    background: #7e0701;/*背景色*/
-}
-
-
-
-
-
-
-
-
-.container{
-    width: 1000px;
-    margin: 0 auto;
-}
-.flex{ 
+.otoiawase_box_contents img{width: 100%;}
+.otoiawase_box_contents{
     display: flex;
-    justify-content: space-around;
+    justify-content:space-between;
 }
-.flex_stretch{
-    display: flex;
-    justify-content: stretch; 
-}
-.flex_between{
-    display: flex;
-    justify-content: space-between;
-}
-.space_top{
-    margin-top: 20px;
-}
-.space_bottom{
-    margin-bottom: 20px;
-}
-.space_right{
-    margin-right: 20px;
-
-}
-.side_border{
-    border-left: dotted #CBCBCB 1px;
-    border-right: dotted #CBCBCB 1px;;
-}
-.border_bottom_dot{
-    border-bottom: dotted #000000 1px;
-}
-.border_bottom_solod{
-    border-bottom: solid #000000 1px;
-}
-.float_right{
-    float: right ;
-}
-.float_left{
-    float: left ;
-}
-.hover_img:hover{
-    opacity: 0.5;
-}
-.hover_navi:hover{
-    position: relative;
-    top: 0px ;
-    left: 0px ;
-}
-.center{
+.otoiawase_box_contents_img{
+    width: 40%;
     text-align: center;
 }
-.brown{
-    color: #611D1A
+.otoiawase_blown_box{
+    background-color: #7e0701;/*背景色*/
+    /* width: 50%; */
+    padding: 30px;
+    text-align: center;
+    /* display: flex; */
 }
-.white{
-    color: #FFFFFF;
+.otoiawase_blown_box img{
+    width: 20%;
 }
-.left{
-    margin-left: 0 auto;
-    padding-left: 70px;
+.otoiawase_blown_box p{
+    color: #fff;
+    font-size: 18px;
+}
+@media (max-width:640px) {
+    .staff_wanted{
+        width: 95%;
+        margin: 0 auto;
+    }
+    .staff_wanted_table{
+        width: 95%;
+        margin: 3% auto;
+        margin-top: 20px auto;
+        line-height: 1.7;
+    }
+    .staff_wanted_table th{
+        display: block;
+        width: 96%;
+        border-bottom: none;
+    }
+    .staff_wanted_table td{
+        display: block;
+        width: 95%;
+        border-bottom: none;
+    }
+    .otoiawase_beige_box{
+        width: 90%;
+    }
+    .otoiawase_beige_box img{width: 100%;}
+
+    
 }
 
 
-
-
-
+/* おすすめ料理に使ったCSS */
 .osusume_img_size{
     margin: 10px 0;
-    height: 335px;
+    height: auto;
     overflow: hidden;
+    display: flex;
 }
-.osusume_img_size p>img{
+.osusume_img_size p{
     width: 50%;
-    float:right;
 }
-
-.osusume_img_size li>img{
-    width: 24.5%;
-    float:left;
+.osusume_img_size img{width: 100%;}
+.osusume_img_size_small{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+}
+.osusume_img_size_small li{
+    width: 49.5%;
     margin: 0.2%;
 }
+.osusume_img_size_small img{width: 100%;}
 .osusume_text{
     line-height: 2;
     margin: 20px;
@@ -981,10 +1030,10 @@ footer{
     color:#ffffff;
 }
 
+/* クリックした際に表示される機能のCSS */
 .modal__open:hover {
     cursor: pointer;
   }
-
   .modal {
     height: 100%;
     position: fixed;
@@ -993,7 +1042,6 @@ footer{
     width: 100%;
     z-index: 2;
   }
-  
   .modal__bg {
     background: rgba(0, 0, 0, 0.8);
     height: 100vh;
@@ -1001,7 +1049,6 @@ footer{
     left: 0;
     width: 100%;
   }
-  
   .modal__content {
     font-size: 14px;
     background: rgba(0, 0, 0, 0);
@@ -1014,14 +1061,12 @@ footer{
             transform: translate(-50%, -50%);
     width: 50%;
   }
-  
   .modal__content img{
     width: 70%;
     height: auto;
     border: #ffffff 7px solid;
     border-radius:10px;
   }
-  
   .modal .close__text {
     width: 27px;
     height: 27px;
@@ -1030,3 +1075,15 @@ footer{
     top: 5%;
     right: 0%;
   }
+
+@media (max-width:640px) {
+    .osusume_img_size{
+        display: block;
+    }
+    .osusume_img_size p{
+        width: 100%;
+    }
+    .osusume_img_size_small{
+        width: 100%;
+    }
+}

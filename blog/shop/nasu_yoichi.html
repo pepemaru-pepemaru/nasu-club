@@ -10,41 +10,52 @@
 
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="../../css/style.css">
-    <script src="js/test.js"></script>
+    <script src="../../js/test.js"></script>
 </head>
 <body>
     <header>
         <div class="container">
-            <p id="header_text01">福知山や北京都を中心に、多数の居酒屋店舗を展開中</p>
+            <p id="header_text01">隠れ家屋敷　なすの与一の店舗情報</p>
             <div class="flex">
-                <a href="../../index.html"><img id="header_logo" class="hover_img" src="../../images/logo.png"alt="なすくらぶ"></a>
-                <img id="header_cope" src="../../images/oishiihanikkori.png"alt="美味しいはニッコリにつながる">
+                <a href="../../index.html"><img class="header_logo hover_img" src="../../images/logo.png"alt="なすくらぶ"></a>
+                <img class="header_cope" src="../../images/oishiihanikkori.png"alt="美味しいはニッコリにつながる">
             </div>
         </div>
     </header>
 
-    <div id="wrapper">
-
-        <div id="navi">
-            <div class="container">
-                <p id="navi_img">
-                    <img src="../../images/navi_nandakore.png"alt="もう一度やり直して下さい">
-                </p>
+    <nav id="navi">
+        <div class="container">
+            <div id="navi_mobile">
+                <p class="navi_logo"><a href="../../index.html"><img src="../../images/logo.png"alt="なすくらぶ"></a></p>
+                <p class="navi_cope"><img src="../../images/oishiihanikkori.png"alt="美味しいはニッコリにつながる"></p>
+                <div id="js-hamburger" class="navi_menu"></div>
+            </div>
+            <div id="js-nav" class="menu">
+                <a href="../../index.html"><p class="menu_size">トップページ</p></a>
+                <a href="index.html"><p class="menu_size">店舗紹介・一覧</p></a>
+                <a href="../company.html"><p class="menu_size">会社案内</p></a>
+                <a href="../recruit.html"><p class="menu_size">スタッフ募集</p></a>
+                <a href="../inquiry.html"><p class="menu_size">お問い合わせ</p></a>
+            </div>
+            <div id="navi_pc">
+                <img src="../../images/navi_nandakore.png"alt="MENU">
             </div>
         </div>
+    </nav>
 
-<!-- ここからなすの与一の店舗紹介になります -->
-    <!-- 店舗紹介画像 -->
+    <main id="wrapper">
+        <!-- ここからなすの与一の店舗紹介になります -->
+        <!-- 店舗紹介画像 -->
         <div class="container ">
-            <div id="nasunoyoichi_shop_text">
-                <p>隠れ家屋敷　なすの与一</p>
+            <div class="shops_info_head_big yoichi_name_bg_img">
+                <h1>隠れ家屋敷　なすの与一</h1>
             </div>
             <ul class="slider-for">
-                <li><img src="../../images/shop_nasu-yoichi_img/nasunoyoichi_shop_img01.jpg" alt="なすの与一店内写真01"></li>
-                <li><img src="../../images/shop_nasu-yoichi_img/nasunoyoichi_shop_img02.jpg" alt="なすの与一店内写真02"></li>
-                <li><img src="../../images/shop_nasu-yoichi_img/nasunoyoichi_shop_img03.jpg" alt="なすの与一店内写真03"></li>
-                <li><img src="../../images/shop_nasu-yoichi_img/nasunoyoichi_shop_img04.jpg" alt="なすの与一店内写真04"></li>
-                <li><img src="../../images/shop_nasu-yoichi_img/nasunoyoichi_shop_img05.jpg" alt="なすの与一店内写真05"></li>
+                <li><img class="shop_img_size " src="../../images/shop_nasu-yoichi_img/nasunoyoichi_shop_img01.jpg" alt="なすの与一店内写真01"></li>
+                <li><img class="shop_img_size " src="../../images/shop_nasu-yoichi_img/nasunoyoichi_shop_img02.jpg" alt="なすの与一店内写真02"></li>
+                <li><img class="shop_img_size " src="../../images/shop_nasu-yoichi_img/nasunoyoichi_shop_img03.jpg" alt="なすの与一店内写真03"></li>
+                <li><img class="shop_img_size " src="../../images/shop_nasu-yoichi_img/nasunoyoichi_shop_img04.jpg" alt="なすの与一店内写真04"></li>
+                <li><img class="shop_img_size " src="../../images/shop_nasu-yoichi_img/nasunoyoichi_shop_img05.jpg" alt="なすの与一店内写真05"></li>
             </ul>
             <ol class="slider-nav">
                 <li><img class="shop_img_size hover_img" src="../../images/shop_nasu-yoichi_img/nasunoyoichi_shop_img01.jpg" alt="なすの与一店内写真01"></li>
@@ -53,72 +64,63 @@
                 <li><img class="shop_img_size hover_img" src="../../images/shop_nasu-yoichi_img/nasunoyoichi_shop_img04.jpg" alt="なすの与一店内写真04"></li>
                 <li><img class="shop_img_size hover_img" src="../../images/shop_nasu-yoichi_img/nasunoyoichi_shop_img05.jpg" alt="なすの与一店内写真05"></li>
             </ol>
-            <div id="nasunoyoichi_shop_img">
-    <!-- 店舗紹介文のキャンペーン情報 -->
-                <div class="shop_introduction_text01">
-                    <p class="border_bottom_solod"><img src="../../images/shop_nasu-yoichi_img/yoichi_campaign_jouhou.png" alt="キャンペーン情報"></p>
-                    <div class="shop_introduction_text02 border_bottom_dot">
-                        <h2 class="brown"><b>なすくらぶInstagram始めてます。各店情報満載！ぜひフォローしてね！</b></h2>
-                        <div class="shop_introduction_text03">
-                            <p>なすくらぶ公式Instagram始めました！ ＜＜＜<a class="hover_img" href="https://www.instagram.com/nasu.club/">https://www.instagram.com/nasu.club/</a>＞＞＞</p>
-                        </div>
+            <div class="shops_bg">
+            <!-- 店舗紹介文のキャンペーン情報 -->
+                <div class="shop_introduction_text">
+                    <h2 class="border_bottom_solod"><img src="../../images/shop_nasu-yoichi_img/yoichi_campaign_jouhou.png" alt="キャンペーン情報"></h2>
+                    <div class="shop_introduction_text_contents border_bottom_dot">
+                        <h3 class="brown"><b>なすくらぶInstagram始めてます。各店情報満載！ぜひフォローしてね！</b></h3>
+                        <p>なすくらぶ公式Instagram始めました！ ＜＜＜<a class="hover_img" href="https://www.instagram.com/nasu.club/">https://www.instagram.com/nasu.club/</a>＞＞＞</p>
                     </div>
-                    <div class="shop_introduction_text02 border_bottom_dot">
-                        <p class="brown"><b>大好評！３８０円イベント開催★（毎月１夜限りの開催）</b></p>
-                        <div class="shop_introduction_text03">
-                            <p>お客様の声にお応えして感謝復活！380円イベントが今月も開催！１日限りなのでお見逃しなく！！（日程はイベントページで確認を）お料理からドリンクまでメニューに掲載されている商品全てがどれもこれも380円(税込)の均一価格に！！お酒好きの方も、お料理好きの方も、デザート好きの方もみーんなお得★驚くほどお得な企画なので内緒ですよ(笑) （※月に一度の大人気イベントのためご予約はお早めに！！）</p>
-                        </div>
+                    <div class="shop_introduction_text_contents border_bottom_dot">
+                        <h3 class="brown"><b>大好評！３８０円イベント開催★（毎月１夜限りの開催）</b></p>
+                        <p>お客様の声にお応えして感謝復活！380円イベントが今月も開催！１日限りなのでお見逃しなく！！（日程はイベントページで確認を）お料理からドリンクまでメニューに掲載されている商品全てがどれもこれも380円(税込)の均一価格に！！お酒好きの方も、お料理好きの方も、デザート好きの方もみーんなお得★驚くほどお得な企画なので内緒ですよ(笑) （※月に一度の大人気イベントのためご予約はお早めに！！）</p>
                     </div>
-                    <div class="shop_introduction_text02 border_bottom_dot">
-                        <p class="brown"><b>１００円ドリンク祭、イベント開催中！【お客様へ大感謝大還元】</b></p>
-                        <div class="shop_introduction_text03">
-                            <p>なすくらぶの大感謝還元イベント！長年ここまでご愛顧いただいたお客様に感謝の気持ちを込めて、できる限りの還元を！ということで、１００円ドリンク祭イベントを開催中！！お客様の声に最大限お応えし、生ビールも角ハイも焼酎もカクテルもソフトドリンクも、ぜーんぶ1杯100円でお楽しみください！ イベント開催日は、イベントスケジュールより確認してね(*^^*) （※お席確保のため事前ご予約のお電話受付中）</p>
-                        </div>
+                    <div class="shop_introduction_text_contents border_bottom_dot">
+                        <h3 class="brown"><b>１００円ドリンク祭、イベント開催中！【お客様へ大感謝大還元】</b></h3>
+                        <p>なすくらぶの大感謝還元イベント！長年ここまでご愛顧いただいたお客様に感謝の気持ちを込めて、できる限りの還元を！ということで、１００円ドリンク祭イベントを開催中！！お客様の声に最大限お応えし、生ビールも角ハイも焼酎もカクテルもソフトドリンクも、ぜーんぶ1杯100円でお楽しみください！ イベント開催日は、イベントスケジュールより確認してね(*^^*) （※お席確保のため事前ご予約のお電話受付中）</p>
                     </div>
                 </div>
-    <!-- 店舗紹介文の店舗情報 -->
-                <div class="shop_introduction_text01">   
-                    <p class="border_bottom_solod"><img src="../../images/shop_nasu-yoichi_img/yoichi_shop_jouhou.png" alt="店舗情報"></p>
-                    <div class="shop_introduction_text02 shop_introduction_text03 space_top space_bottom">
-                        <div class="float_left">
-                            <p><b class="brown">TEL</b>　　　　　　0773-24-2932</p>
-                            <p><b class="brown">住 所</b>　　　　 　京都府福知山市篠尾4-3</p>
-                            <p><b class="brown">営業時間</b>　　　　17:30～24:00</p>
-                            <p><b class="brown">ラストオーダー</b>　23:30（food.drinkともに）</p>
-                            <p><b class="brown">定休日</b>　　　　　無し（店内清掃のため休業の場合があります）</p>
-                            <p><b class="brown">座席数</b>　　　　　完全個室/26室</p>
-                            <p><b class="brown">宴会予約</b>　　　　4名様～最大30名様まで承ります。</p>
-                            <p><b class="brown">駐車場</b>　　　　　22台</p>                                    
+                <!-- 店舗紹介文の店舗情報 -->
+                <div class="shop_introduction_text">   
+                    <h2 class="border_bottom_solod"><img src="../../images/shop_nasu-yoichi_img/yoichi_shop_jouhou.png" alt="店舗情報"></h2>
+                    <div class="shop_introduction_map">
+                        <p><img src="../../images/shop_nasu-yoichi_img/nasunoyoichi_logo.png" alt="なすの与一"></p>
+                        <p><a href="https://g.co/kgs/Hr3St4J"><img src="../../images/btn_map.png" alt="マップはこちら"></a></p>
+                    </div>
+                        <div class="shop_introduction_text_contents">
+                            <dl><dt>TEL</dt><dd>0773-24-2932</dd></dl>
+                            <dl><dt>住 所</dt><dd>京都府福知山市篠尾4-3</dd></dl>
+                            <dl><dt>営業時間</dt><dd>17:30～24:00</dd></dl>
+                            <dl><dt>ラストオーダー</dt><dd>23:30（food.drinkともに）</dd></dl>
+                            <dl><dt>定休日</dt><dd>無し（店内清掃のため休業の場合があります）</dd></dl>
+                            <dl><dt>座席数</dt><dd>完全個室/26室</dd></dl>
+                            <dl><dt>宴会予約</dt><dd>4名様～最大30名様まで承ります。</dd></dl>
+                            <dl><dt>駐車場</dt><dd>22台</dd></dl>
                         </div>
-                        <div class="float_right space_top space_right">
-                            <img src="../../images/shop_nasu-yoichi_img/nasunoyoichi_logo.png" alt="なすの与一">
-                        </div>
+                    </div>                            
+                    <div id="enkai">
+                        <img src="../../images/enkaicourse_yoko.png" alt="宴会コース">
                     </div>
                 </div>          
-                       
-                <div id="enkai">
-                    <img src="../../images/enkaicourse_yoko.png" alt="宴会コース">
-                </div>
            </div>
         </div>
  
-        <div id="news">
-            <div>
-                <p><br><br><br></p>
-                <div class="container center flex_stretch">
-                    <p class="news02"><img src="../../images/osusumeryouri.png"></p>
-                    <p class="left2 news02"><a href="../event.html"><img class="hover_img" src="../../images/konngetunoibennto.png"></a></p>
-                    <p class="left2 news02"><a href="../present.html"><img class="hover_img" src="../../images/konngetunopresent.png"></a></p>
-                    <p class="left2 news02"><a href="../pointcard.html"><img class="hover_img" src="../../images/pointcard.png"></a></p>
-                </div>
-                <p class="space_top"><br><br></p>
-            </div>             
+        <div class="wood_background">
+            <div class="container">
+                <ul class="news">
+                    <li><a href="../osusume.html"><img class="hover_img" src="../../images/osusumeryouri.png"></a></li>
+                    <li><a href="../event.html"><img class="hover_img" src="../../images/konngetunoibennto.png"></a></li>
+                    <li><a href="../present.html"><img class="hover_img" src="../../images/konngetunopresent.png"></a></li>
+                    <li><a href="../pointcard.html"><img class="hover_img" src="../../images/pointcard.png"></a></li>
+                </ul>
+            </div>
         </div>
         
-    </div><!-- #wrapperの終わり -->   
+    </main><!-- #wrapperの終わり -->   
     <footer>
         <div class="container center">
-            <p class="pagetop"><a href="#wrapper"><img class="hover_img" id="footer_pagetop" src="../../images/page_top.png"></a></p>
+            <p><a href="#wrapper"><img class="hover_img" id="footer_pagetop" src="../../images/page_top.png"></a></p>
             <div id="footer_text">
                 <p>Copyright © オフィスヒュート All Rights Reserved. 無断転載禁止</p>
             </div>

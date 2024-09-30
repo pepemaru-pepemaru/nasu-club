@@ -7,43 +7,53 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="../js/test.js"></script>
+
 </head>
 <body>
     <header>
         <div class="container">
-            <p id="header_text01">福知山や北京都を中心に、多数の居酒屋店舗を展開中</p>
+            <p id="header_text01">なすくらぶグループのお問い合わせ</p>
             <div class="flex">
-                <a href="../index.html"><img id="header_logo" class="hover_img" src="../images/logo.png"alt="なすくらぶ"></a>
-                <img id="header_cope" src="../images/oishiihanikkori.png"alt="美味しいはニッコリにつながる">
+                <a href="../index.html"><img class="header_logo hover_img" src="../images/logo.png"alt="なすくらぶ"></a>
+                <img class="header_cope" src="../images/oishiihanikkori.png"alt="美味しいはニッコリにつながる">
             </div>
         </div>
     </header>
 
-    <div id="wrapper">
-
-        <div id="navi">
-            <div class="container">
-                <p id="navi_img">
-                    <img src="../images/navi_nandakore.png"alt="もう一度やり直して下さい">
-                </p>
+    <nav id="navi">
+        <div class="container">
+            <div id="navi_mobile">
+                <p class="navi_logo"><a href="../index.html"><img src="../images/logo.png"alt="なすくらぶ"></a></p>
+                <p class="navi_cope"><img src="../images/oishiihanikkori.png"alt="美味しいはニッコリにつながる"></p>
+                <div id="js-hamburger" class="navi_menu"></div>
+            </div>
+            <div id="js-nav" class="menu">
+                <a href="../index.html"><p class="menu_size">トップページ</p></a>
+                <a href="shop/index.html"><p class="menu_size">店舗紹介・一覧</p></a>
+                <a href="company.html"><p class="menu_size">会社案内</p></a>
+                <a href="recruit.html"><p class="menu_size">スタッフ募集</p></a>
+                <a href="inquiry.html"><p class="menu_size">お問い合わせ</p></a>
+            </div>
+            <div id="navi_pc">
+                <img src="../images/navi_nandakore.png"alt="MENU">
             </div>
         </div>
+    </nav>
 
-        <div class="container">
-            <div id="otoiawase">
+        <main class="container">
+            <h1 class="inquiry_head">
                 <img class="space_top" src="../images/osusume_inquiry_img/otoiawase.png" alt="お問い合わせフォーム">
-            </div>
-            <div class="shop_introduction_text03 space_bottom">
+            </h1>
+            <div class="inquiry_text space_bottom">
                 <p><br></p>
                 <p>ご質問・お問い合わせは下記のメールフォームよりお気軽にお問い合わせ下さい。<br>
                     3営業日以内に担当よりお電話にて回答させていただきます。<br>
                     ※店舗ご予約につきましては、各店舗へ直接お電話いただきますようお願い申し上げます。<br>
                     ※なっちゃんメール会員様の退会については、コチラからお進み下さい。<br><br>
                 </p>
-            </div>
-            <div id="otoiawase_01">
                 <ul>
-                    <li class="flex_between">
+                    <li>
                         <div><img src="../images/osusume_inquiry_img/hissu.png" alt="必須"><b>　お名前</b></div>
                         <div><input class="text_box" type="text" name="otoiawase_box"></div>
                     </li>
@@ -74,22 +84,21 @@
                     <li class="text_box_submit"><input type="submit" name="otoiawase_box"></li>
                 </ul>
             </div>
-       </div>
+        </main>
 
         
-       <div id="news">
-        <div>
-            <p><br><br><br></p>
-            <div class="container center flex_stretch">
-                <p class="news02"><img src="../images/osusumeryouri.png"></p>
-                <p class="left2 news02"><a href="../blog/event.html"><img class="hover_img" src="../images/konngetunoibennto.png"></a></p>
-                <p class="left2 news02"><a href="../blog/present.html"><img class="hover_img" src="../images/konngetunopresent.png"></a></p>
-                <p class="left2 news02"><a href="../blog/pointcard.html"><img class="hover_img" src="../images/pointcard.png"></a></p>
+        <div class="wood_background">
+            <div class="container">
+                <ul class="news">
+                    <li><a href="osusume.html"><img class="hover_img" src="../images/osusumeryouri.png"></a></li>
+                    <li><a href="event.html"><img class="hover_img" src="../images/konngetunoibennto.png"></a></li>
+                    <li><a href="present.html"><img class="hover_img" src="../images/konngetunopresent.png"></a></li>
+                    <li><a href="pointcard.html"><img class="hover_img" src="../images/pointcard.png"></a></li>
+                </ul>
             </div>
-            <p class="space_top"><br><br></p>
-        </div>             
+        </div>
         
-    </div><!-- #wrapperの終わり -->  
+    </div><!-- #wrapperの終わり -->   
     <footer>
         <div class="container center">
             <p class="pagetop"><a href="#wrapper"><img class="hover_img" id="footer_pagetop" src="../images/page_top.png"></a></p>
@@ -97,7 +106,6 @@
                 <p>Copyright © オフィスヒュート All Rights Reserved. 無断転載禁止</p>
             </div>
         </div>    
-    </footer>      
-    <script src="js/test.js"></script>
+    </footer>       
 </body>
 </html>

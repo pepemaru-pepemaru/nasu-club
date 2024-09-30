@@ -7,53 +7,68 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-
+    <script src="../js/test.js"></script>
 </head>
 <body>
     <header>
         <div class="container">
             <p id="header_text01">福知山や北京都を中心に、多数の居酒屋店舗を展開中</p>
             <div class="flex">
-                <a href="../index.html"><img id="header_logo" class="hover_img" src="../images/logo.png"alt="なすくらぶ"></a>
-                <img id="header_cope" src="../images/oishiihanikkori.png"alt="美味しいはニッコリにつながる">
+                <a href="../index.html"><img class="header_logo hover_img" src="../images/logo.png"alt="なすくらぶ"></a>
+                <img class="header_cope" src="../images/oishiihanikkori.png"alt="美味しいはニッコリにつながる">
             </div>
         </div>
     </header>
-    
-    <div id="wrapper">
 
-        <div id="navi">
+    <nav id="navi">
+        <div class="container">
+            <div id="navi_mobile">
+                <p class="navi_logo"><a href="../index.html"><img src="../images/logo.png"alt="なすくらぶ"></a></p>
+                <p class="navi_cope"><img src="../images/oishiihanikkori.png"alt="美味しいはニッコリにつながる"></p>
+                <div id="js-hamburger" class="navi_menu"></div>
+            </div>
+            <div id="js-nav" class="menu">
+                <a href="../index.html"><p class="menu_size">トップページ</p></a>
+                <a href="shop/index.html"><p class="menu_size">店舗紹介・一覧</p></a>
+                <a href="company.html"><p class="menu_size">会社案内</p></a>
+                <a href="recruit.html"><p class="menu_size">スタッフ募集</p></a>
+                <a href="inquiry.html"><p class="menu_size">お問い合わせ</p></a>
+            </div>
+            <div id="navi_pc">
+                <img src="../images/navi_nandakore.png"alt="MENU">
+            </div>
+        </div>
+    </nav>
+
+    <main id="wrapper">
+
+        <div class="wood_background">
             <div class="container">
-                <p id="navi_img">
-                    <img src="../images/navi_nandakore.png"alt="もう一度やり直して下さい">
-                </p>
+                <img class="shop_sub_header" src="../images/present_img/subhead_present.jpg">
             </div>
         </div>
 
-        <div id="sub_header">
-            <img src="../images/pointcard_img/subhead_present.jpg">
+        <div class="shops_bg">
+            <div class="container">
+                <ul class="presentpage">
+                    <li><a href="https://pro.form-mailer.jp/fms/681dfd4d94841"><img class="hover_img" src="../images/present_img/aihuku.png" alt="愛の覆面調査隊"></a></li>
+                    <li><a href="https://pro.form-mailer.jp/fms/d4676fb994846"><img class="hover_img" src="../images/present_img/hokkoriepi.png" alt="ほっこりエピソード"></a></li>
+                </ul>
+            </div>
         </div>
 
-        <div id="presentpage">
-            <a href="https://pro.form-mailer.jp/fms/681dfd4d94841"><img class="hover_img" src="../images/pointcard_img/aihuku.png" alt="愛の覆面調査隊"></a>
-            <a href="https://pro.form-mailer.jp/fms/d4676fb994846"><img class="hover_img" src="../images/pointcard_img/hokkoriepi.png" alt="ほっこりエピソード"></a>
-        </div>
-
-        
-        <div id="news">
-            <div>
-                <p><br><br><br></p>
-                <div class="container center flex_stretch">
-                    <p class="news02"><img src="../images/osusumeryouri.png"></p>
-                    <p class="left2 news02"><a href="../blog/event.html"><img class="hover_img" src="../images/konngetunoibennto.png"></a></p>
-                    <p class="left2 news02"><a href="../blog/present.html"><img class="hover_img" src="../images/konngetunopresent.png"></a></p>
-                    <p class="left2 news02"><a href="../blog/pointcard.html"><img class="hover_img" src="../images/pointcard.png"></a></p>
-                </div>
-                <p class="space_top"><br><br></p>
-            </div>             
+        <div class="wood_background">
+            <div class="container">
+                <ul class="news">
+                    <li><a href="osusume.html"><img class="hover_img" src="../images/osusumeryouri.png"></a></li>
+                    <li><a href="event.html"><img class="hover_img" src="../images/konngetunoibennto.png"></a></li>
+                    <li><a href="present.html"><img class="hover_img" src="../images/konngetunopresent.png"></a></li>
+                    <li><a href="pointcard.html"><img class="hover_img" src="../images/pointcard.png"></a></li>
+                </ul>
+            </div>
         </div>
         
-    </div><!-- #wrapperの終わり -->  
+    </div><!-- #wrapperの終わり -->   
     <footer>
         <div class="container center">
             <p class="pagetop"><a href="#wrapper"><img class="hover_img" id="footer_pagetop" src="../images/page_top.png"></a></p>

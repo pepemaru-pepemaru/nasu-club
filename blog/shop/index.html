@@ -4,250 +4,231 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>店舗一覧ページ</title>
+    
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="../../css/style.css">
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="../../js/test.js"></script>
 </head>
 <body>
     <header>
         <div class="container">
-            <p id="header_text01">福知山や北京都を中心に、多数の居酒屋店舗を展開中</p>
+            <p id="header_text01">なすくらぶグループの店舗一覧ページ</p>
             <div class="flex">
-                <a href="../../index.html"><img id="header_logo" class="hover_img" src="../../images/logo.png"alt="なすくらぶ"></a>
-                <img id="header_cope" src="../../images/oishiihanikkori.png"alt="美味しいはニッコリにつながる">
+                <a href="../../index.html"><img class="header_logo hover_img" src="../../images/logo.png"alt="なすくらぶ"></a>
+                <img class="header_cope" src="../../images/oishiihanikkori.png"alt="美味しいはニッコリにつながる">
             </div>
         </div>
     </header>
 
-    <div id="wrapper">
-
-        <div id="navi">
-            <div class="container">
-                <p id="navi_img">
-                    <img src="../../images/navi_nandakore.png"alt="もう一度やり直して下さい">
-                </p>
+    <nav id="navi">
+        <div class="container">
+            <div id="navi_mobile">
+                <p class="navi_logo"><a href="../../index.html"><img src="../../images/logo.png"alt="なすくらぶ"></a></p>
+                <p class="navi_cope"><img src="../../images/oishiihanikkori.png"alt="美味しいはニッコリにつながる"></p>
+                <div id="js-hamburger" class="navi_menu"></div>
+            </div>
+            <div id="js-nav" class="menu">
+                <a href="../../index.html"><p class="menu_size">トップページ</p></a>
+                <a href="index.html"><p class="menu_size">店舗紹介・一覧</p></a>
+                <a href="../company.html"><p class="menu_size">会社案内</p></a>
+                <a href="../recruit.html"><p class="menu_size">スタッフ募集</p></a>
+                <a href="../inquiry.html"><p class="menu_size">お問い合わせ</p></a>
+            </div>
+            <div id="navi_pc">
+                <img src="../../images/navi_nandakore.png"alt="MENU">
             </div>
         </div>
+    </nav>
 
-        <div id="sub_header">
-            <img src="../../images/tennpoichirann.jpg">
+    <main id="wrapper">
+        <div class="wood_background">
+            <div class="container">
+                <img class="shop_sub_header" src="../../images/tennpoichirann.jpg">
+            </div>
         </div>
+        <div class="container space_top space_bottom">
+            <h2 class="border_bottom_solod font_size_large">
+                <span class=brown>◆</span><b>なすくらぶ全店のご紹介</b><span class=brown>◆</span>
+            </h2>
 
-        <div class="container space_top shop_info">
-            <h2><span class=brown>◆</span><b>なすくらぶ全店のご紹介</b><span class=brown>◆</span></h2>
-
-            <ul class="flex_stretch space_top">
-                <li class="store02">
-                    <div id="store_nasunoyoichi">なすの与一</div>
-                    <div class="shop_introduction_img">
-                        <div class="center">
-                            <a class="hover_img" href="なすの与一紹介.html"><img src="../../images/nasuno-yoichi.png"></a>
-                        </div>
-                        <p><b class="brown">住所</b><br>
-                            〒620-0931<br>
-                            京都府福知山市篠尾4-3<br>
-                            <b class="brown">営業時間</b><br>
-                            17:30～24:00<br>
-                            <b class="brown">TEL</b><br>
-                            0773-24-2932
-                        </p>
+            <ul class="shops_index_flex">
+                <li class="shop_info_contents_background">
+                    <h3 class="shop_info_contents_head yoichi_name_bg_img">なすの与一</h3>
+                    <div class="shop_info_contents">
+                        <a class="hover_img" href="nasu_yoichi.html"><p><img src="../../images/nasuno-yoichi.png"></p></a>
+                        <dl>
+                            <b class="brown"><dt>住所</dt></b>
+                            <dd>〒620-0931<br>
+                                京都府福知山市篠尾4-3</dd>
+                            <b class="brown"><dt>営業時間</dt></b>
+                            <dd>17:30～24:00</dd>
+                            <b class="brown"><dt>TEL</dt></b>
+                            <dd>0773-24-2932</dd>
+                        </dl>
                     </div>
-                    <a class="white" href="なすの与一紹介.html"><div class="button01 hover_img">詳細はこちら</div></a>
+                    <a class="white" href="nasu_yoichi.html"><div class="shop_info_button button01 hover_img">詳細はこちら</div></a>
                 </li>
-                <li class="store02 left2">
-                    <div id="store_chiritote">ちりとてちん</div>
-                    <div class="shop_introduction_img">
-                        <div class="center">
-                            <a class="hover_img" href="ちりとてちん紹介.html"><img src="../../images/chirirtotechin.png"></a>
-                        </div>
-                        <p><b class="brown">住所</b><br>
-                            〒620-0947<br>
-                            京都府福知山市天田旭ヶ丘77<br>
-                            <b class="brown">営業時間</b><br>
-                            17:30～24:00<br>
-                            <b class="brown">TEL</b><br>
-                            0773-23-4760
-                        </p>
+                <li class="shop_info_contents_background">
+                    <h3 class="shop_info_contents_head chiritote_name_bg_img">ちりとてちん</h3>
+                    <div class="shop_info_contents">
+                        <a class="hover_img" href="chiritotechin.html"><p><img src="../../images/chirirtotechin.png"></p></a>
+                        <dl>
+                            <b class="brown"><dt>住所</dt></b>
+                            <dd>〒620-0947<br>
+                                京都府福知山市天田旭ヶ丘77</dd>
+                            <b class="brown"><dt>営業時間</dt></b>
+                            <dd>17:30～24:00</dd>
+                            <b class="brown"><dt>TEL</dt></b>
+                            <dd>0773-23-4760</dd>
+                        </dl>
                     </div>
-                    <a class="white" href="ちりとてちん紹介.html"><div class="button02 hover_img">詳細はこちら</div></a>
+                    <a class="white" href="chiritotechin.html"><div class="shop_info_button button02 hover_img">詳細はこちら</div></a>
                 </li>
-
-                <li class="store02 left2">
-                    <div id="store_kinchan">金ちゃん</div>
-                    <div class="shop_introduction_img">
-                        <div class="center">
-                            <a class="hover_img" href="金ちゃん紹介.html"><img src="../../images/kinnchan.png"></a>
-                        </div>
-                        <p><b class="brown">住所</b><br>
-                            〒620-0940<br>
-                            京都府福知山市駅南町3丁目89　駅南マンション1F<br>
-                            <b class="brown">営業時間</b><br>
-                            15:00〜22:00<br>
-                            <b class="brown">TEL</b><br>
-                            0773-45-3224
-                        </p>
+                <li class="shop_info_contents_background">
+                    <h3 class="shop_info_contents_head kinchan_name_bg_img">金ちゃん</h3>
+                    <div class="shop_info_contents">
+                        <a class="hover_img" href="kinchan.html"><p><img src="../../images/kinnchan.png"></p></a>
+                        <dl>
+                            <b class="brown"><dt>住所</dt></b>
+                            <dd>〒620-0940<br>
+                                京都府福知山市駅南町3丁目89　駅南マンション1F</dd>
+                            <b class="brown"><dt>営業時間</dt></b>
+                            <dd>15:00〜22:00</dd>
+                            <b class="brown"><dt>TEL</dt></b>
+                            <dd>0773-45-3224</dd>
+                        </dl>
                     </div>
-                    <a class="white" href="金ちゃん紹介.html"><div class="button03 hover_img">詳細はこちら</div></a>
+                    <a class="white" href="kinchan.html"><div class="shop_info_button button03 hover_img">詳細はこちら</div></a>
                 </li>
-
-                <li class="store02 left2">
-                    <div id="store_aburiya">あぶりや</div>
-                    <div class="shop_introduction_img">
-                        <div class="center">
-                            <a class="hover_img" href="あぶりや紹介.html"><img src="../../images/aburiya.png"></a>
-                        </div>
-                        <p><b class="brown">住所</b><br>
-                            〒620-0000<br>
-                            京都府福知山市篠尾1丁目36　ECOGLOBAL1F<br>
-                            <b class="brown">営業時間</b><br>
-                            17:30～24:00<br>
-                            <b class="brown">TEL</b><br>
-                            0773-25-0004
-                        </p>
+                <li class="shop_info_contents_background">
+                    <h3 class="shop_info_contents_head aburiya_name_bg_img">あぶりや</h3>
+                    <div class="shop_info_contents">
+                        <a class="hover_img" href="aburiya.html"><p><img src="../../images/aburiya.png"></p></a>                        <dl>
+                            <b class="brown"><dt>住所</dt></b>
+                            <dd>〒620-0000<br>
+                                京都府福知山市篠尾1丁目36　ECOGLOBAL1F</dd>
+                            <b class="brown"><dt>営業時間</dt></b>
+                            <dd>17:30～24:00</dd>
+                            <b class="brown"><dt>TEL</dt></b>
+                            <dd>0773-25-0004</dd>
+                        </dl>
                     </div>
-                    <a class="white" href="あぶりや紹介.html"><div class="button04 hover_img">詳細はこちら</div></a>
+                    <a class="white" href="aburiya.html"><div class="shop_info_button button04 hover_img">詳細はこちら</div></a>
+                </li>
+                <li class="shop_info_contents_background">
+                    <h3 class="shop_info_contents_head toriya_name_bg_img">鳥屋平兵衛商店</h3>
+                    <div class="shop_info_contents">
+                        <a class="hover_img" href="toriya.html"><p><img src="../../images/toriya.png"></p></a>
+                        <b class="brown"><dt>住所</dt></b>
+                            <dd>〒620-0931<br>
+                                京都府福知山市篠尾3-7</dd>
+                            <b class="brown"><dt>営業時間</dt></b>
+                            <dd>17:30～24:00</dd>
+                            <b class="brown"><dt>TEL</dt></b>
+                            <dd>0773-23-1053</dd>
+                        </dl>
+                    </div>
+                    <a class="white" href="toriya.html"><div class="shop_info_button button05 hover_img">詳細はこちら</div></a>
+                </li>
+                <li class="shop_info_contents_background">
+                    <h3 class="shop_info_contents_head sakanaya_name_bg_img">魚屋平兵衛商店</h3>
+                    <div class="shop_info_contents">
+                        <a class="hover_img" href="sakanaya.html"><p><img src="../../images/sakanaya.png"></p></a>
+                        <b class="brown"><dt>住所</dt></b>
+                            <dd>〒620-0055<br>
+                                京都府福知山市篠尾新町3-124</dd>
+                            <b class="brown"><dt>営業時間</dt></b>
+                            <dd>17:30～24:00</dd>
+                            <b class="brown"><dt>TEL</dt></b>
+                            <dd>0773-22-4016</dd>
+                        </dl>
+                    </div>
+                    <a class="white" href="sakanaya.html"><div class="shop_info_button button06 hover_img">詳細はこちら</div></a>
+                </li>
+                <li class="shop_info_contents_background">
+                    <h3 class="shop_info_contents_head yoichi_name_bg_img">いせの与一</h3>
+                    <div class="shop_info_contents">
+                        <a class="hover_img" href="ise_yoichi.html"><p><img src="../../images/iseno-yoichi.png"></p></a>
+                        <b class="brown"><dt>住所</dt></b>
+                            <dd>〒625-0036<br>
+                                京都府舞鶴市浜1143-6</dd>
+                            <b class="brown"><dt>営業時間</dt></b>
+                            <dd>17:30～24:00</dd>
+                            <b class="brown"><dt>TEL</dt></b>
+                            <dd>0773-63-4579</dd>
+                        </dl>
+                    </div>
+                    <a class="white" href="ise_yoichi.html"><div class="shop_info_button button01 hover_img">詳細はこちら</div></a>
+                </li>
+                <li class="shop_info_contents_background">
+                    <h3 class="shop_info_contents_head yamiichi_name_bg_img">闇市倶楽部 西舞鶴店</h3>
+                    <div class="shop_info_contents">
+                        <a class="hover_img" href="yami_nishimaizuru.html"><p><img src="../../images/yamiichi-nishimai.png"></p></a>
+                        <b class="brown"><dt>住所</dt></b>
+                            <dd>〒624-0841<br>
+                                京都府舞鶴市字引土260-3西舞鶴駅第一ビル1階</dd>
+                            <b class="brown"><dt>営業時間</dt></b>
+                            <dd>17:30～24:00</dd>
+                            <b class="brown"><dt>TEL</dt></b>
+                            <dd>0773-75-5114</dd>
+                        </dl>
+                    </div>
+                    <a class="white" href="yami_nishimaizuru.html"><div class="shop_info_button button07 hover_img">詳細はこちら</div></a>
+                </li>
+                <li class="shop_info_contents_background">
+                    <h3 class="shop_info_contents_head kinchan_name_bg_img">情熱ホルモン 豊岡酒場</h3>
+                    <div class="shop_info_contents">
+                        <a class="hover_img" href="jounetsu_toyooka.html"><p><img src="../../images/jounetsu-toyooka.png"></p></a>
+                        <b class="brown"><dt>住所</dt></b>
+                            <dd>〒668-0052<br>
+                                兵庫県豊岡市九日市下町277-9</dd>
+                            <b class="brown"><dt>営業時間</dt></b>
+                            <dd>17:30～24:00</dd>
+                            <b class="brown"><dt>TEL</dt></b>
+                            <dd>0796-23-2860</dd>
+                        </dl>
+                    </div>
+                    <a class="white" href="jounetsu_toyooka.html"><div class="shop_info_button button03 hover_img">詳細はこちら</div></a>
+                </li>
+                <li class="shop_info_contents_background">
+                    <h3 class="shop_info_contents_head aburiya_name_bg_img">名前のない焼肉屋</h3>
+                    <div class="shop_info_contents">
+                        <a class="hover_img" href="yakiniku_notnamed.html"><p><img src="../../images/yakiniki-not-name.png"></p></a>
+                        <b class="brown"><dt>住所</dt></b>
+                            <dd>〒620-0000<br>
+                                京都府福知山市篠尾1丁目36　ECOGLOBAL1F　B</dd>
+                            <b class="brown"><dt>営業時間</dt></b>
+                            <dd>17:30～24:00</dd>
+                            <b class="brown"><dt>TEL</dt></b>
+                            <dd>090-8988-0019</dd>
+                        </dl>
+                    </div>
+                    <a class="white" href="yakiniku_notnamed.html"><div class="shop_info_button button04 hover_img">詳細はこちら</div></a>
                 </li>
             </ul>
-
-            <ul class="flex_stretch space_top">
-                <li class="store02">
-                    <div id="store_toriya">鳥屋平兵衛商店</div>
-                    <div class="shop_introduction_img">
-                        <div class="center">
-                            <a class="hover_img" href="鳥屋平兵衛商店紹介.html"><img src="../../images/toriya.png"></a>
-                        </div>
-                        <p><b class="brown">住所</b><br>
-                            〒620-0931<br>
-                            京都府福知山市篠尾3-7<br>
-                            <b class="brown">営業時間</b><br>
-                            17:30～24:00<br>
-                            <b class="brown">TEL</b><br>
-                            0773-23-1053
-                        </p>
-                    </div>
-                    <a class="white" href="鳥屋平兵衛商店紹介.html"><div class="button05 hover_img">詳細はこちら</div></a>
-                </li>
-
-                <li class="store02 left2">
-                    <div id="store_sakanaya">魚屋平兵衛商店</div>
-                    <div class="shop_introduction_img">
-                        <div class="center">
-                            <a class="hover_img" href="魚屋平兵衛商店紹介.html"><img src="../../images/sakanaya.png"></a>
-                        </div>
-                        <p><b class="brown">住所</b><br>
-                            〒620-0055<br>
-                            京都府福知山市篠尾新町3-124<br>
-                            <b class="brown">営業時間</b><br>
-                            17:30～24:00<br>
-                            <b class="brown">TEL</b><br>
-                            0773-22-4016
-                        </p>
-                        <a class="white" href="魚屋平兵衛商店紹介.html"><div class="button06 hover_img">詳細はこちら</div></a>
-                    </div>
-
-                </li>
-                <li class="store02 left2">
-                    <div id="store_isenoyoichi">いせの与一</div>
-                    <div class="shop_introduction_img">
-                        <div class="center">
-                            <a class="hover_img" href="いせの与一紹介.html"><img src="../../images/iseno-yoichi.png"></a>
-                        </div>
-                        <p><b class="brown">住所</b><br>
-                            〒625-0036<br>
-                            京都府舞鶴市浜1143-6<br>
-                            <b class="brown">営業時間</b><br>
-                            17:30～24:00<br>
-                            <b class="brown">TEL</b><br>
-                            0773-63-4579
-                        </p>
-                        <a class="white" href="いせの与一紹介.html"><div class="button01 hover_img">詳細はこちら</div></a>
-                    </div>
-                </li>
-
-                <li class="store02 left2">
-                    <div id="store_yamiichi">闇市倶楽部 西舞鶴店</div>
-                    <div class="shop_introduction_img">
-                        <div class="center">
-                            <a class="hover_img" href="闇市倶楽部 西舞鶴店紹介.html"><img src="../../images/yamiichi-nishimai.png"></a>
-                        </div>
-                        <p><b class="brown">住所</b><br>
-                            〒624-0841<br>
-                            京都府舞鶴市字引土260-3西舞鶴駅第一ビル1階<br>
-                            <b class="brown">営業時間</b><br>
-                            17:30～24:00<br>
-                            <b class="brown">TEL</b><br>
-                            0773-75-5114
-                        </p>
-                    </div>
-                    <a class="white" href="闇市倶楽部 西舞鶴店紹介.html"><div class="button07 hover_img">詳細はこちら</div></a>
-                </li>
-            </ul>
-
-
-
-            <ul class="flex_stretch space_top">
-                <li class="store02">
-                    <div id="store_jounetu_toyooka">情熱ホルモン 豊岡酒場</div>
-                    <div class="shop_introduction_img">
-                        <div class="center">
-                            <a class="hover_img" href="情熱ホルモン豊岡酒場紹介.html"><img src="../../images/jounetsu-toyooka.png"></a>
-                        </div>
-                        <p><b class="brown">住所</b><br>
-                            〒668-0052<br>
-                            兵庫県豊岡市九日市下町277-9<br>
-                            <b class="brown">営業時間</b><br>
-                            17:30～24:00<br>
-                            <b class="brown">TEL</b><br>
-                            0796-23-2860
-                        </p>
-                    </div>
-                    <a class="white" href="情熱ホルモン豊岡酒場紹介.html"><div class="button03 hover_img">詳細はこちら</div></a>
-                </li>
-
-                <li class="store02 left2">
-                    <div id="store_yakiniku_not_name">名前のない焼肉屋</div>
-                    <div class="shop_introduction_img">
-                        <div class="center">
-                            <a class="hover_img" href="名前のない焼肉屋紹介.html"><img src="../../images/yakiniki-not-name.png"></a>
-                        </div>
-                        <p><b class="brown">住所</b><br>
-                            〒620-0000<br>
-                            京都府福知山市篠尾1丁目36　ECOGLOBAL1F　B<br>
-                            <b class="brown">営業時間</b><br>
-                            17:00～23:00<br>
-                            <b class="brown">TEL</b><br>
-                            090-8988-0019
-                        </p>
-                    </div>
-                    <a class="white" href="名前のない焼肉屋紹介.html"><div class="button04 hover_img">詳細はこちら</div></a>
-                </li> 
-
-            </ul>
-            <p class="space_bottom"><br><br></p>
-            <p class="space_bottom"><br><br></p>
-            <p class="space_bottom"><br><br></p>
+        </div>       
+           
+        <div class="wood_background">
+            <div class="container">
+                <ul class="news">
+                    <li><a href="../osusume.html"><img class="hover_img" src="../../images/osusumeryouri.png"></a></li>
+                    <li><a href="../event.html"><img class="hover_img" src="../../images/konngetunoibennto.png"></a></li>
+                    <li><a href="../present.html"><img class="hover_img" src="../../images/konngetunopresent.png"></a></li>
+                    <li><a href="../pointcard.html"><img class="hover_img" src="../../images/pointcard.png"></a></li>
+                </ul>
+            </div>
         </div>
-        <div id="news">
-            <div>
-                <p><br><br><br></p>
-                <div class="container center flex_stretch">
-                    <p class="news02"><img src="../../images/osusumeryouri.png"></p>
-                    <p class="left2 news02"><a href="../event.html"><img class="hover_img" src="../../images/konngetunoibennto.png"></a></p>
-                    <p class="left2 news02"><a href="../present.html"><img class="hover_img" src="../../images/konngetunopresent.png"></a></p>
-                    <p class="left2 news02"><a href="../pointcard.html"><img class="hover_img" src="../../images/pointcard.png"></a></p>
-                </div>
-                <p class="space_top"><br><br></p>
-            </div>             
-        </div>
-        </div><!-- #wrapperの終わり -->   
+        
+    </main><!-- #wrapperの終わり -->   
     <footer>
         <div class="container center">
-            <p class="pagetop"><a href="#wrapper"><img class="hover_img" id="footer_pagetop" src="../../images/page_top.png"></a></p>
+            <p><a href="#wrapper"><img class="hover_img" id="footer_pagetop" src="../../images/page_top.png"></a></p>
             <div id="footer_text">
                 <p>Copyright © オフィスヒュート All Rights Reserved. 無断転載禁止</p>
             </div>
         </div>    
-    </footer>       
+    </footer>            
     <script src="js/test.js"></script>  
 </body>
 </html>
