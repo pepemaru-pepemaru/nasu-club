@@ -12,60 +12,76 @@
 <body>
     <header>
         <div class="container">
-            <p id="header_text01">福知山や北京都を中心に、多数の居酒屋店舗を展開中</p>
+            <p id="header_text01">なすくらぶ・株式会社オフィスヒュートの会社案内</p>
             <div class="flex">
-                <a href="../index.html"><img id="header_logo" class="hover_img" src="../images/logo.png"alt="なすくらぶ"></a>
-                <img id="header_cope" src="../images/oishiihanikkori.png"alt="美味しいはニッコリにつながる">
+                <a href="../index.html"><img class="header_logo hover_img" src="../images/logo.png"alt="なすくらぶ"></a>
+                <img class="header_cope" src="../images/oishiihanikkori.png"alt="美味しいはニッコリにつながる">
             </div>
         </div>
     </header>
 
-    <div id="wrapper">
+    <nav id="navi">
+        <div class="container">
+            <div id="navi_mobile">
+                <p class="navi_logo"><a href="../index.html"><img src="../images/logo.png"alt="なすくらぶ"></a></p>
+                <p class="navi_cope"><img src="../images/oishiihanikkori.png"alt="美味しいはニッコリにつながる"></p>
+                <div id="js-hamburger" class="navi_menu"></div>
+            </div>
+            <div id="js-nav" class="menu">
+                <a href="../index.html"><p class="menu_size">トップページ</p></a>
+                <a href="shop/index.html"><p class="menu_size">店舗紹介・一覧</p></a>
+                <a href="company.html"><p class="menu_size">会社案内</p></a>
+                <a href="recruit.html"><p class="menu_size">スタッフ募集</p></a>
+                <a href="inquiry.html"><p class="menu_size">お問い合わせ</p></a>
+            </div>
+            <div id="navi_pc">
+                <ul class="navi_pc_button">
+                    <a href="../index.html"><li class="navi_pc_button_1"></li></a>
+                    <a href="shop/index.html"><li class="navi_pc_button_2"></li></a>
+                    <a href="company.html"><li class="navi_pc_button_3"></li></a>
+                    <a href="recruit.html"><li class="navi_pc_button_4"></li></a>
+                    <a href="inquiry.html"><li class="navi_pc_button_5"></li></a>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-        <div id="navi">
+    <main id="wrapper">
+        <div class="wood_background">
             <div class="container">
-                <p id="navi_img">
-                    <img src="../images/navi_nandakore.png"alt="もう一度やり直して下さい">
-                </p>
+                <img class="shop_sub_header" src="../images/course_img/enkai_top.jpg">
             </div>
         </div>
 
-        <div id="sub_header"><img src="../images/course_img/enkai_top.jpg"></div>
-
         <div class="container space_top">
             <p><span class=blown_box>気になる店舗のロゴマークをクリック！</span></p>
-            <ul class="contents flex_stretch space_top">
-                <li>
+            <ul class="TOP_shop_img_flex space_top">
+                <li class="TOP_shop_img_size">
                     <a href="#nasunoyoichi_shop_text_enkai01"><img class="side_border hover_img" src="../images/nasuno-yoichi.png"alt="なすの与一"></a>
                 </li>
-                <li>
+                <li class="TOP_shop_img_size">
                     <a href="#chiritotechinn_shop_text_enkai01"><img class="side_border hover_img" src="../images/chirirtotechin.png"alt="ちりとてちん"></a>
                 </li>
-                <li>
+                <li class="TOP_shop_img_size">
                     <a href="金ちゃん紹介.html"><img class="side_border hover_img" src="../images/kinnchan.png"alt="金ちゃん"></a>
                 </li>
-                <li>
+                <li class="TOP_shop_img_size">
                     <a href="あぶりや紹介.html"><img class="side_border hover_img" src="../images/aburiya.png"alt="あぶりや"></a>
                 </li>
-                <li>
+                <li class="TOP_shop_img_size">
                     <a href="鳥屋平兵衛商店紹介.html"><img class="side_border hover_img" src="../images/toriya.png"alt="鳥屋平兵衛商店"></a>
                 </li>
-            </ul>   
-            <ul class="contents flex_stretch space_top space_bottom">
-                <li>
+                <li class="TOP_shop_img_size">
                     <a href="魚屋平兵衛商店紹介.html"><img class="side_border hover_img" src="../images/sakanaya.png"alt="魚屋平兵衛商店"></a>
                 </li>
-                <li>
+                <li class="TOP_shop_img_size">
                     <a href="いせの与一紹介.html"><img class="side_border hover_img" src="../images/iseno-yoichi.png"alt="いせの与一"></a>
                 </li>
-                <li>
+                <li class="TOP_shop_img_size">
                     <a href="闇市倶楽部 西舞鶴店紹介.html"><img class="side_border hover_img" src="../images/yamiichi-nishimai.png"alt="闇市倶楽部西舞鶴店"></a>
                 </li>
-                <li>
+                <li class="TOP_shop_img_size">
                     <a href="情熱ホルモン 豊岡酒場紹介.html"><img class="side_border hover_img" src="../images/jounetsu-toyooka.png"alt="情熱ホルモン豊岡酒場店"></a>
-                </li>
-                <li>
-                    <a href="名前のない焼肉屋紹介.html"><img class="side_border hover_img" src="../images/yakiniki-not-name.png"alt="名前のない焼肉屋さん"></a>
                 </li>
             </ul>
         </div>
@@ -289,20 +305,18 @@
         </main>
 
         
-        <div id="news">
-            <div>
-                <p><br><br><br></p>
-                <div class="container center flex_stretch">
-                    <p class="news02"><img src="../images/osusumeryouri.png"></p>
-                    <p class="left2 news02"><a href="../blog/event.html"><img class="hover_img" src="../images/konngetunoibennto.png"></a></p>
-                    <p class="left2 news02"><a href="../blog/present.html"><img class="hover_img" src="../images/konngetunopresent.png"></a></p>
-                    <p class="left2 news02"><a href="../blog/pointcard.html"><img class="hover_img" src="../images/pointcard.png"></a></p>
-                </div>
-                <p class="space_top"><br><br></p>
-            </div>             
+        <div class="wood_background">
+            <div class="container">
+                <ul class="news">
+                    <li><a href="osusume.html"><img class="hover_img" src="../images/osusumeryouri.png"></a></li>
+                    <li><a href="event.html"><img class="hover_img" src="../images/konngetunoibennto.png"></a></li>
+                    <li><a href="present.html"><img class="hover_img" src="../images/konngetunopresent.png"></a></li>
+                    <li><a href="pointcard.html"><img class="hover_img" src="../images/pointcard.png"></a></li>
+                </ul>
+            </div>
         </div>
         
-    </div><!-- #wrapperの終わり -->  
+    </div><!-- #wrapperの終わり -->   
     <footer>
         <div class="container center">
             <p class="pagetop"><a href="#wrapper"><img class="hover_img" id="footer_pagetop" src="../images/page_top.png"></a></p>
@@ -310,6 +324,6 @@
                 <p>Copyright © オフィスヒュート All Rights Reserved. 無断転載禁止</p>
             </div>
         </div>    
-    </footer>    
+    </footer>
 </body>
 </html>

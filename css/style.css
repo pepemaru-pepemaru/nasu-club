@@ -269,64 +269,99 @@ footer{
 
 
 /* TOPページ、スライドの部分に使ってるCSS */
-.slider_img_size{
-    height: 600px ;
-    width: 800px ;
-}
 /* 店舗画像 */
 .chiritote{
     background-image: url(../images/index_top_slider_img/chiritotechin_background_top_img.png) ;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
 }
 .aburiya{
     background-image: url(../images/index_top_slider_img/aburiya_background.png) ;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
 }
 .kinchan{
     background-image: url(../images/index_top_slider_img/kinchan_background.png) ;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
 }
 .toriya{
     background-image: url(../images/index_top_slider_img/toriya_top_background.png) ;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
 }
 .sakanaya{
     background-image: url(../images/index_top_slider_img/sakanaya_background.png) ;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
 }
 .yamiichi_nishimai{
     background-image: url(../images/index_top_slider_img/yamiichi_nishimai_background.png) ;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
 }
 .isenoyoichi{
     background-image: url(../images/index_top_slider_img/isenoyoichi_background.png) ;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
 }
 .jounetu_toyooka{
     background-image: url(../images/index_top_slider_img/jounetu_toyoka_background.png) ;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
 }
 .nasunoyoichi{
     background-image: url(../images/index_top_slider_img/nasunoyoichi_background.png) ;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+.slider_img_size{
+    height: 600px;
+    position: relative;
 }
 .box{
     background-image: url(../images/index_top_slider_img/black_usuiyatu.png);
-    width: 800px ;
     position: absolute;
-    margin-top: 480px;
-    padding-bottom: 25px;
+    text-align: center;
+    background-size: cover;
+    width: 800px;
+    bottom: 0 ;
+    padding: 20px;
 }
 .box_in_text{
+    width: 70%;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 15px;
+    margin: 0 auto;
     color: #FFFFFF;
 }
 .slider-nav .slick-track{
     transform: unset !important;
 }
+@media (max-width:800px) {.slider_img_size{height: 600px;}}
+@media (max-width:600px) {.slider_img_size{height: 450px;}}
+@media (max-width:500px) {.slider_img_size{height: 375px;}}
+@media (max-width:400px) {.slider_img_size{height: 300px;}}
+
+
 
 
 /* TOPページに使っているCSS */
 #oishii_text01{
-    margin: 40px;
+    width: 90%;
+    margin: 40px auto;
     text-align: center;
     border-bottom: solid 1px black;
 }
-#oishii_text02{
+.oishii_text02{
     margin-top: 10px;
     line-height: 2;
 }
@@ -344,16 +379,15 @@ footer{
     border-bottom: solid 1px #FFFFFF;
 }
 #news_scroll{
-    width: 800px;
+    width: 80%;
     height: 120px;
+    margin: 0 auto;
     overflow-y: scroll; 
     padding-top: 20px;
     line-height:2.5;
     font-size: 16px;
     text-align: left;
 }
-
-
 /* TOPページ店舗紹介欄に使っているCSS */
 .side_border{
     border-left: dotted #CBCBCB 1px;
@@ -424,6 +458,50 @@ footer{
     position: absolute;
     bottom:1%;
     left: 5%;
+}
+.TOP_blog_flex1{
+    display: flex;
+    justify-content: space-between;
+}
+.TOP_blog_flex2{
+    display: flex;
+    flex-direction:column;
+}
+.TOP_blog_text{color: #fff;}
+.TOP_blog_page_img img{width: 100%;}
+.TOP_blog_page_img a{width: 100%;}
+
+@media (max-width:640px) {
+    .shop_info{display: none;}
+    .enkai_pc{display: none;}
+    .TOP_blog_text{display: none;}
+    .TOP_blog_flex1{
+        display: flex;
+        flex-direction:column;
+    }
+    .TOP_blog_flex2{
+        display: flex;
+        flex-direction:row;
+        gap: 10%;
+    }
+    .TOP_blog_flex2 li{width: 40%;}
+    #oishii_text01 img{width: 100%;}
+    .oishii_text02{
+        margin: 0 auto;
+        width: 90%;
+    }
+    .oishii_text02 img{
+        width: 100%;
+    }
+    #oishii_text04 img{width: 100%;}
+    #news_scroll{width: 100%;}
+    #oishii_text02{
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+@media(min-width:641px) {
+    .enkai_mobile{display: none;}
 }
 
 
@@ -561,8 +639,13 @@ footer{
     border-bottom: solid 1px black;
 }
 .inquiry_text{
-    width: 800px;
+    width: 80%;
     margin: 0 auto;
+}
+.inquiry_flex li{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto;
 }
 .text_box{
     width: 300px;
@@ -595,9 +678,26 @@ width: 50%;
 .presentpage img{width: 100%;}
 
 @media (max-width:640px) {
-.presentpage li{
-    width: 100%;
-}
+    .presentpage li{
+        width: 100%;
+    }
+    .inquiry_text{
+        width: 90%;
+        font-size: 15px;
+    }
+    .inquiry_flex li{
+        display: block;
+        margin: 10px auto;
+    }
+    .text_box_big{
+        width: 100%;
+        height: 150px;
+        margin-right: 0;
+    }
+    .text_box{
+        width: 100%;
+        margin-right: 0;
+    }
 }
 
 /* ポイントカードページで使ったCSS */
@@ -742,7 +842,8 @@ width: 50%;
     border: solid 1px #7e0701 ;
 }
 .course_text_box_attention{
-    margin: 30px 150px;
+    width: 70%;
+    margin: 30px auto;
     padding:  15px;
     border: solid 3px #920902 ;
 }
@@ -771,6 +872,15 @@ width: 50%;
     border-left: solid 7px #bb5a20;/*左線*/
     border-bottom: dotted #CBCBCB 1px;
 }
+@media (max-width:640px) {
+    .course_main{
+        display: block;
+    }
+    .course_text_box_attention{
+        width: 80%;
+    }
+}
+
 
 /* 会社案内、沿革ページに使ったCSS */
 #company_ishizue{
@@ -1086,4 +1196,10 @@ width: 50%;
     .osusume_img_size_small{
         width: 100%;
     }
+    .modal__content {
+        width: 90%;
+      }
+      .modal__content img{
+        width: 100%;
+      }
 }
